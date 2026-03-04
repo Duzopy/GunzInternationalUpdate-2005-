@@ -1,0 +1,1736 @@
+<?xml version="1.0"?>
+<XML id="zitem">
+	<!--
+		[ 추가사항 ]
+
+		우선은 선택한 무기에만 적용됨...( 스피드 반지등은 만들수없음..필요하면 추가 )
+
+			무기에 따른 속도 제어	: limitspeed="70"	수치는 비율.. 기본은 100%
+			무기에 따른 점프 제한	: limitjump = "1"	수치는 0 , 1 (기본은 0 점프가능)
+			무기에 따른 가속 제한	: limittumble = "1" 수치는 0 , 1 (기본은 0 점프가능)
+			무기에 따른 벽타기 제한 : limitwall = "1"	수치는 0 , 1 (기본은 0 점프가능)
+
+		근접 공격용 무기들은 기본이 되는 공격의 에니메이션길이를 포함하는 delay 를 갖는것으로 한다..
+		
+			단검류		: 266 ms 를 더해준다..   attackS ( 상체모션이 기본 ) man_dagger_standshot.elu.ani
+			양손단검류	: 299 ms 를 더해준다..   attack1 ( 하체모션이 기본 ) man_2hdagger_standshot_1.elu.ani
+			카타나류	: 299 ms 를 더해준다..   attack1 ( 하체모션이 기본 ) man_knife_standshot_1.elu.ani
+			이도류		: 299 ms 를 더해준다..   attack1 ( 하체모션이 기본 ) man_blade_standshot_1.elu.ani
+			대검류		: 399 ms 를 더해준다..   attack1 ( 하체모션이 기본 ) man_sword_standshot_1.elu.ani
+		
+	-->
+	<!-- 일반아이템 ////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+	<!-- 무기 /////////////////////////////////////////////////////////////////////////////////////// -->
+	<!-- 단검 /////////////////////////////////////////////////////////////////////////////////////// -->
+	<ITEM id="1" name="Rusty Dagger" mesh_name="dagger01" totalpoint="0" type="melee" res_sex="a"
+		res_level="0" slot="melee" weapon="dagger" weight="5" bt_price="20" delay="366" damage="8"
+		range="160" ctrl_ability="0" magazine="0" reloadtime="0" slug_output="false" gadget_id="0"
+		hp="0" ap="0" maxwt="0" sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF" image_id="0"
+		bullet_image_id="0" magazine_image_id="0" desc="It has some rust here and there. Once bought and used, it is sure to be difficult to sell it to others." />
+	<ITEM id="11" name="Iron Dagger" mesh_name="dagger01" totalpoint="0" type="melee" res_sex="a"
+		res_level="5" slot="melee" weapon="dagger" weight="5" bt_price="200" delay="356" damage="9"
+		range="160" ctrl_ability="0" magazine="0" reloadtime="0" slug_output="false" gadget_id="0"
+		hp="0" ap="0" maxwt="0" sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF" image_id="0"
+		bullet_image_id="0" magazine_image_id="0" desc="Easily obtainable dagger. It was made in a factory. A faint serial number is visible on the surface." />
+	<ITEM id="3" name="Military Dagger" mesh_name="dagger01" totalpoint="0" type="melee" res_sex="a"
+		res_level="9" slot="melee" weapon="dagger" weight="6" bt_price="400" delay="356" damage="11"
+		range="160" ctrl_ability="0" magazine="0" reloadtime="0" slug_output="false" gadget_id="0"
+		hp="0" ap="0" maxwt="0" sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF" image_id="0"
+		bullet_image_id="0" magazine_image_id="0" desc="A dagger used in the military when making an assault." />
+	<ITEM id="4" name="Light-weight Dagger" mesh_name="dagger01" totalpoint="0" type="melee" res_sex="a"
+		res_level="18" slot="melee" weapon="dagger" weight="5" bt_price="1000" delay="346"
+		damage="10" range="160" ctrl_ability="0" magazine="0" reloadtime="0" slug_output="false"
+		gadget_id="0" hp="0" ap="0" maxwt="0" sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF"
+		image_id="0" bullet_image_id="0" magazine_image_id="0" desc="A very light and easy-to-use Dagger." />
+	<ITEM id="5" name="High-end Dagger" mesh_name="dagger01" totalpoint="0" type="melee" res_sex="a"
+		res_level="27" slot="melee" weapon="dagger" weight="6" bt_price="2500" delay="351"
+		damage="12" ctrl_ability="0" magazine="0" reloadtime="0" slug_output="false" gadget_id="0"
+		hp="0" ap="0" maxwt="0" sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF" image_id="0"
+		bullet_image_id="0" magazine_image_id="0" snd_reload="we_revolver_reload" snd_fire="357magrevolver_dryfire"
+		snd_dryfire="357magrevolver_dryfire" desc="A high-end dagger that is not from mass production. A beautiful pattern inscribed on the surface by a craftsman stands out. But it seems heavy."
+		range="160" />
+	<ITEM id="6" name="Phantom Slaying Dagger" mesh_name="dagger02" totalpoint="0" type="melee" res_sex="a"
+		res_level="36" slot="melee" weapon="dagger" weight="4" bt_price="5000" delay="356"
+		damage="13" range="160" ctrl_ability="0" magazine="0" reloadtime="0" slug_output="false"
+		gadget_id="0" hp="0" ap="0" maxwt="0" sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFF80"
+		image_id="0" bullet_image_id="0" magazine_image_id="0" desc="It is a mysterious dagger said to have been used to kill an evil spirit. However, it is not sure whether it is true or not." />
+	<ITEM id="7" name="KEUK-CHO-HON" mesh_name="dagger03" totalpoint="0" type="melee" res_sex="a" res_level="45"
+		slot="melee" weapon="dagger" weight="6" bt_price="10000" delay="346" damage="14" range="160"
+		ctrl_ability="0" magazine="0" reloadtime="0" slug_output="false" gadget_id="0" hp="0"
+		ap="0" maxwt="0" sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF" image_id="0"
+		bullet_image_id="0" magazine_image_id="0" desc="This dagger is used by a very few number of people. It is said that only a very limited number of this dagger has been produced." />
+	<!-- 장검 //////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+	<ITEM id="2" name="Rusty Sword" mesh_name="katana01" totalpoint="0" type="melee" res_sex="a"
+		res_level="0" slot="melee" weapon="katana" weight="10" bt_price="20" delay="359" damage="15"
+		range="220" ctrl_ability="0" magazine="0" reloadtime="0" slug_output="false" gadget_id="0"
+		hp="0" ap="0" maxwt="0" sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF" image_id="0"
+		bullet_image_id="0" magazine_image_id="0" desc="It is somewhat rusty. It seems difficult to sell it to others once it is bought and used." />
+	<ITEM id="12" name="Iron Sword" mesh_name="katana02" totalpoint="0" type="melee" res_sex="a"
+		res_level="5" slot="melee" weapon="katana" weight="10" bt_price="300" delay="359"
+		damage="16" range="220" ctrl_ability="0" magazine="0" reloadtime="0" slug_output="false"
+		gadget_id="0" hp="0" ap="0" maxwt="0" sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF"
+		image_id="0" bullet_image_id="0" magazine_image_id="0" desc="Easily obtainable sword. It was made in a factory. A faint serial number is visible on the surface." />
+	<ITEM id="13" name="Military Sword" mesh_name="katana02" totalpoint="0" type="melee" res_sex="a"
+		res_level="10" slot="melee" weapon="katana" weight="12" bt_price="600" delay="349"
+		damage="18" range="220" ctrl_ability="0" magazine="0" reloadtime="0" slug_output="false"
+		gadget_id="0" hp="0" ap="0" maxwt="0" sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF"
+		image_id="0" bullet_image_id="0" magazine_image_id="0" desc="This sword is used in the military. It is said that this weapon is not supplied to the rank or file. It has quite a high-end appearance." />
+	<ITEM id="14" name="Light-weight Sword" mesh_name="katana01" totalpoint="0" type="melee" res_sex="a"
+		res_level="20" slot="melee" weapon="katana" weight="9" bt_price="1500" delay="339"
+		damage="15" range="220" ctrl_ability="0" magazine="0" reloadtime="0" slug_output="false"
+		gadget_id="0" hp="0" ap="0" maxwt="0" sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF"
+		image_id="0" bullet_image_id="0" magazine_image_id="0" desc="Made easy-to-use lightweight sword." />
+	<ITEM id="15" name="High-class Sword" mesh_name="katana04" totalpoint="0" type="melee" res_sex="a"
+		res_level="30" slot="melee" weapon="katana" weight="13" bt_price="3600" delay="339"
+		damage="20" range="220" ctrl_ability="0" magazine="0" reloadtime="0" slug_output="false"
+		gadget_id="0" hp="0" ap="0" maxwt="0" sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF"
+		image_id="0" bullet_image_id="0" magazine_image_id="0" desc="This sword is made of high-end materials for special purposes." />
+	<ITEM id="16" name="Devil Slayer" mesh_name="katana06" totalpoint="0" type="melee" res_sex="a"
+		res_level="40" slot="melee" weapon="katana" weight="11" bt_price="7200" delay="339"
+		damage="22" range="220" ctrl_ability="0" magazine="0" reloadtime="0" slug_output="false"
+		gadget_id="0" hp="0" ap="0" maxwt="0" sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF"
+		image_id="0" bullet_image_id="0" magazine_image_id="0" desc="It is a mysterious sword said to have been used to kill an evil spirit." />
+	<ITEM id="17" name="YONG-WOL-RANG" mesh_name="katana03" totalpoint="0" type="melee" res_sex="a"
+		res_level="50" slot="melee" weapon="katana" weight="12" bt_price="15000" delay="329"
+		damage="24" range="220" ctrl_ability="0" magazine="0" reloadtime="0" slug_output="false"
+		gadget_id="0" hp="0" ap="0" maxwt="0" sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF"
+		image_id="0" bullet_image_id="0" magazine_image_id="0" desc="This renowned sword is gold plated. The attractive look of this sword makes the sword collector desperately want it." />
+	<!-- 이도류 //////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+	<!-- Dual Wield : Katana - Weapon Type is 'dualkatana -->
+	<!-- 무게는 통상 1.5배, 데미지는 통상 0.8배, 딜레이는 통상 0.7배 * 0.9배, 가격은 1.4배 -->
+	<!-- 철제 소태도의 실제적 비교모델은 군용 장검 -->
+	<ITEM id="31" name="Iron Kodachi" mesh_name="blade02" totalpoint="0" type="melee" res_sex="a"
+		res_level="10" slot="melee" weapon="doublekatana" weight="18" bt_price="850" delay="290"
+		damage="14" range="220" ctrl_ability="0" magazine="0" reloadtime="0" slug_output="false"
+		gadget_id="0" hp="0" ap="0" maxwt="0" sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF"
+		image_id="0" bullet_image_id="0" magazine_image_id="0" desc="Kodachi made in a way that it can be used by both hands. Made suitable for the general public." />
+	<ITEM id="32" name="Light-weight Kodachi" mesh_name="blade01" totalpoint="0" type="melee" res_sex="a"
+		res_level="21" slot="melee" weapon="doublekatana" weight="14" bt_price="2000" delay="280"
+		damage="15" range="220" ctrl_ability="0" magazine="0" reloadtime="0" slug_output="false"
+		gadget_id="0" hp="0" ap="0" maxwt="0" sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF"
+		image_id="0" bullet_image_id="0" magazine_image_id="0" desc="Kodachi made in a way that it can be more easily used by both hands. It is relatively lighter and smaller than the normal one." />
+	<ITEM id="33" name="High-end Kodachi" mesh_name="blade06" totalpoint="0" type="melee" res_sex="a"
+		res_level="32" slot="melee" weapon="doublekatana" weight="20" bt_price="5000" delay="280"
+		damage="16" range="220" ctrl_ability="0" magazine="0" reloadtime="0" slug_output="false"
+		gadget_id="0" hp="0" ap="0" maxwt="0" sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF"
+		image_id="0" bullet_image_id="0" magazine_image_id="0" desc="This Kodachi is made of high-end materials for special use." />
+	<ITEM id="34" name="Red Blood" mesh_name="blade05" totalpoint="0" type="melee" res_sex="a" res_level="43"
+		slot="melee" weapon="doublekatana" weight="18" bt_price="12000" delay="260" damage="18"
+		ctrl_ability="0" magazine="0" reloadtime="0" slug_output="false" gadget_id="0" hp="0"
+		ap="0" maxwt="0" sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF" image_id="0"
+		bullet_image_id="0" magazine_image_id="0" desc="This Kodachi with a scary name is said to have been used by a great swordsman of a long time ago." />
+		
+		<!-- 테스트용 대검입니다. 나중에 삭제요망 -->
+	<ITEM id="51" name="Large Sword" mesh_name="sword01" totalpoint="0" type="melee" res_sex="a" res_level="43"
+		slot="melee" weapon="greatsword" weight="18" bt_price="12000" delay="260" damage="18"
+		ctrl_ability="0" magazine="0" reloadtime="0" slug_output="false" gadget_id="0" hp="0"
+		ap="0" maxwt="0" sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF" image_id="0"
+		bullet_image_id="0" magazine_image_id="0" desc="Very large sword." />
+
+	
+	<!-- Pistol : Magazine = 6 ea ///////////////////////////////////////////////////////////////////////// -->
+	<ITEM id="4001" name="Raptor 50" mesh_name="pistol01" totalpoint="0" type="range" res_sex="a"
+		res_level="0" slot="range" weapon="pistol" weight="7" bt_price="20" delay="250" damage="8"
+		ctrl_ability="30" magazine="10" maxbullet="60" reloadtime="4" slug_output="true" gadget_id="0"
+		hp="0" ap="0" maxwt="0" sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF" image_id="1"
+		bullet_image_id="0" magazine_image_id="0" snd_reload="we_pistol_reload" snd_fire="we_pistol_fire"
+		snd_dryfire="357magrevolver_dryfire" desc="This pistol has been used from a long time ago in the empire. Its production has been discontinued. Manufacturer: Walcom."
+		effect_id="3" />
+	<ITEM id="4002" name="Raptor 50 x2" mesh_name="pistol01x2" totalpoint="0" type="range" res_sex="a"
+		res_level="0" slot="range" weapon="pistolx2" weight="14" bt_price="40" delay="250"
+		damage="16" ctrl_ability="36" magazine="10" maxbullet="60" reloadtime="4" slug_output="true"
+		gadget_id="0" hp="0" ap="0" maxwt="0" sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF"
+		image_id="1" bullet_image_id="0" magazine_image_id="0" snd_reload="we_pistol_reload"
+		snd_fire="we_pistol_fire" snd_dryfire="357magrevolver_dryfire" desc="(Two-handed Weapon) This pistol has been used from a long time ago in the empire. Its production has been discontinued. Manufacturer: Walcom"
+		effect_id="4" />
+	<ITEM id="4009" name="Raptor 80" mesh_name="pistol01" totalpoint="0" type="range" res_sex="a"
+		res_level="5" slot="range" weapon="pistol" weight="7" bt_price="200" delay="200" damage="8"
+		ctrl_ability="30" magazine="12" maxbullet="72" reloadtime="4" slug_output="true" gadget_id="0"
+		hp="0" ap="0" maxwt="0" sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF" image_id="1"
+		bullet_image_id="0" magazine_image_id="0" snd_reload="we_pistol_reload" snd_fire="we_pistol_fire"
+		snd_dryfire="357magrevolver_dryfire" desc="A revised model of the Raptor 50. Its performance improved slightly but the appearance has not changed from the old version. Its production was announced to be stopped quite early as its competition released a new product. Manufacturer: Walcom"
+		effect_id="3" />
+	<ITEM id="4010" name="Raptor 80 x2" mesh_name="pistol01x2" totalpoint="0" type="range" res_sex="a"
+		res_level="7" slot="range" weapon="pistolx2" weight="14" bt_price="360" delay="200"
+		damage="16" ctrl_ability="36" magazine="12" maxbullet="72" reloadtime="4" slug_output="true"
+		gadget_id="0" hp="0" ap="0" maxwt="0" sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF"
+		image_id="1" bullet_image_id="0" magazine_image_id="0" snd_reload="we_pistol_reload"
+		snd_fire="we_pistol_fire" snd_dryfire="357magrevolver_dryfire" desc="(Two-handed Weapon) A revised model of the Raptor 50. Its performance improved slightly but the appearance has not changed from the old version. Manufacturer: Walcom"
+		effect_id="4" />
+	<ITEM id="4011" name="Raven 5" mesh_name="pistol05" totalpoint="0" type="range" res_sex="a"
+		res_level="6" slot="range" weapon="pistol" weight="8" bt_price="300" delay="250" damage="10"
+		ctrl_ability="40" magazine="10" maxbullet="60" reloadtime="4" slug_output="true" gadget_id="0"
+		hp="0" ap="0" maxwt="0" sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF" image_id="1"
+		bullet_image_id="0" magazine_image_id="0" snd_reload="we_pistol_reload" snd_fire="we_pistol_fire"
+		snd_dryfire="357magrevolver_dryfire" desc="This pistol was produced to be supplied to the battlefront of the Republic. Manufacturer: Maxwell" effect_id="3" />
+	<ITEM id="4012" name="Raven 5 x2" mesh_name="pistol05x2" totalpoint="0" type="range" res_sex="a"
+		res_level="8" slot="range" weapon="pistolx2" weight="16" bt_price="540" delay="250"
+		damage="20" ctrl_ability="48" magazine="10" maxbullet="60" reloadtime="4" slug_output="true"
+		gadget_id="0" hp="0" ap="0" maxwt="0" sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF"
+		image_id="1" bullet_image_id="0" magazine_image_id="0" snd_reload="we_pistol_reload"
+		snd_fire="we_pistol_fire" snd_dryfire="357magrevolver_dryfire" desc="(Two-handed Weapon) This pistol was produced to be supplied to the battle front of the Republic. Manufacturer: Maxwell"
+		effect_id="4" />
+	<ITEM id="4003" name="Raptor 120" mesh_name="pistol02" totalpoint="0" type="range" res_sex="a"
+		res_level="10" slot="range" weapon="pistol" weight="7" bt_price="500" delay="200"
+		damage="9" ctrl_ability="25" magazine="12" maxbullet="72" reloadtime="4" slug_output="true"
+		gadget_id="0" hp="0" ap="0" maxwt="0" sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF"
+		image_id="1" bullet_image_id="0" magazine_image_id="0" snd_reload="we_pistol_reload"
+		snd_fire="we_pistol_fire" snd_dryfire="357magrevolver_dryfire" desc="It was developed to be supplied to the military. Its controlability has improved from the Raptor 80. Manufacturer: Walcom"
+		effect_id="3" />
+	<ITEM id="4004" name="Raptor 120 x2" mesh_name="pistol02x2" totalpoint="0" type="range" res_sex="a"
+		res_level="12" slot="range" weapon="pistolx2" weight="14" bt_price="900" delay="200"
+		damage="18" ctrl_ability="30" magazine="12" maxbullet="72" reloadtime="4" slug_output="true"
+		gadget_id="0" hp="0" ap="0" maxwt="0" sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF"
+		image_id="1" bullet_image_id="0" magazine_image_id="0" snd_reload="we_pistol_reload"
+		snd_fire="we_pistol_fire" snd_dryfire="357magrevolver_dryfire" desc="(Two-handed Weapon) It was developed to be supplied to the military. Its control was improved compared with the Raptor 80. Manufacturer: Walcom"
+		effect_id="4" />
+	<ITEM id="4013" name="Raven 6" mesh_name="pistol05" totalpoint="0" type="range" res_sex="a"
+		res_level="14" slot="range" weapon="pistol" weight="8" bt_price="800" delay="220"
+		damage="12" ctrl_ability="40" magazine="14" maxbullet="84" reloadtime="4" slug_output="true"
+		gadget_id="0" hp="0" ap="0" maxwt="0" sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF"
+		image_id="1" bullet_image_id="0" magazine_image_id="0" snd_reload="we_pistol_reload"
+		snd_fire="we_pistol_fire" snd_dryfire="357magrevolver_dryfire" desc="The follow-up model of the Raven 5. It's performance has improved but its manufacturer failed to make it light. Manufacturer: Maxwell"
+		effect_id="3" />
+	<ITEM id="4014" name="Raven 6 x2" mesh_name="pistol05x2" totalpoint="0" type="range" res_sex="a"
+		res_level="16" slot="range" weapon="pistolx2" weight="16" bt_price="1440" delay="220"
+		damage="24" ctrl_ability="48" magazine="14" maxbullet="84" reloadtime="4" slug_output="true"
+		gadget_id="0" hp="0" ap="0" maxwt="0" sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF"
+		image_id="1" bullet_image_id="0" magazine_image_id="0" snd_reload="we_pistol_reload"
+		snd_fire="we_pistol_fire" snd_dryfire="357magrevolver_dryfire" desc="(Two-handed Weapon) Follow-up model of Raven 5. Its performance has improved but failed to make it light. Manufacturer: Maxwell"
+		effect_id="4" />
+	<ITEM id="4015" name="Raptor 160" mesh_name="pistol02" totalpoint="0" type="range" res_sex="a"
+		res_level="24" slot="range" weapon="pistol" weight="8" bt_price="2500" delay="180"
+		damage="11" ctrl_ability="25" magazine="13" maxbullet="78" reloadtime="4" slug_output="true"
+		gadget_id="0" hp="0" ap="0" maxwt="0" sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF"
+		image_id="1" bullet_image_id="0" magazine_image_id="0" snd_reload="we_pistol_reload"
+		snd_fire="we_pistol_fire" snd_dryfire="357magrevolver_dryfire" desc="The follow-up model - Raptor 120. It has a more powerful performance and excellent repeat fire rate."
+		effect_id="3" />
+	<ITEM id="4016" name="Raptor 160 x2" mesh_name="pistol02x2" totalpoint="0" type="range" res_sex="a"
+		res_level="26" slot="range" weapon="pistolx2" weight="16" bt_price="4500" delay="180"
+		damage="22" ctrl_ability="30" magazine="13" maxbullet="78" reloadtime="4" slug_output="true"
+		gadget_id="0" hp="0" ap="0" maxwt="0" sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF"
+		image_id="1" bullet_image_id="0" magazine_image_id="0" snd_reload="we_pistol_reload"
+		snd_fire="we_pistol_fire" snd_dryfire="357magrevolver_dryfire" desc="(Two-handed Weapon) Follow-up model of Raptor 120. It has a more powerful performance and excellent repeat fire rate."
+		effect_id="4" />
+	<ITEM id="4017" name="Raven 7" mesh_name="pistol05" totalpoint="0" type="range" res_sex="a"
+		res_level="32" slot="range" weapon="pistol" weight="9" bt_price="5000" delay="210"
+		damage="13" ctrl_ability="40" magazine="15" maxbullet="90" reloadtime="4" slug_output="true"
+		gadget_id="0" hp="0" ap="0" maxwt="0" sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF"
+		image_id="1" bullet_image_id="0" magazine_image_id="0" snd_reload="we_pistol_reload"
+		snd_fire="we_pistol_fire" snd_dryfire="357magrevolver_dryfire" desc="This Raven 7 has reinforced fire power. It has more fire power and repeat fire rate. But it still has some drawbacks in terms of the control power and weight."
+		effect_id="3" />
+	<ITEM id="4018" name="Raven 7 x2" mesh_name="pistol05x2" totalpoint="0" type="range" res_sex="a"
+		res_level="34" slot="range" weapon="pistolx2" weight="18" bt_price="9000" delay="210"
+		damage="26" ctrl_ability="48" magazine="15" maxbullet="90" reloadtime="4" slug_output="true"
+		gadget_id="0" hp="0" ap="0" maxwt="0" sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF"
+		image_id="1" bullet_image_id="0" magazine_image_id="0" snd_reload="we_pistol_reload"
+		snd_fire="we_pistol_fire" snd_dryfire="357magrevolver_dryfire" desc="(Two-handed Weapon) This Raven 7 has reinforced fire power. It has better fire power and repeat fire rate. But it still has some drawbacks in terms of the control power and weight."
+		effect_id="4" />
+	<ITEM id="4019" name="Raptor 200" mesh_name="pistol02" totalpoint="0" type="range" res_sex="a"
+		res_level="40" slot="range" weapon="pistol" weight="8" bt_price="8000" delay="160"
+		damage="11" ctrl_ability="25" magazine="14" maxbullet="84" reloadtime="4" slug_output="true"
+		gadget_id="0" hp="0" ap="0" maxwt="0" sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF"
+		image_id="1" bullet_image_id="0" magazine_image_id="0" snd_reload="we_pistol_reload"
+		snd_fire="we_pistol_fire" snd_dryfire="357magrevolver_dryfire" desc="Raptor Series won confidence with a high firing accuracy. This weapon shows the advanced development capability of Walcom."
+		effect_id="3" />
+	<ITEM id="4020" name="Raptor 200 x2" mesh_name="pistol02x2" totalpoint="0" type="range" res_sex="a"
+		res_level="42" slot="range" weapon="pistolx2" weight="16" bt_price="14400" delay="160"
+		damage="22" ctrl_ability="30" magazine="14" maxbullet="84" reloadtime="4" slug_output="true"
+		gadget_id="0" hp="0" ap="0" maxwt="0" sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF"
+		image_id="1" bullet_image_id="0" magazine_image_id="0" snd_reload="we_pistol_reload"
+		snd_fire="we_pistol_fire" snd_dryfire="357magrevolver_dryfire" desc="(Two-handed Weapon) Raptor Series won confidence with a high firing accuracy. This weapon shows the advanced development capability of Walcom."
+		effect_id="4" />
+	<!-- Revolver : Magazine = 8 ea ///////////////////////////////////////////////////////////////////////// -->
+	<ITEM id="4005" name="Minic 567" mesh_name="pistol07" totalpoint="0" type="range" res_sex="a"
+		res_level="0" slot="range" weapon="revolver" weight="8" bt_price="20" delay="400"
+		damage="16" ctrl_ability="60" magazine="6" maxbullet="48" reloadtime="8" slug_output="false"
+		gadget_id="0" hp="0" ap="0" maxwt="0" sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF"
+		image_id="1" bullet_image_id="0" magazine_image_id="0" snd_reload="we_revolver_reload"
+		snd_fire="we_revolver_fire" snd_dryfire="357magrevolver_dryfire" desc="This legendary revolver was produced by Maxwell and supplied to the general infantry of the Republic. Its production is discontinued now."
+		effect_id="3" />
+	<ITEM id="4006" name="Minic 567 x2" mesh_name="pistol07x2" totalpoint="0" type="range" res_sex="a"
+		res_level="0" slot="range" weapon="revolverx2" weight="16" bt_price="40" delay="400"
+		damage="32" ctrl_ability="72" magazine="6" maxbullet="48" reloadtime="8" slug_output="false"
+		gadget_id="0" hp="0" ap="0" maxwt="0" sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF"
+		image_id="1" bullet_image_id="0" magazine_image_id="0" snd_reload="we_revolver_reload"
+		snd_fire="we_revolver_fire" snd_dryfire="357magrevolver_dryfire" desc="(Two-handed Weapon) This legendary revolver was produced by Maxwell and supplied to the general infantry of the Republic. Its production is discontinued now."
+		effect_id="4" />
+	<ITEM id="4501" name="Dynax 7000" mesh_name="pistol12" totalpoint="0" type="range" res_sex="a"
+		res_level="5" slot="range" weapon="revolver" weight="7" bt_price="220" delay="300"
+		damage="14" ctrl_ability="60" magazine="8" maxbullet="64" reloadtime="8" slug_output="false"
+		gadget_id="0" hp="0" ap="0" maxwt="0" sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF"
+		image_id="1" bullet_image_id="0" magazine_image_id="0" snd_reload="we_revolver_reload"
+		snd_fire="we_revolver_fire" snd_dryfire="357magrevolver_dryfire" desc="The initial version of lightweight revolver of Canox. Its production is discontinued. Though it is not produced anymore, the second-hand Dynax is frequently transacted."
+		effect_id="3" />
+	<ITEM id="4502" name="Dynax 7000 x2" mesh_name="pistol12x2" totalpoint="0" type="range"
+		res_sex="a" res_level="7" slot="range" weapon="revolverx2" weight="14" bt_price="396"
+		delay="300" damage="28" ctrl_ability="72" magazine="8" maxbullet="64" reloadtime="8"
+		slug_output="false" gadget_id="0" hp="0" ap="0" maxwt="0" sf="0" fr="0" cr="0" pr="0"
+		lr="0" color="#FFFFFFFF" image_id="1" bullet_image_id="0" magazine_image_id="0" snd_reload="we_revolver_reload"
+		snd_fire="we_revolver_fire" snd_dryfire="357magrevolver_dryfire" desc="(Two-handed Weapon) The initial version of lightweight revolver of Canox. Its production is discontinued. Though it is no longer produced, the second-hand Dynax is frequently transacted."
+		effect_id="4" />
+	<ITEM id="4503" name="Minic 567 Limited" mesh_name="pistol07" totalpoint="0" type="range"
+		res_sex="a" res_level="7" slot="range" weapon="revolver" weight="8" bt_price="340"
+		delay="400" damage="18" ctrl_ability="50" magazine="6" maxbullet="48" reloadtime="8"
+		slug_output="false" gadget_id="0" hp="0" ap="0" maxwt="0" sf="0" fr="0" cr="0" pr="0"
+		lr="0" color="#FFFFFFFF" image_id="1" bullet_image_id="0" magazine_image_id="0" snd_reload="we_revolver_reload"
+		snd_fire="we_revolver_fire" snd_dryfire="357magrevolver_dryfire" desc="This model was produced in order to commemorate the fifth anniversary of Maxwell's Minic. It has a higher safety and power than the original one."
+		effect_id="3" />
+	<ITEM id="4504" name="Minic 567 Limited x2" mesh_name="pistol07x2" totalpoint="0" type="range"
+		res_sex="a" res_level="9" slot="range" weapon="revolverx2" weight="16" bt_price="612"
+		delay="400" damage="36" ctrl_ability="60" magazine="6" maxbullet="48" reloadtime="8"
+		slug_output="false" gadget_id="0" hp="0" ap="0" maxwt="0" sf="0" fr="0" cr="0" pr="0"
+		lr="0" color="#FFFFFFFF" image_id="1" bullet_image_id="0" magazine_image_id="0" snd_reload="we_revolver_reload"
+		snd_fire="we_revolver_fire" snd_dryfire="357magrevolver_dryfire" desc="(Two-handed Weapon) This model was produced in order to commemorate the fifth anniversary of Maxwell's Minic. It has a higher safety and power than the original one."
+		effect_id="4" />
+	<ITEM id="4007" name="Zaurus A" mesh_name="pistol08" totalpoint="0" type="range" res_sex="a"
+		res_level="10" slot="range" weapon="revolver" weight="7" bt_price="550" delay="400"
+		damage="20" ctrl_ability="60" magazine="6" maxbullet="48" reloadtime="8" slug_output="false"
+		gadget_id="0" hp="0" ap="0" maxwt="0" sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF"
+		image_id="1" bullet_image_id="0" magazine_image_id="0" snd_reload="we_revolver_reload"
+		snd_fire="we_revolver_fire" snd_dryfire="357magrevolver_dryfire" desc="This revolver was developed by Walcom to be supplied to the military."
+		effect_id="3" />
+	<ITEM id="4008" name="Zaurus A x2" mesh_name="pistol08x2" totalpoint="0" type="range" res_sex="a"
+		res_level="12" slot="range" weapon="revolverx2" weight="14" bt_price="990" delay="400"
+		damage="40" ctrl_ability="72" magazine="6" maxbullet="48" reloadtime="8" slug_output="false"
+		gadget_id="0" hp="0" ap="0" maxwt="0" sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF"
+		image_id="1" bullet_image_id="0" magazine_image_id="0" snd_reload="we_revolver_reload"
+		snd_fire="we_revolver_fire" snd_dryfire="357magrevolver_dryfire" desc="(Two-handed Weapon) This Revolver was developed by Walcom to be supplied to the military."
+		effect_id="4" />
+	<ITEM id="4505" name="Phantom Cruise" mesh_name="pistol10" totalpoint="0" type="range" res_sex="a"
+		res_level="16" slot="range" weapon="revolver" weight="9" bt_price="1200" delay="400"
+		damage="22" ctrl_ability="70" magazine="6" maxbullet="48" reloadtime="8" slug_output="false"
+		gadget_id="0" hp="0" ap="0" maxwt="0" sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF"
+		image_id="1" bullet_image_id="0" magazine_image_id="0" snd_reload="we_revolver_reload"
+		snd_fire="we_revolver_fire" snd_dryfire="357magrevolver_dryfire" desc="High-end revolver made by Nico. Its upgraded design drew keen attention."
+		effect_id="3" />
+	<ITEM id="4506" name="Phantom Cruise x2" mesh_name="pistol10x2" totalpoint="0" type="range" res_sex="a"
+		res_level="18" slot="range" weapon="revolverx2" weight="18" bt_price="2160" delay="400"
+		damage="44" ctrl_ability="84" magazine="6" maxbullet="48" reloadtime="8" slug_output="false"
+		gadget_id="0" hp="0" ap="0" maxwt="0" sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF"
+		image_id="1" bullet_image_id="0" magazine_image_id="0" snd_reload="we_revolver_reload"
+		snd_fire="we_revolver_fire" snd_dryfire="357magrevolver_dryfire" desc="(Two-handed Weapon) High-end revolver made by Nico. Its upgraded design drew keen attention."
+		effect_id="4" />
+	<ITEM id="4507" name="Phantom Cruise N" mesh_name="pistol10" totalpoint="0" type="range" res_sex="a"
+		res_level="21" slot="range" weapon="revolver" weight="8" bt_price="2500" delay="400"
+		damage="23" ctrl_ability="65" magazine="6" maxbullet="48" reloadtime="8" slug_output="false"
+		gadget_id="0" hp="0" ap="0" maxwt="0" sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF"
+		image_id="1" bullet_image_id="0" magazine_image_id="0" snd_reload="we_revolver_reload"
+		snd_fire="we_revolver_fire" snd_dryfire="357magrevolver_dryfire" desc="Phantom Cruise's slightly upgraded model. Its performance has slightly improved."
+		effect_id="3" />
+	<ITEM id="4508" name="Phantom Cruise N x2" mesh_name="pistol10x2" totalpoint="0" type="range" res_sex="a"
+		res_level="23" slot="range" weapon="revolverx2" weight="16" bt_price="4500" delay="400"
+		damage="46" ctrl_ability="78" magazine="6" maxbullet="48" reloadtime="8" slug_output="false"
+		gadget_id="0" hp="0" ap="0" maxwt="0" sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF"
+		image_id="1" bullet_image_id="0" magazine_image_id="0" snd_reload="we_revolver_reload"
+		snd_fire="we_revolver_fire" snd_dryfire="357magrevolver_dryfire" desc="(Two-handed Weapon) Phantom Cruise's minor upgraded model. Its performance has slightly improved."
+		effect_id="4" />
+	<ITEM id="4509" name="Dynax 8000" mesh_name="pistol12" totalpoint="0" type="range" res_sex="a"
+		res_level="26" slot="range" weapon="revolver" weight="7" bt_price="4000" delay="300"
+		damage="18" ctrl_ability="60" magazine="8" maxbullet="64" reloadtime="8" slug_output="false"
+		gadget_id="0" hp="0" ap="0" maxwt="0" sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF"
+		image_id="1" bullet_image_id="0" magazine_image_id="0" snd_reload="we_revolver_reload"
+		snd_fire="we_revolver_fire" snd_dryfire="357magrevolver_dryfire" desc="Canox' Lightweight Revolver. As a follow-up model of Dynax 7000, its performance has remarkably improved."
+		effect_id="3" />
+	<ITEM id="4510" name="Dynax 8000 x2" mesh_name="pistol12x2" totalpoint="0" type="range"
+		res_sex="a" res_level="28" slot="range" weapon="revolverx2" weight="14" bt_price="7200"
+		delay="300" damage="36" ctrl_ability="72" magazine="8" maxbullet="64" reloadtime="8"
+		slug_output="false" gadget_id="0" hp="0" ap="0" maxwt="0" sf="0" fr="0" cr="0" pr="0"
+		lr="0" color="#FFFFFFFF" image_id="1" bullet_image_id="0" magazine_image_id="0" snd_reload="we_revolver_reload"
+		snd_fire="we_revolver_fire" snd_dryfire="357magrevolver_dryfire" desc="(Two-handed Weapon) Canox' Lightweight Revolver. As a follow-up model of Dynax 7000, its performance has remarkably improved."
+		effect_id="4" />
+	<ITEM id="4511" name="Minic 567 MK.II" mesh_name="pistol07" totalpoint="0" type="range" res_sex="a"
+		res_level="34" slot="range" weapon="revolver" weight="8" bt_price="7000" delay="400"
+		damage="25" ctrl_ability="50" magazine="6" maxbullet="48" reloadtime="8" slug_output="false"
+		gadget_id="0" hp="0" ap="0" maxwt="0" sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF"
+		image_id="1" bullet_image_id="0" magazine_image_id="0" snd_reload="we_revolver_reload"
+		snd_fire="we_revolver_fire" snd_dryfire="357magrevolver_dryfire" desc="This model was produced in order to commemorate the fifth anniversary of Maxwell's Minic. It has a higher safety and power than the original one."
+		effect_id="3" />
+	<ITEM id="4512" name="Minic 567 MK.II x2" mesh_name="pistol07x2" totalpoint="0" type="range"
+		res_sex="a" res_level="36" slot="range" weapon="revolverx2" weight="16" bt_price="12600"
+		delay="400" damage="50" ctrl_ability="60" magazine="6" maxbullet="48" reloadtime="8"
+		slug_output="false" gadget_id="0" hp="0" ap="0" maxwt="0" sf="0" fr="0" cr="0" pr="0"
+		lr="0" color="#FFFFFFFF" image_id="1" bullet_image_id="0" magazine_image_id="0" snd_reload="we_revolver_reload"
+		snd_fire="we_revolver_fire" snd_dryfire="357magrevolver_dryfire" desc="(Two-handed Weapon) This model was produced in order to commemorate the fifth anniversary of Maxwell's Minic. It has a higher safety and power than the original one."
+		effect_id="4" />
+	<ITEM id="4513" name="Zaurus B" mesh_name="pistol08" totalpoint="0" type="range" res_sex="a"
+		res_level="42" slot="range" weapon="revolver" weight="8" bt_price="12000" delay="360"
+		damage="25" ctrl_ability="50" magazine="6" maxbullet="48" reloadtime="8" slug_output="false"
+		gadget_id="0" hp="0" ap="0" maxwt="0" sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF"
+		image_id="1" bullet_image_id="0" magazine_image_id="0" snd_reload="we_revolver_reload"
+		snd_fire="we_revolver_fire" snd_dryfire="357magrevolver_dryfire" desc="The Zaurus Type B boasts strong power. It has better firing accuracy."
+		effect_id="3" />
+	<ITEM id="4514" name="Zaurus B x2" mesh_name="pistol08x2" totalpoint="0" type="range" res_sex="a"
+		res_level="46" slot="range" weapon="revolverx2" weight="16" bt_price="21600" delay="360"
+		damage="50" ctrl_ability="60" magazine="6" maxbullet="48" reloadtime="8" slug_output="false"
+		gadget_id="0" hp="0" ap="0" maxwt="0" sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF"
+		image_id="1" bullet_image_id="0" magazine_image_id="0" snd_reload="we_revolver_reload"
+		snd_fire="we_revolver_fire" snd_dryfire="357magrevolver_dryfire" desc="(Two-handed Weapon) The Zaurus Type B boasts strong power. It has better firing accuracy."
+		effect_id="4" />
+	<!-- SMG : Magazine = 5 ea//Controllability Point = 1.8 //////////////////////////////////////////////////////// -->
+	<ITEM id="5001" name="Renard" mesh_name="smg01" totalpoint="0" type="range" res_sex="a" res_level="0"
+		slot="range" weapon="smg" weight="15" bt_price="30" delay="90" damage="7" ctrl_ability="50"
+		magazine="32" maxbullet="160" reloadtime="5" slug_output="true" gadget_id="0" hp="0"
+		ap="0" maxwt="0" sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF" image_id="2"
+		bullet_image_id="0" magazine_image_id="0" snd_reload="we_smg_reload" snd_fire="we_smg_fire"
+		snd_dryfire="762arifle_dryfire" desc="This old submachine gun produced by Canox has been used for a long time. Its production has been discontinued." effect_id="5" />
+	<ITEM id="5002" name="Renard x2" mesh_name="smg01x2" totalpoint="0" type="range" res_sex="a"
+		res_level="0" slot="range" weapon="smgx2" weight="30" bt_price="60" delay="90" damage="14"
+		ctrl_ability="90" magazine="32" maxbullet="160" reloadtime="5" slug_output="true"
+		gadget_id="0" hp="0" ap="0" maxwt="0" sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF"
+		image_id="2" bullet_image_id="0" magazine_image_id="0" snd_reload="we_smg_reload"
+		snd_fire="we_smg_fire" snd_dryfire="762arifle_dryfire" desc="(Two-handed Weapon) This old submachine gun produced by Canox has been used for a long time. Its production has been discontinued."
+		effect_id="6" />
+	<ITEM id="5003" name="Walcom S5" mesh_name="smg02" totalpoint="0" type="range" res_sex="a"
+		res_level="10" slot="range" weapon="smg" weight="15" bt_price="750" delay="90" damage="8"
+		ctrl_ability="50" magazine="36" maxbullet="180" reloadtime="5" slug_output="true"
+		gadget_id="0" hp="0" ap="0" maxwt="0" sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF"
+		image_id="2" bullet_image_id="0" magazine_image_id="0" snd_reload="we_smg_reload"
+		snd_fire="we_smg_fire" snd_dryfire="762arifle_dryfire" desc="This submachine gun produced by Walcom is quite popular with better fire power and better capacity to load more bullets."
+		effect_id="5" />
+	<ITEM id="5004" name="Walcom S5 x2" mesh_name="smg02x2" totalpoint="0" type="range" res_sex="a"
+		res_level="13" slot="range" weapon="smgx2" weight="30" bt_price="1350" delay="90"
+		damage="16" ctrl_ability="90" magazine="36" maxbullet="180" reloadtime="5" slug_output="true"
+		gadget_id="0" hp="0" ap="0" maxwt="0" sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF"
+		image_id="2" bullet_image_id="0" magazine_image_id="0" snd_reload="we_smg_reload"
+		snd_fire="we_smg_fire" snd_dryfire="762arifle_dryfire" desc="(Two-handed Weapon) This submachine gun produced by Walcom is quite popular with better fire power and better capacity to load more bullets."
+		effect_id="6" />
+	<ITEM id="5005" name="Ellan" mesh_name="smg05" totalpoint="0" type="range" res_sex="a" res_level="10"
+		slot="range" weapon="smg" weight="12" bt_price="700" delay="90" damage="5" ctrl_ability="70"
+		magazine="60" maxbullet="300" reloadtime="2" slug_output="true" gadget_id="0" hp="0"
+		ap="0" maxwt="0" sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF" image_id="2"
+		bullet_image_id="0" magazine_image_id="0" snd_reload="we_smg_reload" snd_fire="we_smg_fire"
+		snd_dryfire="762arifle_dryfire" desc="Canox's small submachine gun. This is manufactured with a focus on better portability." effect_id="5" />
+	<ITEM id="5006" name="Ellan x2" mesh_name="smg05x2" totalpoint="0" type="range" res_sex="a"
+		res_level="12" slot="range" weapon="smgx2" weight="24" bt_price="1260" delay="90"
+		damage="10" ctrl_ability="126" magazine="60" maxbullet="300" reloadtime="2" slug_output="true"
+		gadget_id="0" hp="0" ap="0" maxwt="0" sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF"
+		image_id="2" bullet_image_id="0" magazine_image_id="0" snd_reload="we_smg_reload"
+		snd_fire="we_smg_fire" snd_dryfire="762arifle_dryfire" desc="(Two-handed Weapon) Canox's small submachine gun. This is manufactured with a focus on better portability."
+		effect_id="6" />
+	<ITEM id="5007" name="Renard V" mesh_name="smg01" totalpoint="0" type="range" res_sex="a"
+		res_level="24" slot="range" weapon="smg" weight="15" bt_price="2800" delay="85" damage="7"
+		ctrl_ability="35" magazine="32" maxbullet="160" reloadtime="3" slug_output="true"
+		gadget_id="0" hp="0" ap="0" maxwt="0" sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF"
+		image_id="2" bullet_image_id="0" magazine_image_id="0" snd_reload="we_smg_reload"
+		snd_fire="we_smg_fire" snd_dryfire="762arifle_dryfire" desc="Follow-up model of the once widely-popular Renard. It has better controllability and repeat fire rate."
+		effect_id="5" />
+	<ITEM id="5008" name="Renard V x2" mesh_name="smg01x2" totalpoint="0" type="range" res_sex="a"
+		res_level="27" slot="range" weapon="smgx2" weight="30" bt_price="5040" delay="85"
+		damage="14" ctrl_ability="63" magazine="32" maxbullet="160" reloadtime="3" slug_output="true"
+		gadget_id="0" hp="0" ap="0" maxwt="0" sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF"
+		image_id="2" bullet_image_id="0" magazine_image_id="0" snd_reload="we_smg_reload"
+		snd_fire="we_smg_fire" snd_dryfire="762arifle_dryfire" desc="(Two-handed Weapon) Follow-up model of the once widely popular Renard. It has better controllability and repeat fire rate."
+		effect_id="6" />
+	<ITEM id="5009" name="Walcom S6" mesh_name="smg02" totalpoint="0" type="range" res_sex="a"
+		res_level="24" slot="range" weapon="smg" weight="16" bt_price="2800" delay="95" damage="9"
+		ctrl_ability="55" magazine="36" maxbullet="180" reloadtime="5" slug_output="true"
+		gadget_id="0" hp="0" ap="0" maxwt="0" sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF"
+		image_id="2" bullet_image_id="0" magazine_image_id="0" snd_reload="we_smg_reload"
+		snd_fire="we_smg_fire" snd_dryfire="762arifle_dryfire" desc="Follow-up model of Walcom's S5. It has better fire power and stability compared with its previous model."
+		effect_id="5" />
+	<ITEM id="5010" name="Walcom S6 x2" mesh_name="smg02x2" totalpoint="0" type="range" res_sex="a"
+		res_level="27" slot="range" weapon="smgx2" weight="32" bt_price="5040" delay="95"
+		damage="18" ctrl_ability="99" magazine="36" maxbullet="180" reloadtime="5" slug_output="true"
+		gadget_id="0" hp="0" ap="0" maxwt="0" sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF"
+		image_id="2" bullet_image_id="0" magazine_image_id="0" snd_reload="we_smg_reload"
+		snd_fire="we_smg_fire" snd_dryfire="762arifle_dryfire" desc="(Two-handed Weapon) Follow-up model of Walcom's S5. It has better fire power and stability compared with its previous model."
+		effect_id="6" />
+	<ITEM id="5011" name="New Renard V" mesh_name="smg01" totalpoint="0" type="range" res_sex="a"
+		res_level="36" slot="range" weapon="smg" weight="15" bt_price="5600" delay="80" damage="8"
+		ctrl_ability="35" magazine="40" maxbullet="200" reloadtime="3" slug_output="true"
+		gadget_id="0" hp="0" ap="0" maxwt="0" sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF"
+		image_id="2" bullet_image_id="0" magazine_image_id="0" snd_reload="we_smg_reload"
+		snd_fire="we_smg_fire" snd_dryfire="762arifle_dryfire" desc="New version of the popular Renard V produced by Canox."
+		effect_id="5" />
+	<ITEM id="5012" name="New Renard V x2" mesh_name="smg01x2" totalpoint="0" type="range" res_sex="a"
+		res_level="39" slot="range" weapon="smgx2" weight="30" bt_price="10080" delay="80"
+		damage="16" ctrl_ability="63" magazine="40" maxbullet="200" reloadtime="3" slug_output="true"
+		gadget_id="0" hp="0" ap="0" maxwt="0" sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF"
+		image_id="2" bullet_image_id="0" magazine_image_id="0" snd_reload="we_smg_reload"
+		snd_fire="we_smg_fire" snd_dryfire="762arifle_dryfire" desc="(Two-handed Weapon) New version of the popular Renard V produced by Canox."
+		effect_id="6" />
+	<ITEM id="5013" name="Walcom XL" mesh_name="smg03" totalpoint="0" type="range" res_sex="a"
+		res_level="36" slot="range" weapon="smg" weight="14" bt_price="5800" delay="95" damage="9"
+		ctrl_ability="50" magazine="32" maxbullet="160" reloadtime="5" slug_output="true"
+		gadget_id="0" hp="0" ap="0" maxwt="0" sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF"
+		image_id="2" bullet_image_id="0" magazine_image_id="0" snd_reload="we_smg_reload"
+		snd_fire="we_smg_fire" snd_dryfire="762arifle_dryfire" desc="This model was produced in order to commemorate the 70th anniversary of Walcom. It has a light-weight body and it is called 'the minor grade version of S6.'"
+		effect_id="5" />
+	<ITEM id="5014" name="Walcom XL x2" mesh_name="smg03x2" totalpoint="0" type="range" res_sex="a"
+		res_level="39" slot="range" weapon="smgx2" weight="28" bt_price="10440" delay="95"
+		damage="18" ctrl_ability="90" magazine="32" maxbullet="160" reloadtime="5" slug_output="true"
+		gadget_id="0" hp="0" ap="0" maxwt="0" sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF"
+		image_id="2" bullet_image_id="0" magazine_image_id="0" snd_reload="we_smg_reload"
+		snd_fire="we_smg_fire" snd_dryfire="762arifle_dryfire" desc="(Two-handed Weapon) This model was produced in order to commemorate the 70th anniversary of Walcom. It has a light-weight body and it is called minor grade version of S6."
+		effect_id="6" />
+	<ITEM id="5015" name="Renard VI" mesh_name="smg01" totalpoint="0" type="range" res_sex="a"
+		res_level="45" slot="range" weapon="smg" weight="14" bt_price="12000" delay="80" damage="8"
+		ctrl_ability="35" magazine="40" maxbullet="200" reloadtime="3" slug_output="true"
+		gadget_id="0" hp="0" ap="0" maxwt="0" sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF"
+		image_id="2" bullet_image_id="0" magazine_image_id="0" snd_reload="we_smg_reload"
+		snd_fire="we_smg_fire" snd_dryfire="762arifle_dryfire" desc="This new model was produced by Canox whose popularity was dented by Walcom XL."
+		effect_id="5" />
+	<ITEM id="5016" name="Renard VI x2" mesh_name="smg01x2" totalpoint="0" type="range" res_sex="a"
+		res_level="48" slot="range" weapon="smgx2" weight="28" bt_price="21600" delay="80"
+		damage="16" ctrl_ability="63" magazine="40" maxbullet="200" reloadtime="3" slug_output="true"
+		gadget_id="0" hp="0" ap="0" maxwt="0" sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF"
+		image_id="2" bullet_image_id="0" magazine_image_id="0" snd_reload="we_smg_reload"
+		snd_fire="we_smg_fire" snd_dryfire="762arifle_dryfire" desc="(Two-handed Weapon) This new model was produced by Canox whose popularity was dented by Walcom XL."
+		effect_id="6" />
+	<ITEM id="5017" name="Walcom XLS" mesh_name="smg03" totalpoint="0" type="range" res_sex="a"
+		res_level="45" slot="range" weapon="smg" weight="14" bt_price="12000" delay="95" damage="11"
+		ctrl_ability="50" magazine="32" maxbullet="160" reloadtime="5" slug_output="true"
+		gadget_id="0" hp="0" ap="0" maxwt="0" sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF"
+		image_id="2" bullet_image_id="0" magazine_image_id="0" snd_reload="we_smg_reload"
+		snd_fire="we_smg_fire" snd_dryfire="762arifle_dryfire" desc="New model produced by Walcom who attempted to take advantage of Walcom XL. Its only difference from the old model is better fire power."
+		effect_id="5" />
+	<ITEM id="5018" name="Walcom XLS x2" mesh_name="smg03x2" totalpoint="0" type="range" res_sex="a"
+		res_level="48" slot="range" weapon="smgx2" weight="28" bt_price="21600" delay="95"
+		damage="22" ctrl_ability="90" magazine="32" maxbullet="160" reloadtime="5" slug_output="true"
+		gadget_id="0" hp="0" ap="0" maxwt="0" sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF"
+		image_id="2" bullet_image_id="0" magazine_image_id="0" snd_reload="we_smg_reload"
+		snd_fire="we_smg_fire" snd_dryfire="762arifle_dryfire" desc="(Two-handed Weapon) New model produced by Walcom who attempted to take advantage of Walcom XL. Its only difference from the old model is better fire power."
+		effect_id="6" />
+	<!-- SHOTGUN : Magazine = 5 ea ////////////////////////////////////////////////////////////////// -->
+	<ITEM id="6001" name="Breaker 3" mesh_name="shotgun01" totalpoint="0" type="range" res_sex="a"
+		res_level="5" slot="range" weapon="shotgun" weight="15" bt_price="200" delay="1100"
+		damage="6" ctrl_ability="60" magazine="3" maxbullet="15" reloadtime="5" slug_output="true"
+		gadget_id="0" hp="0" ap="0" maxwt="0" sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF"
+		image_id="2" bullet_image_id="0" magazine_image_id="0" snd_reload="we_shotgunpa_reload"
+		snd_fire="we_shotgunpa_fire" snd_dryfire="762arifle_dryfire" desc="Pump action-type shotgun produced by Leonics that specializes in the production of shotguns for ages. Its production has been discontinued."
+		effect_id="7" />
+	<ITEM id="6002" name="Breaker 5" mesh_name="shotgun01" totalpoint="0" type="range" res_sex="a"
+		res_level="10" slot="range" weapon="shotgun" weight="18" bt_price="800" delay="1000"
+		damage="6" ctrl_ability="60" magazine="5" maxbullet="25" reloadtime="5" slug_output="true"
+		gadget_id="0" hp="0" ap="0" maxwt="0" sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF"
+		image_id="2" bullet_image_id="0" magazine_image_id="0" snd_reload="we_shotgunpa_reload"
+		snd_fire="we_shotgunpa_fire" snd_dryfire="762arifle_dryfire" desc="Pump action type shotgun produced by Leonics. Though produced a long time ago, it is still very popular."
+		effect_id="7" />
+	<ITEM id="6003" name="Breaker 6" mesh_name="shotgun01" totalpoint="0" type="range" res_sex="a"
+		res_level="15" slot="range" weapon="shotgun" weight="20" bt_price="1600" delay="1000"
+		damage="7" ctrl_ability="60" magazine="5" maxbullet="25" reloadtime="5" slug_output="true"
+		gadget_id="0" hp="0" ap="0" maxwt="0" sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF"
+		image_id="2" bullet_image_id="0" magazine_image_id="0" snd_reload="we_shotgunpa_reload"
+		snd_fire="we_shotgunpa_fire" snd_dryfire="762arifle_dryfire" desc="Leonics' new shotgun that was released quite recently."
+		effect_id="7" />
+	<ITEM id="6004" name="Breaker 7" mesh_name="shotgun03" totalpoint="0" type="range" res_sex="a"
+		res_level="30" slot="range" weapon="shotgun" weight="20" bt_price="8000" delay="1000"
+		damage="8" ctrl_ability="60" magazine="5" maxbullet="25" reloadtime="5" slug_output="true"
+		gadget_id="0" hp="0" ap="0" maxwt="0" sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF"
+		image_id="2" bullet_image_id="0" magazine_image_id="0" snd_reload="we_shotgunpa_reload"
+		snd_fire="we_shotgunpa_fire" snd_dryfire="762arifle_dryfire" desc="Leonics's 7th model adopted a new design different from the existing breaker series."
+		effect_id="7" />
+	<ITEM id="6005" name="Avenger" mesh_name="shotgun07" totalpoint="0" type="range" res_sex="a"
+		res_level="30" slot="range" weapon="shotgun" weight="15" bt_price="9000" delay="1200"
+		damage="10" ctrl_ability="100" magazine="2" maxbullet="10" reloadtime="5" slug_output="true"
+		gadget_id="0" hp="0" ap="0" maxwt="0" sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF"
+		image_id="2" bullet_image_id="0" magazine_image_id="0" snd_reload="we_shotgunpa_reload"
+		snd_fire="we_shotgunpa_fire" snd_dryfire="762arifle_dryfire" desc="Shotgun introduced by Nico as a monumental product. This weapon has strong destructive power. It has a drawback - it can load a small number of bullets."
+		effect_id="7" />
+	<ITEM id="6006" name="Breaker 8" mesh_name="shotgun03" totalpoint="0" type="range" res_sex="a"
+		res_level="45" slot="range" weapon="shotgun" weight="20" bt_price="20000" delay="1000"
+		damage="9" ctrl_ability="60" magazine="5" maxbullet="25" reloadtime="5" slug_output="true"
+		gadget_id="0" hp="0" ap="0" maxwt="0" sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF"
+		image_id="2" bullet_image_id="0" magazine_image_id="0" snd_reload="we_shotgunpa_reload"
+		snd_fire="we_shotgunpa_fire" snd_dryfire="762arifle_dryfire" desc="New shotgun produced by Leonics, which is quite famous for the breaker series of shotguns."
+		effect_id="7" />
+	<ITEM id="6007" name="Avenger MK.II" mesh_name="shotgun07" totalpoint="0" type="range" res_sex="a"
+		res_level="45" slot="range" weapon="shotgun" weight="16" bt_price="24000" delay="1200"
+		damage="11" ctrl_ability="100" magazine="2" maxbullet="10" reloadtime="5" slug_output="true"
+		gadget_id="0" hp="0" ap="0" maxwt="0" sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF"
+		image_id="2" bullet_image_id="0" magazine_image_id="0" snd_reload="we_shotgunpa_reload"
+		snd_fire="we_shotgunpa_fire" snd_dryfire="762arifle_dryfire" desc="Avenger's follow-up model that took the adventurers by shock."
+		effect_id="7" />
+	<!-- RIFLE : Magazine = 5 ea ////////////////////////////////////////////////////////////////////////// -->
+	<ITEM id="7001" name="Nico R2" mesh_name="rifle03" totalpoint="0" type="range" res_sex="a"
+		res_level="5" slot="range" weapon="rifle" weight="15" bt_price="400" delay="120" damage="11"
+		ctrl_ability="30" magazine="32" maxbullet="160" reloadtime="6" slug_output="true"
+		gadget_id="0" hp="0" ap="0" maxwt="0" sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF"
+		image_id="2" bullet_image_id="0" magazine_image_id="0" snd_reload="we_rifle_reload"
+		snd_fire="we_rifle_fire" snd_dryfire="762arifle_dryfire" desc="Rifle produced by Nico in early days." effect_id="8" />
+	<ITEM id="7002" name="Nico R5" mesh_name="rifle01" totalpoint="0" type="range" res_sex="a"
+		res_level="10" slot="range" weapon="rifle" weight="18" bt_price="1500" delay="110"
+		damage="12" ctrl_ability="30" magazine="32" maxbullet="160" reloadtime="6" slug_output="true"
+		gadget_id="0" hp="0" ap="0" maxwt="0" sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF"
+		image_id="2" bullet_image_id="0" magazine_image_id="0" snd_reload="we_rifle_reload"
+		snd_fire="we_rifle_fire" snd_dryfire="762arifle_dryfire" desc="One of the most popular rifles among the Republican army."
+		effect_id="8" />
+	<ITEM id="7003" name="Walcom Warrior 77" mesh_name="rifle02" totalpoint="0" type="range" res_sex="a"
+		res_level="15" slot="range" weapon="rifle" weight="20" bt_price="2800" delay="100"
+		damage="15" ctrl_ability="50" magazine="24" maxbullet="120" reloadtime="6" slug_output="true"
+		gadget_id="0" hp="0" ap="0" maxwt="0" sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF"
+		image_id="2" bullet_image_id="0" magazine_image_id="0" snd_reload="we_rifle_reload"
+		snd_fire="we_rifle_fire" snd_dryfire="762arifle_dryfire" desc="Produced by Walcom, it has the drawback of being difficult to use but it has relatively strong power."
+		effect_id="8" />
+	<ITEM id="7004" name="Maxwell LX30" mesh_name="rifle04" totalpoint="0" type="range" res_sex="a"
+		res_level="18" slot="range" weapon="rifle" weight="20" bt_price="3000" delay="80"
+		damage="13" ctrl_ability="20" magazine="40" maxbullet="200" reloadtime="6" slug_output="true"
+		gadget_id="0" hp="0" ap="0" maxwt="0" sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF"
+		image_id="2" bullet_image_id="0" magazine_image_id="0" snd_reload="we_rifle_reload"
+		snd_fire="we_rifle_fire" snd_dryfire="762arifle_dryfire" desc="Produced by Maxwell, this weapon has stable grip, good operability, and high repeat rate."
+		effect_id="8" />
+	<ITEM id="7005" name="Nico R6" mesh_name="rifle03" totalpoint="0" type="range" res_sex="a"
+		res_level="26" slot="range" weapon="rifle" weight="18" bt_price="6000" delay="90"
+		damage="15" ctrl_ability="30" magazine="36" maxbullet="160" reloadtime="6" slug_output="true"
+		gadget_id="0" hp="0" ap="0" maxwt="0" sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF"
+		image_id="2" bullet_image_id="0" magazine_image_id="0" snd_reload="we_rifle_reload"
+		snd_fire="we_rifle_fire" snd_dryfire="762arifle_dryfire" desc="Follow-up model of popular R5 of Nico. With its improved fire power, it is popular among R5 maniacs."
+		effect_id="8" />
+	<ITEM id="7006" name="Maxwell LX44" mesh_name="rifle04" totalpoint="0" type="range" res_sex="a"
+		res_level="34" slot="range" weapon="rifle" weight="20" bt_price="12000" delay="80"
+		damage="14" ctrl_ability="20" magazine="40" maxbullet="200" reloadtime="6" slug_output="true"
+		gadget_id="0" hp="0" ap="0" maxwt="0" sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF"
+		image_id="2" bullet_image_id="0" magazine_image_id="0" snd_reload="we_rifle_reload"
+		snd_fire="we_rifle_fire" snd_dryfire="762arifle_dryfire" desc="(Discontinued Item) Rifle with a higher repeat rate than LX30. It has a stable grip with high accuracy."
+		effect_id="8" />
+	<ITEM id="7007" name="Nico R7" mesh_name="rifle01" totalpoint="0" type="range" res_sex="a"
+		res_level="42" slot="range" weapon="rifle" weight="18" bt_price="24000" delay="90"
+		damage="16" ctrl_ability="30" magazine="40" maxbullet="200" reloadtime="6" slug_output="true"
+		gadget_id="0" hp="0" ap="0" maxwt="0" sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF"
+		image_id="2" bullet_image_id="0" magazine_image_id="0" snd_reload="we_rifle_reload"
+		snd_fire="we_rifle_fire" snd_dryfire="762arifle_dryfire" desc="Nico's new rifle with better fire power."
+		effect_id="8" />
+	<ITEM id="7008" name="Walcom Warrior 88" mesh_name="rifle02" totalpoint="0" type="range" res_sex="a"
+		res_level="50" slot="range" weapon="rifle" weight="20" bt_price="48000" delay="100"
+		damage="19" ctrl_ability="50" magazine="32" maxbullet="160" reloadtime="6" slug_output="true"
+		gadget_id="0" hp="0" ap="0" maxwt="0" sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF"
+		image_id="2" bullet_image_id="0" magazine_image_id="0" snd_reload="we_rifle_reload"
+		snd_fire="we_rifle_fire" snd_dryfire="762arifle_dryfire" desc="Is still not easy to use but this new product of Walcom is produced with a focus on stronger fire power."
+		effect_id="8" />
+	<!-- MACHINEGUN /////////////////////////////////////////////////////////////////////////////////////////// -->
+	<ITEM id="8001" name="Nico MG-K8" mesh_name="machinegun01" totalpoint="0" type="range" res_sex="a"
+		res_level="25" slot="range" weapon="machinegun" weight="28" bt_price="8000" delay="100"
+		damage="16" ctrl_ability="70" magazine="120" maxbullet="240" reloadtime="10" slug_output="true"
+		gadget_id="0" hp="0" ap="0" maxwt="0" sf="0" fr="0" cr="0" pr="0" lr="0" limitspeed="90"
+		limitwall="1" color="#FFFFFFFF" image_id="2" bullet_image_id="0" magazine_image_id="0"
+		snd_reload="we_machinegun_reload" snd_fire="we_machinegun_fire" snd_dryfire="762arifle_dryfire"
+		desc="It is so heavy that it is hard to carry but its power of repeated shooting maked the enemies shiver in fear." effect_id="9" />
+	<ITEM id="8002" name="Nico MG-K9" mesh_name="machinegun01" totalpoint="0" type="range" res_sex="a"
+		res_level="35" slot="range" weapon="machinegun" weight="28" bt_price="16000" delay="100"
+		damage="17" ctrl_ability="70" magazine="120" maxbullet="240" reloadtime="10" slug_output="true"
+		gadget_id="0" hp="0" ap="0" maxwt="0" sf="0" fr="0" cr="0" pr="0" lr="0" limitspeed="90"
+		limitwall="1" color="#FFFFFFFF" image_id="2" bullet_image_id="0" magazine_image_id="0"
+		snd_reload="we_machinegun_reload" snd_fire="we_machinegun_fire" snd_dryfire="762arifle_dryfire"
+		desc="K9 machine gun with upgraded power. Its powerful serial shooting speed and controllability earned it the name, 'Firepower of Horror'." effect_id="9" />
+	<ITEM id="8003" name="Nico MG-KX" mesh_name="machinegun02" totalpoint="0" type="range" res_sex="a"
+		res_level="45" slot="range" weapon="machinegun" weight="28" bt_price="32000" delay="100"
+		damage="18" ctrl_ability="70" magazine="120" maxbullet="240" reloadtime="10" slug_output="true"
+		gadget_id="0" hp="0" ap="0" maxwt="0" sf="0" fr="0" cr="0" pr="0" lr="0" limitspeed="90"
+		limitwall="1" color="#FFFFFFFF" image_id="2" bullet_image_id="0" magazine_image_id="0"
+		snd_reload="we_machinegun_reload" snd_fire="we_machinegun_fire" snd_dryfire="762arifle_dryfire"
+		desc="Nico's new machine gun with explosive power. Even just facing the MG-KX will make the enemy feel pain." effect_id="9" />
+	<!-- ROCKET LAUNCHER : Magazine = 4 ea ///////////////////////////////////////////////////////////////////// -->
+	<ITEM id="9006" name="Maxwell RW-66" mesh_name="rocketlauncher02" totalpoint="0" type="range"
+		res_sex="a" res_level="10" slot="range" weapon="rocket" weight="30" bt_price="2000"
+		delay="1000" damage="30" ctrl_ability="50" magazine="4" maxbullet="16" reloadtime="3"
+		slug_output="true" gadget_id="0" hp="0" ap="0" maxwt="0" sf="0" fr="0" cr="0" pr="0"
+		lr="0" limitspeed="90" limitwall="1" color="#FFFFFFFF" image_id="2" bullet_image_id="0"
+		magazine_image_id="0" snd_reload="we_rocket_reload" snd_fire="we_rocket_fire" snd_dryfire="762arifle_dryfire"
+		desc="Rocket launcher made in early days by Maxwell. It does not have a strong power." />
+	<ITEM id="9001" name="Walcom L1" mesh_name="rocketlauncher" totalpoint="0" type="range" res_sex="a"
+		res_level="15" slot="range" weapon="rocket" weight="30" bt_price="3200" delay="1200"
+		damage="50" ctrl_ability="50" magazine="3" maxbullet="12" reloadtime="3" slug_output="true"
+		gadget_id="0" hp="0" ap="0" maxwt="0" sf="0" fr="0" cr="0" pr="0" lr="0" limitspeed="90"
+		limitwall="1" color="#FFFFFFFF" image_id="2" bullet_image_id="0" magazine_image_id="0"
+		snd_reload="we_rocket_reload" snd_fire="we_rocket_fire" snd_dryfire="762arifle_dryfire"
+		desc="Rocket launcher of strong power produced by Walcom." />
+	<ITEM id="9002" name="Maxwell RW-77" mesh_name="rocketlauncher02" totalpoint="0" type="range"
+		res_sex="a" res_level="20" slot="range" weapon="rocket" weight="28" bt_price="5200"
+		delay="900" damage="35" ctrl_ability="50" magazine="5" maxbullet="20" reloadtime="3"
+		slug_output="true" gadget_id="0" hp="0" ap="0" maxwt="0" sf="0" fr="0" cr="0" pr="0"
+		lr="0" limitwall="1" limitspeed="90" color="#FFFFFFFF" image_id="2" bullet_image_id="0"
+		magazine_image_id="0" snd_reload="we_rocket_reload" snd_fire="we_rocket_fire" snd_dryfire="762arifle_dryfire"
+		desc="Rocket launcher produced by Maxwell. It has more number of bullets than Walcom's L series and better repeated shooting capability. However, fire power was sacrificed instead." />
+	<ITEM id="9003" name="Walcom L1 mk. II" mesh_name="rocketlauncher" totalpoint="0" type="range"
+		res_sex="a" res_level="30" slot="range" weapon="rocket" weight="30" bt_price="12000"
+		delay="1200" damage="55" ctrl_ability="50" magazine="3" maxbullet="12" reloadtime="3"
+		slug_output="true" gadget_id="0" hp="0" ap="0" maxwt="0" sf="0" fr="0" cr="0" pr="0"
+		lr="0" limitspeed="90" limitwall="1" color="#FFFFFFFF" image_id="2" bullet_image_id="0"
+		magazine_image_id="0" snd_reload="we_rocket_reload" snd_fire="we_rocket_fire" snd_dryfire="762arifle_dryfire"
+		desc="Walcom's Rocket Launcher. This slightly upgraded model of L1 has slightly better rocket power." />
+	<ITEM id="9004" name="Maxwell RW-88" mesh_name="rocketlauncher02" totalpoint="0" type="range"
+		res_sex="a" res_level="40" slot="range" weapon="rocket" weight="28" bt_price="24000"
+		delay="800" damage="36" ctrl_ability="50" magazine="5" maxbullet="20" reloadtime="3"
+		slug_output="true" gadget_id="0" hp="0" ap="0" maxwt="0" sf="0" fr="0" cr="0" pr="0"
+		lr="0" limitspeed="90" limitwall="1" color="#FFFFFFFF" image_id="2" bullet_image_id="0"
+		magazine_image_id="0" snd_reload="we_rocket_reload" snd_fire="we_rocket_fire" snd_dryfire="762arifle_dryfire"
+		desc="An upgraded version of RW-77. Though nothing has changed, it has better repeated shooting power." />
+	<ITEM id="9005" name="Walcom L2" mesh_name="rocketlauncher03" totalpoint="0" type="range"
+		res_sex="a" res_level="50" slot="range" weapon="rocket" weight="25" bt_price="50000"
+		delay="1200" damage="55" ctrl_ability="50" magazine="4" maxbullet="16" reloadtime="3"
+		slug_output="true" gadget_id="0" hp="0" ap="0" maxwt="0" sf="0" fr="0" cr="0" pr="0"
+		lr="0" limitspeed="90" limitwall="1" color="#FFFFFFFF" image_id="2" bullet_image_id="0"
+		magazine_image_id="0" snd_reload="we_rocket_reload" snd_fire="we_rocket_fire" snd_dryfire="762arifle_dryfire"
+		desc="Walcom's Rocket Launcher. With more bullets than L1, it has become more powerful weapon. It got lighter as well." />
+	<!-- Snifer Rifle /////////////////////////////////////////////////////////////////////////////////////////// -->
+	<ITEM id="10001" name="SniferRifle1" mesh_name="rifle03" totalpoint="0" type="range" res_sex="a"
+		res_level="0" slot="range" weapon="snifer" weight="25" bt_price="50000" delay="1200"
+		damage="80" ctrl_ability="0" magazine="2" maxbullet="16" reloadtime="7" slug_output="false"
+		gadget_id="0" hp="0" ap="0" maxwt="0" sf="0" fr="0" cr="0" pr="0" lr="0" limitwall="1"
+		color="#FFFFFFFF" image_id="2" bullet_image_id="0" magazine_image_id="0" snd_reload="we_rifle_reload"
+		snd_fire="we_rifle_fire" snd_dryfire="762arifle_dryfire" desc="Sniper Rifle produced by Bird." />
+	<!-- 임시 테스트용 아이템 /////////////////////////////////////////////////////////////////////////////////////////// -->
+	<!--
+	<ITEM id="20001" name="test sword" mesh_name="sword01" totalpoint="0" type="melee" res_sex="a"
+		res_level="0" slot="melee" weapon="dagger" weight="5" bt_price="20" delay="100" damage="8" ctrl_ability="0"
+		magazine="0" reloadtime="0" slug_output="false" gadget_id="0" hp="0" ap="0" maxwt="0"
+		sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF" image_id="0" bullet_image_id="0"
+		magazine_image_id="0" desc=" Liphunter의 sword." />
+
+	<ITEM id="20003" name="test daggerx2" mesh_name="dagger01" totalpoint="0" type="melee" res_sex="a"
+		res_level="0" slot="melee" weapon="dagger" weight="5" bt_price="20" delay="100" damage="8" ctrl_ability="0"
+		magazine="0" reloadtime="0" slug_output="false" gadget_id="0" hp="0" ap="0" maxwt="0"
+		sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF" image_id="0" bullet_image_id="0"
+		magazine_image_id="0" desc=" Liphunter의 daggerx2." />
+
+-->
+	<!-- HANDHELD ITEMS ///////////////////////////////////////////////////////////////////////////////////////////// -->
+	<ITEM id="30301" name="Canox FG1" mesh_name="grenade01" totalpoint="0" type="custom" res_sex="a"
+		res_level="0" slot="custom" weapon="frag" weight="2" bt_price="200" delay="1500" damage="100"
+		ctrl_ability="20" magazine="2" maxbullet="2" reloadtime="10" slug_output="false" gadget_id="0"
+		hp="0" ap="0" maxwt="0" sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF" image_id="3"
+		bullet_image_id="0" magazine_image_id="0" snd_fire="we_grenade_fire"
+		desc="New grenade produced by Canox in a way that it can be easily used indoors. 2 units" />
+	<ITEM id="30302" name="Canox FG2" mesh_name="grenade01" totalpoint="0" type="custom" res_sex="a"
+		res_level="11" slot="custom" weapon="frag" weight="3" bt_price="500" delay="1500"
+		damage="100" ctrl_ability="20" magazine="3" maxbullet="3" reloadtime="10" slug_output="false"
+		gadget_id="0" hp="0" ap="0" maxwt="0" sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF"
+		image_id="3" bullet_image_id="0" magazine_image_id="0" snd_fire="we_grenade_fire"
+		desc="New grenade produced by Canox in a way that it can be easily used indoors. 3 units" />
+	<ITEM id="30303" name="Canox FG3" mesh_name="grenade01" totalpoint="0" type="custom" res_sex="a"
+		res_level="22" slot="custom" weapon="frag" weight="4" bt_price="1000" delay="1500"
+		damage="100" ctrl_ability="20" magazine="4" maxbullet="4" reloadtime="10" slug_output="false"
+		gadget_id="0" hp="0" ap="0" maxwt="0" sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF"
+		image_id="3" bullet_image_id="0" magazine_image_id="0" snd_fire="we_grenade_fire"
+		desc="New grenade produced by Canox in a way that it can be easily used indoors. 4 units" />
+	<ITEM id="30304" name="Canox FG4" mesh_name="grenade01" totalpoint="0" type="custom" res_sex="a"
+		res_level="33" slot="custom" weapon="frag" weight="5" bt_price="2000" delay="1500"
+		damage="100" ctrl_ability="20" magazine="5" maxbullet="5" reloadtime="10" slug_output="false"
+		gadget_id="0" hp="0" ap="0" maxwt="0" sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF"
+		image_id="3" bullet_image_id="0" magazine_image_id="0" snd_fire="we_grenade_fire"
+		desc="New grenade produced by Canox in a way that it can be easily used indoors. 5 units" />
+	<ITEM id="30305" name="Canox FG5" mesh_name="grenade01" totalpoint="0" type="custom" res_sex="a"
+		res_level="44" slot="custom" weapon="frag" weight="6" bt_price="4000" delay="1500"
+		damage="100" ctrl_ability="20" magazine="6" maxbullet="6" reloadtime="10" slug_output="false"
+		gadget_id="0" hp="0" ap="0" maxwt="0" sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF"
+		image_id="3" bullet_image_id="0" magazine_image_id="0" snd_fire="we_grenade_fire"
+		desc="New grenade produced by Canox in a way that it can be easily used indoors. 6 units" />
+	<ITEM id="30201" name="Canox FB1" mesh_name="flashbang01" totalpoint="0" type="custom" res_sex="a"
+		res_level="0" slot="custom" weapon="flashbang" weight="2" bt_price="200" delay="1500"
+		damage="0" ctrl_ability="20" magazine="2" maxbullet="2" reloadtime="10" slug_output="false"
+		gadget_id="0" hp="0" ap="0" maxwt="0" sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF"
+		image_id="3" bullet_image_id="0" magazine_image_id="0" snd_fire="we_grenade_fire"
+		desc="Flash bomb. This weapon can temporarily paralyse enemies' vision and hearing. 2 units" />
+	<ITEM id="30202" name="Canox FB2" mesh_name="flashbang01" totalpoint="0" type="custom" res_sex="a"
+		res_level="10" slot="custom" weapon="flashbang" weight="3" bt_price="500" delay="1500"
+		damage="0" ctrl_ability="20" magazine="3" maxbullet="3" reloadtime="10" slug_output="false"
+		gadget_id="0" hp="0" ap="0" maxwt="0" sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF"
+		image_id="3" bullet_image_id="0" magazine_image_id="0" snd_fire="we_grenade_fire"
+		desc="Flash bomb. This weapon can temporarily paralyse enemies' vision and hearing. 3 units" />
+	<ITEM id="30203" name="Canox FB3" mesh_name="flashbang01" totalpoint="0" type="custom" res_sex="a"
+		res_level="20" slot="custom" weapon="flashbang" weight="4" bt_price="1000" delay="1500"
+		damage="0" ctrl_ability="20" magazine="4" maxbullet="4" reloadtime="10" slug_output="false"
+		gadget_id="0" hp="0" ap="0" maxwt="0" sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF"
+		image_id="3" bullet_image_id="0" magazine_image_id="0" snd_fire="we_grenade_fire"
+		desc="Flash bomb. This weapon can temporarily paralyse enemies' vision and hearing. 4 units" />
+	<ITEM id="30204" name="Canox FB4" mesh_name="flashbang01" totalpoint="0" type="custom" res_sex="a"
+		res_level="30" slot="custom" weapon="flashbang" weight="5" bt_price="2000" delay="1500"
+		damage="0" ctrl_ability="20" magazine="5" maxbullet="5" reloadtime="10" slug_output="false"
+		gadget_id="0" hp="0" ap="0" maxwt="0" sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF"
+		image_id="3" bullet_image_id="0" magazine_image_id="0" snd_fire="we_grenade_fire"
+		desc="Flash bomb. This weapon can temporarily paralyse enemies' vision and hearing. 5 units" />
+	<ITEM id="30205" name="Canox FB5" mesh_name="flashbang01" totalpoint="0" type="custom" res_sex="a"
+		res_level="40" slot="custom" weapon="flashbang" weight="6" bt_price="4000" delay="1500"
+		damage="0" ctrl_ability="20" magazine="6" maxbullet="6" reloadtime="10" slug_output="false"
+		gadget_id="0" hp="0" ap="0" maxwt="0" sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF"
+		image_id="3" bullet_image_id="0" magazine_image_id="0" snd_fire="we_grenade_fire"
+		desc="Flash bomb. This weapon can temporarily paralyse enemies' vision and hearing. 6 units" />
+	<ITEM id="30401" name="Canox SG1" mesh_name="smoke01" totalpoint="0" type="custom" res_sex="a"
+		res_level="0" slot="custom" weapon="smoke" weight="2" bt_price="200" delay="1500"
+		damage="0" ctrl_ability="20" magazine="3" maxbullet="3" reloadtime="10" slug_output="false"
+		gadget_id="0" hp="0" ap="0" maxwt="0" sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF"
+		image_id="3" bullet_image_id="0" magazine_image_id="0" snd_fire="we_grenade_fire"
+		desc="Smoke bomb. This is used to disrupt the sight of the enemy with smoke. 3 units" />
+	<ITEM id="30402" name="Canox SG2" mesh_name="smoke01" totalpoint="0" type="custom" res_sex="a"
+		res_level="12" slot="custom" weapon="smoke" weight="3" bt_price="500" delay="1500"
+		damage="0" ctrl_ability="20" magazine="4" maxbullet="4" reloadtime="10" slug_output="false"
+		gadget_id="0" hp="0" ap="0" maxwt="0" sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF"
+		image_id="3" bullet_image_id="0" magazine_image_id="0" snd_fire="we_grenade_fire"
+		desc="Smoke bomb. This is used to disrupt the sight of the enemy with smoke. 4 units" />
+	<ITEM id="30403" name="Canox SG3" mesh_name="smoke01" totalpoint="0" type="custom" res_sex="a"
+		res_level="24" slot="custom" weapon="smoke" weight="4" bt_price="1000" delay="1500"
+		damage="0" ctrl_ability="20" magazine="5" maxbullet="5" reloadtime="10" slug_output="false"
+		gadget_id="0" hp="0" ap="0" maxwt="0" sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF"
+		image_id="3" bullet_image_id="0" magazine_image_id="0" snd_fire="we_grenade_fire"
+		desc="Smoke bomb. This is used to disrupt the sight of the enemy with smoke. 5 units" />
+	<ITEM id="30404" name="Canox SG4" mesh_name="smoke01" totalpoint="0" type="custom" res_sex="a"
+		res_level="36" slot="custom" weapon="smoke" weight="5" bt_price="2000" delay="1500"
+		damage="0" ctrl_ability="20" magazine="6" maxbullet="6" reloadtime="10" slug_output="false"
+		gadget_id="0" hp="0" ap="0" maxwt="0" sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF"
+		image_id="3" bullet_image_id="0" magazine_image_id="0" snd_fire="we_grenade_fire"
+		desc="Smoke bomb. This is used to disrupt the sight of the enemy with smoke. 6 units" />
+	<ITEM id="30405" name="Canox SG5" mesh_name="smoke01" totalpoint="0" type="custom" res_sex="a"
+		res_level="48" slot="custom" weapon="smoke" weight="6" bt_price="4000" delay="1500"
+		damage="0" ctrl_ability="20" magazine="7" maxbullet="7" reloadtime="10" slug_output="false"
+		gadget_id="0" hp="0" ap="0" maxwt="0" sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF"
+		image_id="3" bullet_image_id="0" magazine_image_id="0" snd_fire="we_grenade_fire"
+		desc="Smoke bomb. This is used to disrupt the sight of the enemy with smoke. 7 units" />
+	<ITEM id="30001" name="Medical Kit MK-1" mesh_name="medikit" totalpoint="0" type="custom" res_sex="a"
+		res_level="0" slot="custom" weapon="medkit" weight="5" bt_price="400" delay="1000"
+		damage="0" ctrl_ability="0" magazine="2" maxbullet="2" reloadtime="10" slug_output="false"
+		gadget_id="0" hp="0" ap="0" maxwt="0" sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF"
+		image_id="3" bullet_image_id="0" magazine_image_id="0" snd_fire="we_grenade_fire"
+		desc="This enables you to recover the physical strength. 2 units" />
+	<ITEM id="30002" name="Medical Kit MK-2" mesh_name="medikit" totalpoint="0" type="custom" res_sex="a"
+		res_level="20" slot="custom" weapon="medkit" weight="6" bt_price="5000" delay="1000"
+		damage="0" ctrl_ability="0" magazine="3" maxbullet="3" reloadtime="10" slug_output="false"
+		gadget_id="0" hp="0" ap="0" maxwt="0" sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF"
+		image_id="3" bullet_image_id="0" magazine_image_id="0" snd_fire="we_grenade_fire"
+		desc="This enables you to recover the physical strength. 3 units" />
+	<ITEM id="30003" name="Medical Kit MK-3" mesh_name="medikit" totalpoint="0" type="custom" res_sex="a"
+		res_level="40" slot="custom" weapon="medkit" weight="7" bt_price="20000" delay="1000"
+		damage="0" ctrl_ability="0" magazine="4" maxbullet="4" reloadtime="10" slug_output="false"
+		gadget_id="0" hp="0" ap="0" maxwt="0" sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF"
+		image_id="3" bullet_image_id="0" magazine_image_id="0" snd_fire="we_grenade_fire"
+		desc="This enables you to recover the physical strength. 4 units" />
+	<ITEM id="30101" name="Repair Kit RK-1" mesh_name="repairkit" totalpoint="0" type="custom" res_sex="a"
+		res_level="0" slot="custom" weapon="repairkit" weight="5" bt_price="400" delay="1000"
+		damage="0" ctrl_ability="0" magazine="2" maxbullet="2" reloadtime="10" slug_output="false"
+		gadget_id="0" hp="0" ap="0" maxwt="0" sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF"
+		image_id="3" bullet_image_id="0" magazine_image_id="0" snd_fire="we_grenade_fire"
+		desc="Repairs defense tools. It repairs broken defense weapons. 2 units" />
+	<ITEM id="30102" name="Repair Kit RK-2" mesh_name="repairkit" totalpoint="0" type="custom" res_sex="a"
+		res_level="20" slot="custom" weapon="repairkit" weight="6" bt_price="5000" delay="1000"
+		damage="0" ctrl_ability="0" magazine="3" maxbullet="3" reloadtime="10" slug_output="false"
+		gadget_id="0" hp="0" ap="0" maxwt="0" sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF"
+		image_id="3" bullet_image_id="0" magazine_image_id="0" snd_fire="we_grenade_fire"
+		desc="Repairs defense tools. It repairs broken defense weapons. 3 units" />
+	<ITEM id="30103" name="Repair Kit RK-3" mesh_name="repairkit" totalpoint="0" type="custom" res_sex="a"
+		res_level="40" slot="custom" weapon="repairkit" weight="7" bt_price="20000" delay="1000"
+		damage="0" ctrl_ability="0" magazine="4" maxbullet="4" reloadtime="10" slug_output="false"
+		gadget_id="0" hp="0" ap="0" maxwt="0" sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF"
+		image_id="3" bullet_image_id="0" magazine_image_id="0" snd_fire="we_grenade_fire"
+		desc="Repairs defense tools. It repairs broken defense weapons. 4 units" />
+	<!-- 반지 ///////////////////////////////////////////////////////////////////////////////////////////// -->
+	<ITEM id="25001" name="Ring of the Citizen" totalpoint="0" type="equip" res_sex="a" res_level="0" slot="finger"
+		weight="2" bt_price="400" hp="5" ap="0" maxwt="0" sf="0" fr="0" cr="0" pr="0" lr="0"
+		color="#FFFFFFFF" desc="This ring does not look so beautiful. It was produced by the mayor for commemoration." />
+	<ITEM id="25002" name="Ring of the Crying Hawk" totalpoint="0" type="equip" res_sex="a" res_level="0"
+		slot="finger" weight="2" bt_price="400" hp="0" ap="5" maxwt="0" sf="0" fr="0" cr="0"
+		pr="0" lr="0" color="#FFFFFFFF" desc="This ring is said to have been supplied to some special combat forces famous in the legends." />
+	<ITEM id="25003" name="Warrior's Cry" totalpoint="0" type="equip" res_sex="a" res_level="10"
+		slot="finger" weight="2" bt_price="1000" hp="8" ap="0" maxwt="0" sf="0" fr="0" cr="0"
+		pr="0" lr="0" color="#FFFFFFFF" desc="This small ring seems to contain the wishes of the many people who longed for a return to home alive." />
+	<ITEM id="25004" name="Pierre's Ring" totalpoint="0" type="equip" res_sex="a" res_level="10"
+		slot="finger" weight="2" bt_price="1000" hp="0" ap="8" maxwt="0" sf="0" fr="0" cr="0"
+		pr="0" lr="0" color="#FFFFFFFF" desc="This ring was produced in order to cherish the memory of a brave commander who was killed in a battle." />
+	<ITEM id="25005" name="FMT Ring" totalpoint="0" type="equip" res_sex="a" res_level="20"
+		slot="finger" weight="2" bt_price="10000" hp="5" ap="5" maxwt="0" sf="0" fr="0" cr="0"
+		pr="0" lr="0" color="#FFFFFFFF" desc="This ring was produced in order to commemorate scientists who created a system named FMT. There is a faint signature of McField inscribed in the jewel." />
+	<ITEM id="25006" name="Ring of Good Fortune" totalpoint="0" type="equip" res_sex="a" res_level="20"
+		slot="finger" weight="0" bt_price="10000" hp="0" ap="0" maxwt="2" sf="0" fr="0" cr="0"
+		pr="0" lr="0" color="#FFFFFFFF" desc="It does not look beautiful, but calls for good luck. People who wear this ring feel that they are much lighter." />
+	<ITEM id="25007" name="Altema's Ring" totalpoint="0" type="equip" res_sex="a" res_level="30"
+		slot="finger" weight="2" bt_price="20000" hp="0" ap="10" maxwt="0" sf="0" fr="0" cr="0"
+		pr="0" lr="0" color="#FFFFFFFF" desc="This ring is produced by TEAMI in order to commemorate the achievement that Emperor Altema made." />
+	<ITEM id="25008" name="Band of the Blood" totalpoint="0" type="equip" res_sex="a" res_level="30"
+		slot="finger" weight="4" bt_price="20000" hp="10" ap="0" maxwt="0" sf="0" fr="0" cr="0"
+		pr="0" lr="0" color="#FFFFFFFF" desc="A pretty ring with a beautiful red jewel. It is said to give its wearer energy." />
+	<ITEM id="25009" name="Elia's Ring" totalpoint="0" type="equip" res_sex="a" res_level="40"
+		slot="finger" weight="2" bt_price="40000" hp="0" ap="15" maxwt="0" sf="0" fr="0" cr="0"
+		pr="0" lr="0" color="#FFFFFFFF" desc="This ring was produced to commemorate the princess, Elia under the order of the Emperor Altema. This rings gives its wearer confidence." />
+	<ITEM id="25010" name="Ring of a Feather" totalpoint="0" type="equip" res_sex="a" res_level="40"
+		slot="finger" weight="0" bt_price="40000" hp="0" ap="0" maxwt="3" sf="0" fr="0" cr="0"
+		pr="0" lr="0" color="#FFFFFFFF" desc="This ring is said to have been made of the feather of a legendary bird. This makes its wearer feel much lighter." />
+	<!-- 장비 ///////////////////////////////////////////////////////////////////////////////////////////// -->
+	<!-- chest /////////////////////////////////////////////////////////////////////////////////////////// -->
+	<!-- 남자 //////////////////////////////////////////////// -->
+	<ITEM id="21001" name="Ares Running Shirt" mesh_name="eq_chest_12" totalpoint="0" type="equip"
+		res_sex="m" res_level="0" slot="chest" weight="5" bt_price="50" hp="0" ap="5" maxwt="0"
+		sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF" desc="Men's running shirt produced by Ares, a supplier of military outfits." />
+	<ITEM id="21002" name="Renaut Cotton Shirt" mesh_name="eq_chest_06" totalpoint="0" type="equip" res_sex="m"
+		res_level="0" slot="chest" weight="10" bt_price="200" hp="0" ap="10" maxwt="0" sf="0"
+		fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF" desc="Very active men's cotton shirt produced by Renaut Sports." />
+	<ITEM id="21003" name="Venico Leather Coat" mesh_name="eq_chest_13" totalpoint="0" type="equip"
+		res_sex="m" res_level="10" slot="chest" weight="15" bt_price="800" hp="0" ap="20"
+		maxwt="0" sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF" desc="Men's Leather Coat produced by Venico" />
+	<ITEM id="21004" name="Vinz Winter Jacket" mesh_name="eq_chest_01" totalpoint="0" type="equip"
+		res_sex="m" res_level="20" slot="chest" weight="18" bt_price="1600" hp="0" ap="25"
+		maxwt="0" sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF" desc="This leather-fabric jacket for men has good thermal insulation." />
+	<ITEM id="21005" name="Miz Leather Coat" mesh_name="eq_chest_03" totalpoint="0" type="equip"
+		res_sex="m" res_level="30" slot="chest" weight="20" bt_price="3200" hp="0" ap="28"
+		maxwt="0" sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF" desc="Quite fashionable and stylish men's trench coat produced by Miz, formal suit maker Ares Military Jacket A." />
+	<ITEM id="21006" name="Ares Military Jacket" mesh_name="eq_chest_a001" totalpoint="0" type="equip"
+		res_sex="m" res_level="0" slot="chest" weight="12" bt_price="200" hp="2" ap="8" maxwt="0"
+		sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF" desc="Military jacket that Ares produced to supply to the military." />
+	<ITEM id="21007" name="Vinz Long Coat" mesh_name="eq_chest_07_1" totalpoint="0" type="equip"
+		res_sex="m" res_level="20" slot="chest" weight="16" bt_price="1600" hp="0" ap="22"
+		maxwt="0" sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF" desc="Long wool coat produced by Vinz for men." />
+	<ITEM id="21008" name="Renaut's Summer Shirt" mesh_name="eq_chest_21" totalpoint="0" type="equip"
+		res_sex="m" res_level="0" slot="chest" weight="10" bt_price="500" hp="0" ap="10" maxwt="0"
+		sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF" desc="Men's shirt with flower patterns produced by Renaut for summer." />
+	<!-- 여자 ////////////////////////////////////////////////// -->
+	<ITEM id="21501" name="Flex Cotton T-Shirt" mesh_name="eq_chest_05" totalpoint="0" type="equip"
+		res_sex="f" res_level="0" slot="chest" weight="5" bt_price="50" hp="0" ap="5" maxwt="0"
+		sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF" desc="Cotton T-Shirt exclusively for women. This product is especially suitable for active women." />
+	<ITEM id="21502" name="Urike Leather Jacket" mesh_name="eq_chest_n013" totalpoint="0" type="equip"
+		res_sex="f" res_level="0" slot="chest" weight="10" bt_price="200" hp="0" ap="10" maxwt="0"
+		sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF" desc="Urike Women's Leather Jacket quite popular with the elastic fabric." />
+	<ITEM id="21504" name="Arona Leather Jacket" mesh_name="eq_chest_c001" totalpoint="0" type="equip"
+		res_sex="f" res_level="10" slot="chest" weight="15" bt_price="800" hp="0" ap="20"
+		maxwt="0" sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF" desc="Fashionable leather jacket for women." />
+	<ITEM id="21503" name="Rex Military Vest" mesh_name="eq_chest_p001" totalpoint="0" type="equip"
+		res_sex="f" res_level="20" slot="chest" weight="18" bt_price="1600" hp="0" ap="25"
+		maxwt="0" sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF" desc="Women's military vest, which ensures good sport activity and survival in a combat." />
+	<ITEM id="21505" name="L* Leather Coat" mesh_name="eq_chest_long001" totalpoint="0" type="equip"
+		res_sex="f" res_level="30" slot="chest" weight="20" bt_price="3200" hp="0" ap="28"
+		maxwt="0" sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF" desc="Women's coat with luxury look produced by L*." />
+	<ITEM id="21506" name="Rex Military Jacket" mesh_name="eq_chest_07" totalpoint="0" type="equip"
+		res_sex="f" res_level="0" slot="chest" weight="12" bt_price="200" hp="2" ap="8" maxwt="0"
+		sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF" desc="Women's military jacket supplied by Rex." />
+	<ITEM id="21507" name="Urike Long Coat" mesh_name="eq_chest_long004" totalpoint="0" type="equip"
+		res_sex="f" res_level="20" slot="chest" weight="16" bt_price="1600" hp="0" ap="22"
+		maxwt="0" sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF" desc="Women's stylish long coat, a new product of Urike." />
+	<ITEM id="21508" name="Bics Summer Top" mesh_name="eq_chest_21" totalpoint="0" type="equip"
+		res_sex="f" res_level="0" slot="chest" weight="10" bt_price="500" hp="0" ap="10" maxwt="0"
+		sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF" desc="Women's flower patterned top for summer produced by Bics." />
+	<!-- hands /////////////////////////////////////////////////////////////////////////////////////// -->
+	<!-- 남자 //////////////////////////////////////////////////// -->
+	<ITEM id="22001" name="Ares Combat Gloves" mesh_name="eq_hands_a001" totalpoint="0" type="equip"
+		res_sex="m" res_level="0" slot="hands" weight="5" bt_price="50" hp="0" ap="5" maxwt="0"
+		sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF" desc="Miz men's leather gloves which are popular with comfortable and simple design." />
+	<ITEM id="22002" name="Vinz Winter Gloves" mesh_name="eq_hands_01" totalpoint="0" type="equip"
+		res_sex="m" res_level="10" slot="hands" weight="5" bt_price="500" hp="0" ap="10" maxwt="0"
+		sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF" desc="Winter gloves that protect your hands from the wind and cold. For men." />
+	<ITEM id="22003" name="Ares Iron Gloves" mesh_name="eq_hands_02" totalpoint="0" type="equip"
+		res_sex="m" res_level="20" slot="hands" weight="8" bt_price="1000" hp="0" ap="15"
+		maxwt="0" sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF" desc="Men's iron gloves with excellent defensive power designed to be used in combat." />
+	<ITEM id="22004" name="Miz Sheep Leather Gloves" mesh_name="eq_hands_04" totalpoint="0" type="equip"
+		res_sex="m" res_level="20" slot="hands" weight="6" bt_price="1500" hp="0" ap="12"
+		maxwt="0" sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF" desc="Gloves made of durable leather." />
+	<ITEM id="22005" name="Renaut Summer Gloves" mesh_name="eq_hands_21" totalpoint="0" type="equip"
+		res_sex="m" res_level="0" slot="hands" weight="4" bt_price="250" hp="0" ap="4" maxwt="0"
+		sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF" desc="Men's gloves that are made by Renaut for summer." />
+	<!-- 여자 ///////////////////////////////////////////////////// -->
+	<ITEM id="22501" name="Rex Combat Gloves" mesh_name="eq_hands_07" totalpoint="0" type="equip"
+		res_sex="f" res_level="0" slot="hands" weight="5" bt_price="50" hp="0" ap="5" maxwt="0"
+		sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF" desc="Simple, elastic leather gloves" />
+	<ITEM id="22502" name="Arona Winter Leather Gloves" mesh_name="eq_hands_leather04" totalpoint="0" type="equip"
+		res_sex="f" res_level="10" slot="hands" weight="5" bt_price="500" hp="0" ap="10" maxwt="0"
+		sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF" desc="Leather gloves to protect from cold." />
+	<ITEM id="22503" name="Rex Iron Gloves" mesh_name="eq_hands_02" totalpoint="0" type="equip"
+		res_sex="f" res_level="20" slot="hands" weight="8" bt_price="1000" hp="0" ap="15"
+		maxwt="0" sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF" desc="Women's iron gloves designed to be used in combat." />
+	<ITEM id="22504" name="Urike Sheep Leather Gloves" mesh_name="eq_hands_leather02" totalpoint="0" type="equip"
+		res_sex="f" res_level="20" slot="hands" weight="6" bt_price="1500" hp="0" ap="12"
+		maxwt="0" sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF" desc="Women's iron gloves designed to be used in combat." />
+	<ITEM id="22505" name="Bics Summer Gloves" mesh_name="eq_hands_21" totalpoint="0" type="equip"
+		res_sex="f" res_level="0" slot="hands" weight="4" bt_price="250" hp="0" ap="4" maxwt="0"
+		sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF" desc="Bics' Women's Gloves for summer." />
+	<!-- legs ////////////////////////////////////////////////////////////////////////////////////// -->
+	<!-- 남자 ///////////////////////////////////////////////// -->
+	<ITEM id="23001" name="Vinz Training Pants" mesh_name="eq_legs_01" totalpoint="0" type="equip"
+		res_sex="m" res_level="0" slot="legs" weight="10" bt_price="50" hp="0" ap="10" maxwt="0"
+		sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF" desc="Men's trousers by Vinz with an emphasis on the excellent elasticity and good feel and touch." />
+	<ITEM id="23005" name="Ares Military Trousers" mesh_name="eq_legs_a001" totalpoint="0" type="equip"
+		res_sex="m" res_level="0" slot="legs" weight="10" bt_price="200" hp="1" ap="8" maxwt="0"
+		sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF" desc="Military trousers that Ares supplies to the military." />
+	<ITEM id="23002" name="Renaut's Sporty Pants" mesh_name="eq_legs_02" totalpoint="0" type="equip"
+		res_sex="m" res_level="0" slot="legs" weight="10" bt_price="200" hp="0" ap="15" maxwt="0"
+		sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF" desc="Trousers presented by Renaut Sportswear for sportsmen." />
+	<ITEM id="23004" name="Venico Denim Trousers" mesh_name="eq_legs_13" totalpoint="0" type="equip"
+		res_sex="m" res_level="10" slot="legs" weight="15" bt_price="1200" hp="0" ap="22"
+		maxwt="0" sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF" desc="Venico's denim angle band trousers for men with unique touch and feel." />
+	<ITEM id="23003" name="Miz Leather Trousers" mesh_name="eq_legs_04" totalpoint="0" type="equip"
+		res_sex="m" res_level="20" slot="legs" weight="15" bt_price="2400" hp="0" ap="25"
+		maxwt="0" sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF" desc="Leather trousers in a sophisticated design. Using natural leather, they have a sleek and clean cut and sewing." />
+	<ITEM id="23006" name="Webs Blue Jeans" mesh_name="eq_legs_12" totalpoint="0" type="equip"
+		res_sex="m" res_level="20" slot="legs" weight="14" bt_price="3000" hp="0" ap="23"
+		maxwt="0" sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF" desc="Blue Jeans produced by Webs. Suitable for tough adventurers." />
+	<ITEM id="23007" name="Renaut Summer Shorts" mesh_name="eq_legs_21" totalpoint="0" type="equip" res_sex="m"
+		res_level="0" slot="legs" weight="10" bt_price="500" hp="0" ap="12" maxwt="0" sf="0"
+		fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF" desc="Men's swimming trousers for summer produced by Renaut." />
+	<!-- 여자 ////////////////////////////////////////////////// -->
+	<ITEM id="23501" name="Flex Training Pants" mesh_name="eq_legs_g002" totalpoint="0" type="equip"
+		res_sex="f" res_level="0" slot="legs" weight="10" bt_price="50" hp="0" ap="10" maxwt="0"
+		sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF" desc="Flex' women's trousers with excellent elasticity and good touch and feel." />
+	<ITEM id="23508" name="Rex Military Trousers" mesh_name="eq_legs_007" totalpoint="0" type="equip"
+		res_sex="f" res_level="0" slot="legs" weight="10" bt_price="200" hp="1" ap="8" maxwt="0"
+		sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF" desc="Women's military trousers produced by Rex." />
+	<ITEM id="23502" name="Arona Women's Blue Jeans" mesh_name="eq_legs_j001" totalpoint="0" type="equip"
+		res_sex="f" res_level="0" slot="legs" weight="10" bt_price="200" hp="0" ap="15" maxwt="0"
+		sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF" desc="(Discontinued Item) Blue jeans widely worn by all, young and old. For women." />
+	<ITEM id="23503" name="Rex Military Trousers" mesh_name="eq_legs_c001" totalpoint="0" type="equip"
+		res_sex="f" res_level="0" slot="legs" weight="15" bt_price="1200" hp="0" ap="22" maxwt="0"
+		sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF" desc="Comfortable military trousers especially designed for female soldiers." />
+	<ITEM id="23504" name="L* Black Cotton Slacks" mesh_name="eq_legs_ge001" totalpoint="0" type="equip"
+		res_sex="f" res_level="0" slot="legs" weight="15" bt_price="2400" hp="0" ap="25" maxwt="0"
+		sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF" desc="(Discontinued Item) Cotton trousers with luxurious touch that L* presents for special females." />
+	<ITEM id="23505" name="Arona Women's Blue Jeans" mesh_name="eq_legs_j001" totalpoint="0" type="equip"
+		res_sex="f" res_level="0" slot="legs" weight="10" bt_price="200" hp="0" ap="15" maxwt="0"
+		sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF" desc="Blue jeans widely worn by all, young and old. For women." />
+	<ITEM id="23506" name="Vinz Chamois Trousers" mesh_name="eq_legs_c001" totalpoint="0" type="equip"
+		res_sex="f" res_level="10" slot="legs" weight="15" bt_price="1200" hp="0" ap="22"
+		maxwt="0" sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF" desc="Women's Chamois trousers with good feel and touch produced by Vinz." />
+	<ITEM id="23507" name="L* Black Cotton Slacks" mesh_name="eq_legs_ge001" totalpoint="0" type="equip"
+		res_sex="f" res_level="20" slot="legs" weight="15" bt_price="2400" hp="0" ap="25"
+		maxwt="0" sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF" desc="Cotton trousers (new) with luxurious touch that L* presents for special females." />
+	<ITEM id="23509" name="Urike Cotton Slacks" mesh_name="eq_legs_c002" totalpoint="0" type="equip"
+		res_sex="f" res_level="20" slot="legs" weight="14" bt_price="3000" hp="0" ap="23"
+		maxwt="0" sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF" desc="Stylish cotton trousers made by Urike. Added practical touch and stylish look using coarse fabric." />
+	<ITEM id="23510" name="Bics Summer Pants" mesh_name="eq_legs_21" totalpoint="0" type="equip" res_sex="f"
+		res_level="0" slot="legs" weight="10" bt_price="500" hp="0" ap="12" maxwt="0" sf="0"
+		fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF" desc="Women's swimming trousers for summer produced by Bics." />
+	<!-- feet //////////////////////////////////////////////////////////////////////////////////////// -->
+	<!-- 남자 //////////////////////////////////////////////// -->
+	<ITEM id="24001" name="Ares Combat Shoes" mesh_name="eq_feet_a001" totalpoint="0" type="equip"
+		res_sex="m" res_level="0" slot="feet" weight="5" bt_price="50" hp="0" ap="5" maxwt="0"
+		sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF" desc="High-end shoes with comfortable touch for dynamic activity." />
+	<ITEM id="24002" name="Venico Casual Shoes" mesh_name="eq_feet_05" totalpoint="0" type="equip"
+		res_sex="m" res_level="0" slot="feet" weight="5" bt_price="100" hp="0" ap="10" maxwt="0"
+		sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF" desc="Casual shoes popular with a unique design " />
+	<ITEM id="24003" name="Renaut Climbing Shoes" mesh_name="eq_feet_04" totalpoint="0" type="equip"
+		res_sex="m" res_level="10" slot="feet" weight="5" bt_price="500" hp="0" ap="15" maxwt="0"
+		sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF" desc="Made of sturdy leather, these shoes do not tear no matter how tough the terrain that they trod." />
+	<ITEM id="24004" name="Ares Iron Boots" mesh_name="eq_feet_02" totalpoint="0" type="equip"
+		res_sex="m" res_level="20" slot="feet" weight="8" bt_price="1000" hp="0" ap="20" maxwt="0"
+		sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF" desc="These heavy shoes are made for those who put great value on the defense power." />
+	<ITEM id="24005" name="Vinz Casual Shoes" mesh_name="eq_feet_09" totalpoint="0" type="equip"
+		res_sex="m" res_level="20" slot="feet" weight="6" bt_price="1500" hp="0" ap="18" maxwt="0"
+		sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF" desc="Very sturdy casual-looking shoes produced by Vinz." />
+	<ITEM id="24006" name="Renaut Summer Sandals" mesh_name="eq_feet_21" totalpoint="0" type="equip" res_sex="m"
+		res_level="0" slot="feet" weight="4" bt_price="250" hp="0" ap="4" maxwt="0" sf="0"
+		fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF" desc="Men's sandals for summer made by Renaut." />
+	<!-- 여성 //////////////////////////////////////////////// -->
+	<ITEM id="24501" name="Urike Leather Shoes" mesh_name="eq_feets_leather003" totalpoint="0" type="equip"
+		res_sex="f" res_level="0" slot="feet" weight="5" bt_price="50" hp="0" ap="5" maxwt="0"
+		sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF" desc="Artificial leather shoes with a plain touch and feel." />
+	<ITEM id="24502" name="Rex Combat Shoes" mesh_name="eq_feets_07" totalpoint="0" type="equip" res_sex="f"
+		res_level="0" slot="feet" weight="5" bt_price="100" hp="0" ap="10" maxwt="0" sf="0"
+		fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF" desc="Combat shoes specially made for female soldiers by Rex." />
+	<ITEM id="24503" name="L* Leather Boots" mesh_name="eq_feets_leather007" totalpoint="0" type="equip"
+		res_sex="f" res_level="10" slot="feet" weight="5" bt_price="500" hp="0" ap="15" maxwt="0"
+		sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF" desc="High-class leather boots L* is very proud of" />
+	<ITEM id="24504" name="Rex Iron Boots" mesh_name="eq_feets_p002" totalpoint="0" type="equip"
+		res_sex="f" res_level="20" slot="feet" weight="8" bt_price="1000" hp="0" ap="20" maxwt="0"
+		sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF" desc="Though look heavy, these shoes are made for those who put great value to defensive power." />
+	<ITEM id="24505" name="Urike Leather Shoes" mesh_name="eq_feets_leather008" totalpoint="0" type="equip"
+		res_sex="f" res_level="20" slot="feet" weight="6" bt_price="1500" hp="0" ap="18" maxwt="0"
+		sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF" desc="Leather shoes with unique touch and feel produced by Urike." />
+	<ITEM id="24506" name="Bics Summer Sandals" mesh_name="eq_feet_21" totalpoint="0" type="equip" res_sex="f"
+		res_level="0" slot="feet" weight="4" bt_price="250" hp="0" ap="4" maxwt="0" sf="0"
+		fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF" desc="Women's Sandals for summer produced by Bics" />
+
+	<!--
+      /////////////////////////////////////////////////////////////////////////////////////////////////////////////
+      NPC 아이템 //////////////////////////////////////////////////////////////////////////////////////////////////
+	-->
+	<ITEM id="300000" name="Goblin Dagger" mesh_name="" totalpoint="0" type="melee" res_sex="a"
+		res_level="0" slot="melee" weapon="dagger" weight="5" bt_price="20" delay="366" damage="12"
+		range="160" ctrl_ability="0" magazine="0" reloadtime="0" slug_output="false" gadget_id="0"
+		hp="0" ap="0" maxwt="0" sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF" image_id="0"
+		bullet_image_id="0" magazine_image_id="0" desc="Dagger used by Goblin." />
+
+	<ITEM id="300001" name="Goblin Rifle" mesh_name="" totalpoint="0" type="range" res_sex="a"
+		res_level="0" slot="range" weapon="rifle" weight="20" bt_price="12000" delay="80"
+		damage="15" ctrl_ability="20" magazine="40" maxbullet="200" reloadtime="6" slug_output="true"
+		gadget_id="0" hp="0" ap="0" maxwt="0" sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF"
+		image_id="2" bullet_image_id="0" magazine_image_id="0" snd_reload="we_rifle_reload"
+		snd_fire="we_rifle_fire" snd_dryfire="762arifle_dryfire" desc="Rifle used by Goblin."
+		effect_id="8" />
+
+	<ITEM id="300002" name="Goblin Mace" mesh_name="" totalpoint="0" type="melee" res_sex="a"
+		res_level="0" slot="melee" weapon="katana" weight="5" bt_price="20" delay="366" damage="20"
+		range="160" ctrl_ability="0" magazine="0" reloadtime="0" slug_output="false" gadget_id="0"
+		hp="0" ap="0" maxwt="0" sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF" image_id="0"
+		bullet_image_id="0" magazine_image_id="0" desc="Mace used by the Chief Goblin." />
+
+	<ITEM id="300003" name="Goblin Wand" mesh_name="" totalpoint="0" type="melee" res_sex="a"
+		res_level="0" slot="melee" weapon="katana" weight="5" bt_price="20" delay="800" damage="30"
+		range="160" ctrl_ability="0" magazine="0" reloadtime="0" slug_output="false" gadget_id="0"
+		hp="0" ap="0" maxwt="0" sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF" image_id="0"
+		bullet_image_id="0" magazine_image_id="0" desc="Wand used by the Chief Goblin." />
+
+    <ITEM id="300004" name="Goblin Great Hammer" mesh_name="" totalpoint="0" type="melee" res_sex="a"
+		res_level="0" slot="melee" weapon="katana" weight="5" bt_price="20" delay="600" damage="40"
+		range="160" ctrl_ability="0" magazine="0" reloadtime="0" slug_output="false" gadget_id="0"
+		hp="0" ap="0" maxwt="0" sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF" image_id="0"
+		bullet_image_id="0" magazine_image_id="0" desc="Great Hammer used by Goblin the King." />
+	<!--
+      /////////////////////////////////////////////////////////////////////////////////////////////////////////////
+      이벤트 아이템 ///////////////////////////////////////////////////////////////////////////////////////////////
+
+	-->
+	<ITEM id="400001" name="Ring of Apology" totalpoint="0" type="equip" res_sex="a" res_level="0"
+		slot="finger" weight="5" bt_price="800" hp="2" ap="2" maxwt="0" sf="0" fr="0" cr="0"
+		pr="0" lr="0" color="#FFFFFFFF" desc="(Event Item) Ring of apology. Drawback: a bit heavy." />
+	<ITEM id="400002" name="BUG-FREE Coat for Men" mesh_name="eq_chest_07" totalpoint="0" type="equip"
+		res_sex="m" res_level="0" slot="chest" weight="5" bt_price="0" hp="0" ap="5" maxwt="2"
+		sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF" desc="(Event Item) Men's coat that only those adventurers who helped dispel the abnormal phenomena of the Astra world can wear." />
+	<ITEM id="400003" name="BUG-FREE Coat for Women" mesh_name="eq_chest_long003" totalpoint="0" type="equip"
+		res_sex="f" res_level="0" slot="chest" weight="5" bt_price="0" hp="0" ap="5" maxwt="2"
+		sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF" desc="(Event Item) Women's coat that only those adventurers who helped dispel the abnormal phenomena of the Astra world can wear." />
+	<ITEM id="400004" name="Staff Jacket for Men" mesh_name="eq_chest_staff" totalpoint="0" type="equip"
+		res_sex="m" res_level="0" slot="chest" weight="2" bt_price="0" hp="15" ap="15" maxwt="2"
+		sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF" desc="(Event Item) Jackets for the operation staff." />
+	<ITEM id="400005" name="Staff Jacket for Women" mesh_name="eq_chest_staff" totalpoint="0" type="equip"
+		res_sex="f" res_level="0" slot="chest" weight="2" bt_price="0" hp="15" ap="15" maxwt="2"
+		sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF" desc="(Event Item) Jackets for operation staff." />
+	<ITEM id="400006" name="Cheater's Ring" totalpoint="0" type="equip" res_sex="a" res_level="0"
+		slot="finger" weight="1" bt_price="40000" hp="20" ap="20" maxwt="5" sf="0" fr="0"
+		cr="0" pr="0" lr="0" color="#FFFFFFFF" desc="(Event Item) Golden ring. The letter of ‘My Precious' is inscribed inside." />
+	<ITEM id="400007" name="Triangle Seaweed-rolled Rice" mesh_name="samgak01" totalpoint="0" type="custom" res_sex="a"
+		res_level="5" slot="custom" weapon="medkit" weight="5" bt_price="2000" delay="1000"
+		damage="0" ctrl_ability="0" magazine="4" maxbullet="4" reloadtime="10" slug_output="false"
+		gadget_id="0" hp="0" ap="0" maxwt="0" sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF"
+		image_id="3" bullet_image_id="0" magazine_image_id="0" snd_fire="we_grenade_fire"
+		desc="(Event Item) Triagle shaped rice rolls wrapped by seaweed. They look yummy. It can help you recover HP and AP slightly at once." />
+
+	<!--
+      /////////////////////////////////////////////////////////////////////////////////////////////////////////////
+      캐쉬아이템 //////////////////////////////////////////////////////////////////////////////////////////////////
+	-->
+	<!-- 무기 /////////////////////////////////////////////////////////////////////////////////////// -->
+	<!-- 단검 /////////////////////////////////////////////////////////////////////////////////////// -->
+	<ITEM id="500001" name="Adventurer Dagger" mesh_name="dagger06" totalpoint="0" type="melee" res_sex="a"
+		res_level="0" slot="melee" weapon="dagger" weight="4" bt_price="500000" delay="356"
+		damage="9" ctrl_ability="0" magazine="0" reloadtime="0" slug_output="false" gadget_id="0"
+		hp="0" ap="0" maxwt="0" sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF" image_id="0"
+		bullet_image_id="0" magazine_image_id="0" desc="Light-weight practical dagger for adventurers." />
+	<ITEM id="500002" name="Koden Knife" mesh_name="dagger05" totalpoint="0" type="melee" res_sex="a"
+		res_level="7" slot="melee" weapon="dagger" weight="4" bt_price="500000" delay="346"
+		damage="10" ctrl_ability="0" magazine="0" reloadtime="0" slug_output="false" gadget_id="0"
+		hp="0" ap="0" maxwt="0" sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF" image_id="0"
+		bullet_image_id="0" magazine_image_id="0" desc="A dagger in a unique shape designed by a legendary swordsman." />
+	<ITEM id="500003" name="Black Martial Dagger" mesh_name="dagger04" totalpoint="0" type="melee" res_sex="a"
+		res_level="15" slot="melee" weapon="dagger" weight="6" bt_price="500000" delay="346"
+		damage="11" ctrl_ability="0" magazine="0" reloadtime="0" slug_output="false" gadget_id="0"
+		hp="0" ap="0" maxwt="0" sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF" image_id="0"
+		bullet_image_id="0" magazine_image_id="0" desc="An odd dagger handed down from the ancient times." />
+	<ITEM id="500004" name="Ridic Hunter Dagger" mesh_name="dagger11" totalpoint="0" type="melee" res_sex="a"
+		res_level="0" slot="melee" weapon="dagger" weight="4" bt_price="500000" delay="356"
+		damage="8" ctrl_ability="0" magazine="0" reloadtime="0" slug_output="false" gadget_id="0"
+		hp="0" ap="3" maxwt="0" sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF" image_id="0"
+		bullet_image_id="0" magazine_image_id="0" desc="(Available during a certain period only) Ridic's Dagger. This strange dagger raises AP for the person who wears it." />
+	<!-- 장검 //////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+	<ITEM id="502001" name="Adventurer Long Sword" mesh_name="katana05" totalpoint="0" type="melee" res_sex="a"
+		res_level="0" slot="melee" weapon="katana" weight="9" bt_price="500000" delay="359"
+		damage="16" ctrl_ability="0" magazine="0" reloadtime="0" slug_output="false" gadget_id="0"
+		hp="0" ap="0" maxwt="0" sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF" image_id="0"
+		bullet_image_id="0" magazine_image_id="0" desc="A light-weight practical sword for adventurers." />
+	<ITEM id="502002" name="Salamanda" mesh_name="katana07" totalpoint="0" type="melee" res_sex="a"
+		res_level="7" slot="melee" weapon="katana" weight="8" bt_price="500000" delay="349"
+		damage="17" ctrl_ability="0" magazine="0" reloadtime="0" slug_output="false" gadget_id="0"
+		hp="0" ap="0" maxwt="0" sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF" image_id="0"
+		bullet_image_id="0" magazine_image_id="0" desc="A sword in a unique shape designed by a legendary swordsman." />
+	<ITEM id="502003" name="Black Karma" mesh_name="katana08" totalpoint="0" type="melee" res_sex="a"
+		res_level="15" slot="melee" weapon="katana" weight="10" bt_price="500000" delay="349"
+		damage="19" ctrl_ability="0" magazine="0" reloadtime="0" slug_output="false" gadget_id="0"
+		hp="0" ap="0" maxwt="0" sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF" image_id="0"
+		bullet_image_id="0" magazine_image_id="0" desc="An odd sword handed down from the ancient times." />
+	<!-- Pistol : Magazine = 6 ea ///////////////////////////////////////////////////////////////////////// -->
+	<ITEM id="504001" name="Adventurer Pistol x2" mesh_name="pistol18x2" totalpoint="0" type="range"
+		res_sex="a" res_level="0" slot="range" weapon="pistolx2" weight="12" bt_price="500000"
+		delay="250" damage="18" ctrl_ability="36" magazine="12" maxbullet="72" reloadtime="4"
+		slug_output="true" gadget_id="0" hp="0" ap="0" maxwt="0" sf="0" fr="0" cr="0" pr="0"
+		lr="0" color="#FFFFFFFF" image_id="1" bullet_image_id="0" magazine_image_id="0" snd_reload="we_pistol_reload"
+		snd_fire="we_pistol_fire" snd_dryfire="357magrevolver_dryfire" desc="A pistol mainly used by novice adventurers."
+		effect_id="4" />
+	<ITEM id="504002" name="Ridic Hunter Pistol x2" mesh_name="pistol20x2" totalpoint="0" type="range"
+		res_sex="a" res_level="0" slot="range" weapon="pistolx2" weight="12" bt_price="500000"
+		delay="240" damage="16" ctrl_ability="36" magazine="13" maxbullet="78" reloadtime="4"
+		slug_output="true" gadget_id="0" hp="0" ap="2" maxwt="0" sf="0" fr="0" cr="0" pr="0"
+		lr="0" color="#FFFFFFFF" image_id="1" bullet_image_id="0" magazine_image_id="0" snd_reload="we_pistol_reload"
+		snd_fire="we_pistol_fire" snd_dryfire="357magrevolver_dryfire" desc="(Available during a certain period only) Ridic hunter's pistol. This strange pistol raises AP for the person who wears it."
+		effect_id="4" />
+	<ITEM id="504003" name="Iris Pistol x2" mesh_name="pistol04x2" totalpoint="0" type="range"
+		res_sex="a" res_level="7" slot="range" weapon="pistolx2" weight="12" bt_price="500000"
+		delay="220" damage="20" ctrl_ability="36" magazine="12" maxbullet="72" reloadtime="4"
+		slug_output="true" gadget_id="0" hp="0" ap="0" maxwt="0" sf="0" fr="0" cr="0" pr="0"
+		lr="0" color="#FFFFFFFF" image_id="1" bullet_image_id="0" magazine_image_id="0" snd_reload="we_pistol_reload"
+		snd_fire="we_pistol_fire" snd_dryfire="357magrevolver_dryfire" desc="A pistol that the Republic's soldiers had used. It was named after their residence."
+		effect_id="4" />
+	<ITEM id="504004" name="Iron Crow Pistol x2" mesh_name="pistol13x2" totalpoint="0" type="range"
+		res_sex="a" res_level="15" slot="range" weapon="pistolx2" weight="14" bt_price="500000"
+		delay="200" damage="24" ctrl_ability="36" magazine="13" maxbullet="78" reloadtime="4"
+		slug_output="true" gadget_id="0" hp="0" ap="0" maxwt="0" sf="0" fr="0" cr="0" pr="0"
+		lr="0" color="#FFFFFFFF" image_id="1" bullet_image_id="0" magazine_image_id="0" snd_reload="we_pistol_reload"
+		snd_fire="we_pistol_fire" snd_dryfire="357magrevolver_dryfire" desc="A pistol used in Iron Crow, the center of the Havani, main city for outlaws."
+		effect_id="4" />
+	<!-- Revolver : Magazine = 7 ea ///////////////////////////////////////////////////////////////////////// -->
+	<ITEM id="504501" name="Iris Revolver x2" mesh_name="pistol09x2" totalpoint="0" type="range"
+		res_sex="a" res_level="7" slot="range" weapon="pistolx2" weight="12" bt_price="500000"
+		delay="360" damage="38" ctrl_ability="36" magazine="6" maxbullet="48" reloadtime="4"
+		slug_output="true" gadget_id="0" hp="0" ap="0" maxwt="0" sf="0" fr="0" cr="0" pr="0"
+		lr="0" color="#FFFFFFFF" image_id="1" bullet_image_id="0" magazine_image_id="0" snd_reload="we_pistol_reload"
+		snd_fire="we_pistol_fire" snd_dryfire="357magrevolver_dryfire" desc="Revolver that the Republic's soldiers had used. It was named after their residence."
+		effect_id="4" />
+	<ITEM id="504502" name="Iron Crow Revolver x2" mesh_name="pistol17x2" totalpoint="0" type="range"
+		res_sex="a" res_level="15" slot="range" weapon="pistolx2" weight="14" bt_price="500000"
+		delay="360" damage="42" ctrl_ability="36" magazine="8" maxbullet="64" reloadtime="4"
+		slug_output="true" gadget_id="0" hp="0" ap="0" maxwt="0" sf="0" fr="0" cr="0" pr="0"
+		lr="0" color="#FFFFFFFF" image_id="1" bullet_image_id="0" magazine_image_id="0" snd_reload="we_pistol_reload"
+		snd_fire="we_pistol_fire" snd_dryfire="357magrevolver_dryfire" desc="Revolver used in Iron Crow, the center of the Havani, main city for outlaws."
+		effect_id="4" />
+	<!-- SMG : Magazine = 5 ea//Controllability Point = 1.8 //////////////////////////////////////////////////////// -->
+	<ITEM id="505001" name="Adventurer SMG x2" mesh_name="smg06x2" totalpoint="0" type="range" res_sex="a"
+		res_level="0" slot="range" weapon="smgx2" weight="28" bt_price="500000" delay="85"
+		damage="14" ctrl_ability="90" magazine="40" maxbullet="200" reloadtime="5" slug_output="true"
+		gadget_id="0" hp="0" ap="0" maxwt="0" sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF"
+		image_id="2" bullet_image_id="0" magazine_image_id="0" snd_reload="we_smg_reload"
+		snd_fire="we_smg_fire" snd_dryfire="762arifle_dryfire" desc="SMG mainly used by the novice adventurers. It seems that merchants remodel the Renard's Magazine illegally and then sell them in the market."
+		effect_id="5" />
+	<ITEM id="505002" name="Iris SMG x2" mesh_name="smg08x2" totalpoint="0" type="range" res_sex="a"
+		res_level="7" slot="range" weapon="smgx2" weight="28" bt_price="500000" delay="95"
+		damage="16" ctrl_ability="90" magazine="40" maxbullet="200" reloadtime="5" slug_output="true"
+		gadget_id="0" hp="0" ap="0" maxwt="0" sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF"
+		image_id="2" bullet_image_id="0" magazine_image_id="0" snd_reload="we_smg_reload"
+		snd_fire="we_smg_fire" snd_dryfire="762arifle_dryfire" desc="SMG that the Republic's soldiers had used. It was named after their residence."
+		effect_id="5" />
+	<ITEM id="505003" name="Iron Crow SMG x2" mesh_name="smg07x2" totalpoint="0" type="range"
+		res_sex="a" res_level="15" slot="range" weapon="smgx2" weight="28" bt_price="500000"
+		delay="90" damage="16" ctrl_ability="80" magazine="40" maxbullet="200" reloadtime="5"
+		slug_output="true" gadget_id="0" hp="0" ap="0" maxwt="0" sf="0" fr="0" cr="0" pr="0"
+		lr="0" color="#FFFFFFFF" image_id="2" bullet_image_id="0" magazine_image_id="0" snd_reload="we_smg_reload"
+		snd_fire="we_smg_fire" snd_dryfire="762arifle_dryfire" desc="SMG used in Iron Crow, the center of the Havani, main city for outlaws."
+		effect_id="5" />
+	<!-- SHOTGUN : Magazine = 5 ea ////////////////////////////////////////////////////////////////// -->
+	<ITEM id="506001" name="Iris Shotgun" mesh_name="shotgun08" totalpoint="0" type="range" res_sex="a"
+		res_level="7" slot="range" weapon="shotgun" weight="18" bt_price="500000" delay="1100"
+		damage="7" ctrl_ability="60" magazine="5" maxbullet="25" reloadtime="5" slug_output="true"
+		gadget_id="0" hp="0" ap="0" maxwt="0" sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF"
+		image_id="2" bullet_image_id="0" magazine_image_id="0" snd_reload="we_shotgunpa_reload"
+		snd_fire="we_shotgunpa_fire" snd_dryfire="762arifle_dryfire" desc="Shotgun that the Republic's soldiers had used. It was named after their residence."
+		effect_id="7" />
+	<ITEM id="506002" name="Iron Crow Shotgun" mesh_name="shotgun09" totalpoint="0" type="range" res_sex="a"
+		res_level="15" slot="range" weapon="shotgun" weight="18" bt_price="500000" delay="900"
+		damage="7" ctrl_ability="60" magazine="5" maxbullet="25" reloadtime="5" slug_output="true"
+		gadget_id="0" hp="0" ap="0" maxwt="0" sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF"
+		image_id="2" bullet_image_id="0" magazine_image_id="0" snd_reload="we_shotgunpa_reload"
+		snd_fire="we_shotgunpa_fire" snd_dryfire="762arifle_dryfire" desc="Shotgun used in Iron Crow, the center of the Havani, main city for outlaws."
+		effect_id="7" />
+	<!-- RIFLE : Magazine = 5 ea ////////////////////////////////////////////////////////////////////////// -->
+	<ITEM id="507001" name="Iris Rifle" mesh_name="rifle10" totalpoint="0" type="range" res_sex="a"
+		res_level="7" slot="range" weapon="rifle" weight="18" bt_price="500000" delay="110"
+		damage="15" ctrl_ability="30" magazine="36" maxbullet="180" reloadtime="6" slug_output="true"
+		gadget_id="0" hp="0" ap="0" maxwt="0" sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF"
+		image_id="2" bullet_image_id="0" magazine_image_id="0" snd_reload="we_rifle_reload"
+		snd_fire="we_rifle_fire" snd_dryfire="762arifle_dryfire" desc="Rifle that the Republic's soldiers had used. It was named after their residence."
+		effect_id="8" />
+	<ITEM id="507002" name="Iron Crow Rifle" mesh_name="rifle15" totalpoint="0" type="range" res_sex="a"
+		res_level="15" slot="range" weapon="rifle" weight="18" bt_price="500000" delay="100"
+		damage="16" ctrl_ability="30" magazine="36" maxbullet="180" reloadtime="6" slug_output="true"
+		gadget_id="0" hp="0" ap="0" maxwt="0" sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF"
+		image_id="2" bullet_image_id="0" magazine_image_id="0" snd_reload="we_rifle_reload"
+		snd_fire="we_rifle_fire" snd_dryfire="762arifle_dryfire" desc="Rifle used in Iron Crow, the center of the Havani, main city for outlaws."
+		effect_id="8" />
+	<!-- MACHINEGUN /////////////////////////////////////////////////////////////////////////////////////////// -->
+	<ITEM id="508001" name="Iron Crow Machine Gun" mesh_name="machinegun03" totalpoint="0" type="range"
+		res_sex="a" res_level="15" slot="range" weapon="machinegun" weight="26" bt_price="500000"
+		delay="100" damage="15" ctrl_ability="70" magazine="120" maxbullet="240" reloadtime="10"
+		slug_output="true" gadget_id="0" hp="0" ap="0" maxwt="0" sf="0" fr="0" cr="0" pr="0"
+		lr="0" limitspeed="90" limitwall="1" color="#FFFFFFFF" image_id="2" bullet_image_id="0"
+		magazine_image_id="0" snd_reload="we_machinegun_reload" snd_fire="we_machinegun_fire"
+		snd_dryfire="762arifle_dryfire" desc="Machine Gun used in Iron Crow, the center of the Havani, main city for outlaws." effect_id="9" />
+	<!-- ROCKET LAUNCHER : Magazine = 4 ea ///////////////////////////////////////////////////////////////////// -->
+	<ITEM id="509001" name="Iris Rocket" mesh_name="rocketlauncher04" totalpoint="0" type="range"
+		res_sex="a" res_level="7" slot="range" weapon="rocket" weight="28" bt_price="500000"
+		delay="1000" damage="35" ctrl_ability="50" magazine="4" maxbullet="16" reloadtime="3"
+		slug_output="true" gadget_id="0" hp="0" ap="0" maxwt="0" sf="0" fr="0" cr="0" pr="0"
+		lr="0" limitspeed="90" limitwall="1" color="#FFFFFFFF" image_id="2" bullet_image_id="0"
+		magazine_image_id="0" snd_reload="we_rocket_reload" snd_fire="we_rocket_fire" snd_dryfire="762arifle_dryfire"
+		desc="Rocket used by Republic’s soldiers. It was named after their residence." />
+	<ITEM id="509002" name="Iron Crow Rocket" mesh_name="rocketlauncher06" totalpoint="0" type="range"
+		res_sex="a" res_level="15" slot="range" weapon="rocket" weight="26" bt_price="500000"
+		delay="1400" damage="55" ctrl_ability="50" magazine="4" maxbullet="16" reloadtime="3"
+		slug_output="true" gadget_id="0" hp="0" ap="0" maxwt="0" sf="0" fr="0" cr="0" pr="0"
+		lr="0" limitspeed="90" limitwall="1" color="#FFFFFFFF" image_id="2" bullet_image_id="0"
+		magazine_image_id="0" snd_reload="we_rocket_reload" snd_fire="we_rocket_fire" snd_dryfire="762arifle_dryfire"
+		desc="Rocket the Iron Crow used that dominated the city of outlaws, Havana." />
+	<!-- HANDHELD ITEMS ///////////////////////////////////////////////////////////////////////////////////////////// -->
+	<!-- 반지 ///////////////////////////////////////////////////////////////////////////////////////////// -->
+	<ITEM id="525001" name="Clover Ring" totalpoint="0" type="equip" res_sex="a" res_level="10"
+		slot="finger" weight="0" bt_price="200000" hp="0" ap="0" maxwt="4" sf="0" iscashitem="true"
+		fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF" desc="A ring with the symbol of the luck (clover) inside the crystal. Its wearer would see its maximum weight increase." />
+	<ITEM id="525002" name="Ring Commemorating Iron Cavalry" totalpoint="0" type="equip" res_sex="a" res_level="30"
+		slot="finger" weight="0" bt_price="200000" hp="0" ap="0" maxwt="6" sf="0" iscashitem="true"
+		fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF" desc="This ring said to have been given to the Iron Cavalry. You may understand why those magicians of the ancient times devised the ring of this mighty power when you consider the heavy weapons that they carry." />
+	<ITEM id="525003" name="Ring of the Great Emperor" totalpoint="0" type="equip" res_sex="a" res_level="40"
+		slot="finger" weight="0" bt_price="200000" hp="0" ap="5" maxwt="5" sf="0" iscashitem="true"
+		fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF" desc="This ring is said to have been made for the Great Emperor of Ryswick. The person who wears this ring with mysterious power is affected by the strong power of the ancient magic." />
+	<!-- 장비 //////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+	<!-- head /////////////////////////////////////////////////////////////////////////////////////////// -->
+	<!-- 남자 //////////////////////////////////////////////// -->
+	<ITEM id="520001" name="Ares Military Hat" mesh_name="eq_head_a001" totalpoint="0" type="equip"
+		iscashitem="true" res_sex="m" res_level="0" slot="head" weight="4" bt_price="50000"
+		hp="1" ap="2" maxwt="0" sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF" desc="Ares supplies this hat to the military. Perfect match for the Ares military outlook." />
+	<ITEM id="520002" name="Rank Ceremonial Dress Hat" mesh_name="eq_head_12" totalpoint="0" type="equip" iscashitem="true"
+		res_sex="m" res_level="7" slot="head" weight="4" bt_price="500000" hp="2" ap="3" maxwt="0"
+		sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF" desc="Ceremonial Dress Hat that the ranks of the Empire wear at important ceremonies." />
+	<ITEM id="520003" name="Men's Gunners' Heaven Soft Hat" mesh_name="eq_head_07" totalpoint="0" type="equip"
+		iscashitem="true" res_sex="m" res_level="15" slot="head" weight="4" bt_price="500000"
+		hp="3" ap="6" maxwt="0" sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF" desc="A soft Hat exclusively for the Gunners' Heaven, a private organization at the Republic. It would look good on dark-colored coat." />
+	<ITEM id="520004" name="Men's Military-Look Head Covering" mesh_name="eq_head_04" totalpoint="0" type="equip"
+		iscashitem="true" res_sex="m" res_level="0" slot="head" weight="4" bt_price="500000"
+		hp="1" ap="2" maxwt="0" sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF" desc="An easy-to-wear men's head covering. It can also be used to disguise yourself at battlefield." />
+	<ITEM id="520005" name="Men's Head Covering with no Pattern" mesh_name="eq_head_13" totalpoint="0" type="equip"
+		iscashitem="true" res_sex="m" res_level="0" slot="head" weight="4" bt_price="500000"
+		hp="1" ap="2" maxwt="0" sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF" desc="A simple Men's Head Covering. It is sometimes used as fashion accessories as well." />
+	<ITEM id="520006" name="Men's Head Covering with the Water Drop Pattern" mesh_name="eq_head_15" totalpoint="0" type="equip"
+		iscashitem="true" res_sex="m" res_level="0" slot="head" weight="4" bt_price="500000"
+		hp="1" ap="2" maxwt="0" sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF" desc="A light and easy-to-wear men's head covering. There are cute water drop patterns embroidered on the red fabric." />
+	<ITEM id="520007" name="Men's Head Covering with Star Pattern" mesh_name="eq_head_14" totalpoint="0" type="equip"
+		iscashitem="true" res_sex="m" res_level="0" slot="head" weight="4" bt_price="500000"
+		hp="1" ap="2" maxwt="0" sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF" desc="Star patterned men's head covering with unique touch and feel." />
+	<ITEM id="520008" name="Men's Eternal Blue Hat" mesh_name="eq_head_10" totalpoint="0" type="equip"
+		iscashitem="true" res_sex="m" res_level="15" slot="head" weight="4" bt_price="500000"
+		hp="2" ap="8" maxwt="0" sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF" desc="A men's uniform hat for Eternal Blue, outlaw at the sea." />
+	<ITEM id="520009" name="Men's Adventurer Hat" mesh_name="eq_head_16" totalpoint="0" type="equip"
+		iscashitem="true" res_sex="m" res_level="0" slot="head" weight="3" bt_price="500000"
+		hp="0" ap="3" maxwt="0" sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF" desc="A light men's hat recommended for the novice adventurers and those who hate a heavy outfit and equipment." />
+	<ITEM id="520010" name="Men's Blue Whistle Hat" mesh_name="eq_head_20" totalpoint="0" type="equip"
+		iscashitem="true" res_sex="m" res_level="7" slot="head" weight="4" bt_price="500000"
+		hp="1" ap="5" maxwt="0" sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF" desc="A men's hat for Blue Whistle, called the headache of the Empire." />
+	<ITEM id="520011" name="Men's Ipot Hat" mesh_name="eq_head_21" totalpoint="0" type="equip"
+		iscashitem="true" res_sex="m" res_level="0" slot="head" weight="3" bt_price="500000"
+		hp="0" ap="3" maxwt="0" sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF" desc="A hat for cool guys on a hot summer beach." />
+	<ITEM id="520012" name="Men's Iron Crow Hat" mesh_name="eq_head_23" totalpoint="0" type="equip"
+		iscashitem="true" res_sex="m" res_level="15" slot="head" weight="4" bt_price="500000"
+		hp="3" ap="6" maxwt="0" sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF" desc="An Iron Crow men's hat worn in Iron Crow, the center of the Havani, main city for outlaws." />
+	<ITEM id="520013" name="Men's Santa Claus Hat" mesh_name="eq_head_santa" totalpoint="0" type="equip"
+		iscashitem="true" res_sex="m" res_level="0" slot="head" weight="3" bt_price="500000"
+		hp="0" ap="4" maxwt="0" sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF" desc="A Christmas season item. For men." />
+	<ITEM id="520014" name="Men's Phantom Breed Head Covering" mesh_name="eq_head_24" totalpoint="0" type="equip"
+		iscashitem="true" res_sex="m" res_level="7" slot="head" weight="5" bt_price="500000"
+		hp="3" ap="3" maxwt="0" sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF" desc="A men's head covering for a spy organization handed down from the ancient times. It is somewhat heavy." />
+	<ITEM id="520015" name="Republic Gun Priest Hat" mesh_name="eq_head_22" totalpoint="0" type="equip"
+		iscashitem="true" res_sex="m" res_level="15" slot="head" weight="3" bt_price="500000"
+		hp="2" ap="6" maxwt="0" sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF" desc="A men's hat for a secret organization related with religious groups. It is light-weight." />
+	<ITEM id="520016" name="Men's Gray Dust Hat" mesh_name="eq_head_19" totalpoint="0" type="equip"
+		iscashitem="true" res_sex="m" res_level="15" slot="head" weight="4" bt_price="500000"
+		hp="2" ap="8" maxwt="0" sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF" desc="A men's Uniform Hat for Gray Dust, elite troops of the Empire." />
+	<ITEM id="520017" name="Men's LOK Hat" mesh_name="eq_head_11" totalpoint="0" type="equip"
+		iscashitem="true" res_sex="m" res_level="15" slot="head" weight="4" bt_price="500000"
+		hp="1" ap="10" maxwt="0" sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF" desc="Men's LOK Hat." />
+	<!-- 여자 ////////////////////////////////////////////////// -->
+	<ITEM id="520501" name="Rex Military Hat" mesh_name="eq_head_04" totalpoint="0" type="equip" iscashitem="true"
+		res_sex="f" res_level="0" slot="head" weight="4" bt_price="500000" hp="1" ap="2" maxwt="0"
+		sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF" desc="A military hat for female soldiers. Produced by Rex, this hat is a perfect match for the Rex Military outfit." />
+	<ITEM id="520502" name="Women's Ceremonial Dress Beret" mesh_name="eq_head_05" totalpoint="0" type="equip" iscashitem="true"
+		res_sex="f" res_level="7" slot="head" weight="4" bt_price="500000" hp="2" ap="3" maxwt="0"
+		sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF" desc="A pretty hat supplied to the general female soldiers of the Empire." />
+	<ITEM id="520503" name="Women's Gunners' Heaven Hat" mesh_name="eq_head_06" totalpoint="0" type="equip"
+		iscashitem="true" res_sex="f" res_level="15" slot="head" weight="4" bt_price="500000"
+		hp="3" ap="6" maxwt="0" sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF" desc="A hat exclusively for the Gunners' Heaven, private organization of the Republic." />
+	<ITEM id="520504" name="Women's Military-Look Head Covering" mesh_name="eq_head_07" totalpoint="0" type="equip"
+		iscashitem="true" res_sex="f" res_level="0" slot="head" weight="4" bt_price="500000"
+		hp="1" ap="2" maxwt="0" sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF" desc="An easy-to-wear Women's Head Covering. It can also be used to disguise yourself at battlefield." />
+	<ITEM id="520505" name="Women's Head Covering with no Patterns" mesh_name="eq_head_10" totalpoint="0" type="equip"
+		iscashitem="true" res_sex="f" res_level="0" slot="head" weight="4" bt_price="500000"
+		hp="1" ap="2" maxwt="0" sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF" desc="Simple Women's Head Covering. It is sometimes used as fashion accessories as well." />
+	<ITEM id="520506" name="A women's Head Covering with the Water Drop Pattern" mesh_name="eq_head_11" totalpoint="0" type="equip"
+		iscashitem="true" res_sex="f" res_level="0" slot="head" weight="4" bt_price="500000"
+		hp="1" ap="2" maxwt="0" sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF" desc="A light and easy-to-wear women's head covering. There are cute water drop patterns embroidered on the red fabric." />
+	<ITEM id="520507" name="Women's Head Covering with Star Pattern" mesh_name="eq_head_12" totalpoint="0" type="equip"
+		iscashitem="true" res_sex="f" res_level="0" slot="head" weight="4" bt_price="500000"
+		hp="1" ap="2" maxwt="0" sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF" desc="A star patterned head covering with a unique touch and feel." />
+	<ITEM id="520508" name="Women's Eternal Blue Hat" mesh_name="eq_head_08" totalpoint="0" type="equip"
+		iscashitem="true" res_sex="f" res_level="15" slot="head" weight="4" bt_price="500000"
+		hp="2" ap="8" maxwt="0" sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF" desc="A women's uniform hat for Eternal Blue, outlaw at the sea." />
+	<ITEM id="520509" name="Women's Adventurer Hat" mesh_name="eq_head_13" totalpoint="0" type="equip"
+		iscashitem="true" res_sex="f" res_level="0" slot="head" weight="3" bt_price="500000"
+		hp="0" ap="3" maxwt="0" sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF" desc="A light women's hat recommended for the novice adventurers and those who hate a heavy outfit and equipment." />
+	<ITEM id="520510" name="Women's Blue Whistle Hat" mesh_name="eq_head_01" totalpoint="0" type="equip"
+		iscashitem="true" res_sex="f" res_level="7" slot="head" weight="4" bt_price="500000"
+		hp="1" ap="5" maxwt="0" sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF" desc="A women's hat for Blue Whistle, called the headache of the Empire." />
+	<ITEM id="520511" name="Women's Ipot Hat" mesh_name="eq_head_20" totalpoint="0" type="equip"
+		iscashitem="true" res_sex="f" res_level="0" slot="head" weight="3" bt_price="500000"
+		hp="0" ap="3" maxwt="0" sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF" desc="A hat for cool women on a hot summer beach." />
+	<ITEM id="520512" name="Women's Iron Crow Hat" mesh_name="eq_head_23" totalpoint="0" type="equip"
+		iscashitem="true" res_sex="f" res_level="15" slot="head" weight="4" bt_price="500000"
+		hp="3" ap="6" maxwt="0" sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF" desc="An Iron Crow women's hat worn in Iron Crow, the center of the Havani, main city for outlaws." />
+	<ITEM id="520513" name="Women's Santa Claus Hat" mesh_name="eq_head_santa" totalpoint="0" type="equip"
+		iscashitem="true" res_sex="f" res_level="0" slot="head" weight="3" bt_price="500000"
+		hp="0" ap="4" maxwt="0" sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF" desc="Christmas season item. For women." />
+	<ITEM id="520514" name="Women's Phantom Breed Head Covering" mesh_name="eq_head_24" totalpoint="0" type="equip"
+		iscashitem="true" res_sex="f" res_level="7" slot="head" weight="5" bt_price="500000"
+		hp="3" ap="3" maxwt="0" sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF" desc="A women's head covering for a spy organization handed down from the ancient times. It is somewhat heavy." />
+	<ITEM id="520515" name="Republic Gun Priestess Hat" mesh_name="eq_head_22" totalpoint="0" type="equip"
+		iscashitem="true" res_sex="f" res_level="15" slot="head" weight="3" bt_price="500000"
+		hp="2" ap="6" maxwt="0" sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF" desc="A women's hat for a secret organization related with religious groups. It is light-weight." />
+	<ITEM id="520516" name="Women's Gray Dust Hat" mesh_name="eq_head_18" totalpoint="0" type="equip"
+		iscashitem="true" res_sex="f" res_level="15" slot="head" weight="4" bt_price="500000"
+		hp="2" ap="8" maxwt="0" sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF" desc="A women's Uniform Hat for Gray Dust, elite troops of the Empire." />
+	<ITEM id="520517" name="Women's LOK Hat" mesh_name="eq_head_26" totalpoint="0" type="equip"
+		iscashitem="true" res_sex="f" res_level="15" slot="head" weight="4" bt_price="500000"
+		hp="1" ap="10" maxwt="0" sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF" desc="Women's LOK Hat" />
+	<!-- chest /////////////////////////////////////////////////////////////////////////////////////////// -->
+	<!-- 남자 //////////////////////////////////////////////// -->
+	<ITEM id="521001" name="Rank Ceremonial Dress Garment" mesh_name="eq_chest_16" totalpoint="0" type="equip" iscashitem="true"
+		res_sex="m" res_level="7" slot="chest" weight="14" bt_price="50000" hp="4" ap="16"
+		maxwt="0" sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF" desc="A ceremonial dress garment that the Empire ranks wear at important ceremonies." />
+	<ITEM id="521002" name="Men's Gunners' Heaven Long Leather Coat" mesh_name="eq_chest_04" totalpoint="0" type="equip"
+		iscashitem="true" res_sex="m" res_level="15" slot="chest" weight="15" bt_price="500000"
+		hp="4" ap="22" maxwt="0" sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF" desc="A long leather coat and garment exclusively for the Gunners' Heaven, private organization of the Republic." />
+	<ITEM id="521003" name="Men's Eternal Blue Coat" mesh_name="eq_chest_17" totalpoint="0" type="equip"
+		iscashitem="true" res_sex="m" res_level="15" slot="chest" weight="15" bt_price="500000"
+		hp="3" ap="24" maxwt="0" sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF" desc="A men's uniform garment for Eternal Blue, outlaw at the sea." />
+	<ITEM id="521004" name="Men's Adventurer Jacket" mesh_name="eq_chest_10" totalpoint="0" type="equip"
+		iscashitem="true" res_sex="m" res_level="0" slot="chest" weight="10" bt_price="500000"
+		hp="2" ap="10" maxwt="0" sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF" desc="A men's jacket recommended for the novice adventurers and those who hate a heavy outfit and equipment." />
+	<ITEM id="521005" name="Men's Blue Whistle Jacket" mesh_name="eq_chest_09" totalpoint="0" type="equip"
+		iscashitem="true" res_sex="m" res_level="7" slot="chest" weight="14" bt_price="50000"
+		hp="3" ap="18" maxwt="0" sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF" desc="A men's jacket for Blue Whistle, called the headache of the Empire." />
+	<ITEM id="521006" name="Men's Ipot Shirt" mesh_name="eq_chest_20" totalpoint="0" type="equip"
+		iscashitem="true" res_sex="m" res_level="0" slot="chest" weight="9" bt_price="50000"
+		hp="3" ap="6" maxwt="0" sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF" desc="A Hawaiian shirt for cool guys on a hot summer beach." />
+	<ITEM id="521007" name="Men's Iron Crow Coat" mesh_name="eq_chest_23" totalpoint="0" type="equip"
+		iscashitem="true" res_sex="m" res_level="15" slot="chest" weight="14" bt_price="500000"
+		hp="3" ap="22" maxwt="0" sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF" desc="Iron Crow men's coat worn in Iron Crow, the center of the Havani, main city for outlaws." />
+	<ITEM id="521008" name="Men's Santa Claus Coat" mesh_name="eq_chest_santa" totalpoint="0" type="equip"
+		iscashitem="true" res_sex="m" res_level="0" slot="chest" weight="10" bt_price="500000"
+		hp="1" ap="13" maxwt="0" sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF" desc="Christmas season item. For men." />
+	<ITEM id="521009" name="Men's Phantom Breed Jacket" mesh_name="eq_chest_24" totalpoint="0" type="equip"
+		iscashitem="true" res_sex="m" res_level="7" slot="chest" weight="15" bt_price="50000"
+		hp="5" ap="16" maxwt="0" sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF" desc="Men's armor for a spy organization handed down from the ancient times. It is somewhat heavy." />
+	<ITEM id="521010" name="Republic Gun Priest Garment" mesh_name="eq_chest_22" totalpoint="0" type="equip"
+		iscashitem="true" res_sex="m" res_level="15" slot="chest" weight="14" bt_price="50000"
+		hp="3" ap="22" maxwt="0" sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF" desc="A men's garment for a secret organization related with religious groups. It is light-weight." />
+	<ITEM id="521011" name="Men's Gray Dust Long Coat" mesh_name="eq_chest_19" totalpoint="0" type="equip"
+		iscashitem="true" res_sex="m" res_level="15" slot="chest" weight="15" bt_price="50000"
+		hp="3" ap="24" maxwt="0" sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF" desc="A men's uniform coat for Gray Dust, elite troops of the Empire." />
+	<ITEM id="521012" name="Men's LOK Garment" mesh_name="eq_chest_18" totalpoint="0" type="equip"
+		iscashitem="true" res_sex="m" res_level="15" slot="chest" weight="15" bt_price="50000"
+		hp="4" ap="22" maxwt="0" sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF" desc="Men's LOK Garment" />
+	<!-- 여자 ////////////////////////////////////////////////// -->
+	<ITEM id="521501" name="Women's Ceremonial Dress Jacket" mesh_name="eq_chest_long002" totalpoint="0" type="equip"
+		iscashitem="true" res_sex="f" res_level="7" slot="chest" weight="14" bt_price="500000"
+		hp="3" ap="16" maxwt="0" sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF" desc="A ceremonial dress set garment supplied to the general female soldiers of the Empire." />
+	<ITEM id="521502" name="Women's Gunners' Heaven Long Wool Coat" mesh_name="eq_chest_17" totalpoint="0" type="equip"
+		iscashitem="true" res_sex="f" res_level="15" slot="chest" weight="15" bt_price="500000"
+		hp="4" ap="22" maxwt="0" sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF" desc="A women's long wool coat and garment exclusively for the Gunners' Heaven, private organization of the Republic." />
+	<ITEM id="521503" name="Women's Eternal Blue Coat" mesh_name="eq_chest_19" totalpoint="0" type="equip"
+		iscashitem="true" res_sex="f" res_level="15" slot="chest" weight="15" bt_price="500000"
+		hp="3" ap="24" maxwt="0" sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF" desc="A women's uniform garment for Eternal Blue, outlaw at the sea." />
+	<ITEM id="521504" name="Women's Adventurer Jacket" mesh_name="eq_chest_14" totalpoint="0" type="equip"
+		iscashitem="true" res_sex="f" res_level="0" slot="chest" weight="10" bt_price="500000"
+		hp="2" ap="10" maxwt="0" sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF" desc="A women's jacket recommended for the novice adventurers and those who hate a heavy outfit and equipment." />
+	<ITEM id="521505" name="Women's Blue Whistle Jacket" mesh_name="eq_chest_08" totalpoint="0" type="equip"
+		iscashitem="true" res_sex="f" res_level="7" slot="chest" weight="14" bt_price="50000"
+		hp="3" ap="18" maxwt="0" sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF" desc="A women's jacket for Blue Whistle, called the headache of the Empire." />
+	<ITEM id="521506" name="Women's Ipot Bikini Upper Garment" mesh_name="eq_chest_20" totalpoint="0" type="equip"
+		iscashitem="true" res_sex="f" res_level="0" slot="chest" weight="9" bt_price="50000"
+		hp="3" ap="6" maxwt="0" sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF" desc="A bikini garment for cool women on a hot summer beach." />
+	<ITEM id="521507" name="Women's Iron Crow Coat" mesh_name="eq_chest_023" totalpoint="0" type="equip"
+		iscashitem="true" res_sex="f" res_level="15" slot="chest" weight="14" bt_price="500000"
+		hp="3" ap="22" maxwt="0" sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF" desc="Iron Crow women's coat worn in Iron Crow, the center of the Havani, main city for outlaws." />
+	<ITEM id="521508" name="Women's Santa Claus Coat" mesh_name="eq_chest_santa" totalpoint="0" type="equip"
+		iscashitem="true" res_sex="f" res_level="0" slot="chest" weight="10" bt_price="500000"
+		hp="1" ap="13" maxwt="0" sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF" desc="Christmas season item. For women." />
+	<ITEM id="521509" name="Women's Phantom Breed Jacket" mesh_name="eq_chest_024" totalpoint="0" type="equip"
+		iscashitem="true" res_sex="f" res_level="7" slot="chest" weight="15" bt_price="50000"
+		hp="5" ap="16" maxwt="0" sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF" desc="Women's armor for a spy organization handed down from the ancient times. It is somewhat heavy." />
+	<ITEM id="521510" name="Republic Gun Priestess Upper Garment" mesh_name="eq_chest_22" totalpoint="0" type="equip"
+		iscashitem="true" res_sex="f" res_level="15" slot="chest" weight="14" bt_price="50000"
+		hp="3" ap="22" maxwt="0" sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF" desc="Women's garment for a secret organization related with religious groups. It is light-weight." />
+	<ITEM id="521511" name="Women's Gray Dust Long Coat" mesh_name="eq_chest_18" totalpoint="0" type="equip"
+		iscashitem="true" res_sex="f" res_level="15" slot="chest" weight="15" bt_price="50000"
+		hp="3" ap="24" maxwt="0" sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF" desc="A women's Uniform Coat for Gray Dust, elite troops of the Empire." />
+	<ITEM id="521512" name="Women's LOK Garnet" mesh_name="eq_chest_026" totalpoint="0" type="equip"
+		iscashitem="true" res_sex="f" res_level="15" slot="chest" weight="15" bt_price="50000"
+		hp="4" ap="22" maxwt="0" sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF" desc="Women's LOK Garnet" />
+	<!-- hands /////////////////////////////////////////////////////////////////////////////////////// -->
+	<!-- 남자 //////////////////////////////////////////////////// -->
+	<ITEM id="522001" name="Rank Ceremonial Dress Gloves" mesh_name="eq_hands_17" totalpoint="0" type="equip" res_sex="m"
+		res_level="7" slot="hands" weight="3" bt_price="50000" hp="2" ap="8" maxwt="0" sf="0"
+		fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF" desc="A ceremonial dress set gloves that the ranks of the Empire wear at important ceremonies." />
+	<ITEM id="522002" name="Men's Gunners' Heaven Gloves" mesh_name="eq_hands_07" totalpoint="0" type="equip"
+		iscashitem="true" res_sex="m" res_level="15" slot="hands" weight="4" bt_price="500000"
+		hp="3" ap="12" maxwt="0" sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF" desc="Gloves exclusively for the Gunners' Heaven, a private organization at the Republic." />
+	<ITEM id="522003" name="Men's Eternal Blue Gloves" mesh_name="eq_hands_15" totalpoint="0" type="equip"
+		iscashitem="true" res_sex="m" res_level="15" slot="hands" weight="4" bt_price="500000"
+		hp="2" ap="14" maxwt="0" sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF" desc="A men's uniform gloves for Eternal Blue, outlaw at the sea" />
+	<ITEM id="522004" name="Men's Adventurer Gloves" mesh_name="eq_hands_09" totalpoint="0" type="equip"
+		iscashitem="true" res_sex="m" res_level="0" slot="hands" weight="2" bt_price="500000"
+		hp="1" ap="6" maxwt="0" sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF" desc="Men's gloves recommended for novice adventurers and those who hate a heavy outfit and equipment." />
+	<ITEM id="522005" name="Men's Blue Whistle Gloves" mesh_name="eq_hands_08" totalpoint="0" type="equip"
+		res_sex="m" res_level="7" slot="hands" weight="3" bt_price="50000" hp="1" ap="10"
+		maxwt="0" sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF" desc="Men's gloves for Blue Whistle, called the headache of the Empire." />
+	<ITEM id="522006" name="Men's Ipot Gloves" mesh_name="eq_hands_20" totalpoint="0" type="equip"
+		res_sex="m" res_level="0" slot="hands" weight="2" bt_price="50000" hp="1" ap="6" maxwt="0"
+		sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF" desc="Gloves for cool guys on a hot summer beach." />
+	<ITEM id="522007" name="Men's Iron Crow Gloves" mesh_name="eq_hands_23" totalpoint="0" type="equip"
+		res_sex="m" res_level="15" slot="hands" weight="4" bt_price="50000" hp="3" ap="12"
+		maxwt="0" sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF" desc="Iron Crow Men's Gloves worn in Iron Crow, the center of the Havani, main city for outlaws." />
+	<ITEM id="522008" name="Men's Santa Claus Gloves" mesh_name="eq_hands_santa" totalpoint="0" type="equip"
+		res_sex="m" res_level="0" slot="hands" weight="2" bt_price="50000" hp="0" ap="9" maxwt="0"
+		sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF" desc="Christmas season item. For men." />
+	<ITEM id="522009" name="Men's Phantom Breed Gloves" mesh_name="eq_hands_24" totalpoint="0" type="equip"
+		res_sex="m" res_level="7" slot="hands" weight="4" bt_price="50000" hp="3" ap="8" maxwt="0"
+		sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF" desc="Men's Gloves for a spy organization handed down from the ancient times. They are somewhat heavy." />
+	<ITEM id="522010" name="Republic Gun Priest Gloves" mesh_name="eq_hands_22" totalpoint="0" type="equip"
+		res_sex="m" res_level="15" slot="hands" weight="3" bt_price="50000" hp="2" ap="12" maxwt="0"
+		sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF" desc="Men's gloves for a secret organization related with religious groups. They are light-weight." />
+	<ITEM id="522011" name="Men's Gray Dust Gloves" mesh_name="eq_hands_19" totalpoint="0" type="equip"
+		res_sex="m" res_level="15" slot="hands" weight="4" bt_price="50000" hp="2" ap="14" maxwt="0"
+		sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF" desc="Men's uniform gloves for Gray Dust, elite troops of the Empire." />
+	<ITEM id="522012" name="Men's LOK Leather Gloves" mesh_name="eq_hands_18" totalpoint="0" type="equip"
+		res_sex="m" res_level="15" slot="hands" weight="4" bt_price="50000" hp="1" ap="16" maxwt="0"
+		sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF" desc="Men's LOK Leather Gloves" />	
+	<!-- 여자 ///////////////////////////////////////////////////// -->
+	<ITEM id="522501" name="Women's Ceremonial Dress Gloves" mesh_name="eq_hands_leather001" totalpoint="0" type="equip"
+		res_sex="f" res_level="7" slot="hands" weight="3" bt_price="50000" hp="2" ap="8" maxwt="0"
+		sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF" desc="Ceremonial dress set gloves supplied to the general female soldiers of the Empire" />
+	<ITEM id="522502" name="Women's Gunners' Heaven Gloves Made of Rabbit Fur" mesh_name="eq_hands_17" totalpoint="0" type="equip"
+		iscashitem="true" res_sex="f" res_level="15" slot="hands" weight="4" bt_price="500000"
+		hp="3" ap="12" maxwt="0" sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF" desc="Fur gloves exclusively for the Gunners' Heaven, private organization of the Republic. Made of soft rabbit fur." />
+	<ITEM id="522503" name="Women's Eternal Blue Gloves" mesh_name="eq_hands_19" totalpoint="0" type="equip"
+		iscashitem="true" res_sex="f" res_level="15" slot="hands" weight="4" bt_price="500000"
+		hp="2" ap="14" maxwt="0" sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF" desc="Women's uniform gloves for Eternal Blue, outlaw at the sea." />
+	<ITEM id="522504" name="Women's Adventurer Gloves" mesh_name="eq_hands_05" totalpoint="0" type="equip"
+		iscashitem="true" res_sex="f" res_level="0" slot="hands" weight="2" bt_price="500000"
+		hp="1" ap="6" maxwt="0" sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF" desc="Women's light gloves recommended for the novice adventurers and those who hate a heavy outfit and equipment." />
+	<ITEM id="522505" name="Women's Blue Whistle Gloves" mesh_name="eq_hands_08" totalpoint="0" type="equip"
+		res_sex="f" res_level="7" slot="hands" weight="3" bt_price="50000" hp="1" ap="10"
+		maxwt="0" sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF" desc="Women's gloves for Blue Whistle, called the headache of the Empire." />
+	<ITEM id="522506" name="Women's Ipot Gloves" mesh_name="eq_hands_20" totalpoint="0" type="equip"
+		res_sex="f" res_level="0" slot="hands" weight="2" bt_price="50000" hp="1" ap="6" maxwt="0"
+		sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF" desc="Gloves for cool females on a hot summer beach." />
+	<ITEM id="522507" name="Women's Iron Crow Gloves" mesh_name="eq_hands_23" totalpoint="0" type="equip"
+		res_sex="f" res_level="15" slot="hands" weight="4" bt_price="50000" hp="3" ap="12"
+		maxwt="0" sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF" desc="Iron Crow women's gloves worn in Iron Crow, the center of the Havani, main city for outlaws." />
+	<ITEM id="522508" name="Women's Santa Claus Gloves" mesh_name="eq_hands_santa" totalpoint="0" type="equip"
+		res_sex="f" res_level="0" slot="hands" weight="2" bt_price="50000" hp="0" ap="9" maxwt="0"
+		sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF" desc="Christmas season item. For women." />
+	<ITEM id="522509" name="Women's Phantom Breed Gloves" mesh_name="eq_hands_24" totalpoint="0" type="equip"
+		res_sex="f" res_level="7" slot="hands" weight="4" bt_price="50000" hp="3" ap="8" maxwt="0"
+		sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF" desc="Women's gloves for a spy organization handed down from the ancient times. They are somewhat heavy." />
+	<ITEM id="522510" name="Republic Gun Priestess Gloves" mesh_name="eq_hands_22" totalpoint="0" type="equip"
+		res_sex="f" res_level="15" slot="hands" weight="3" bt_price="50000" hp="2" ap="12" maxwt="0"
+		sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF" desc="Women's gloves for a secret organization related with religious groups. They are light-weight." />
+	<ITEM id="522511" name="Women's Gray Dust Gloves" mesh_name="eq_hands_18" totalpoint="0" type="equip"
+		res_sex="f" res_level="15" slot="hands" weight="4" bt_price="50000" hp="2" ap="14" maxwt="0"
+		sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF" desc="Women's uniform gloves for Gray Dust, elite troops of the Empire." />
+	<ITEM id="522512" name="Women's LOK Leather Gloves" mesh_name="eq_hands_26" totalpoint="0" type="equip"
+		res_sex="f" res_level="15" slot="hands" weight="4" bt_price="50000" hp="1" ap="16" maxwt="0"
+		sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF" desc="Women's LOK Leather Gloves" />
+	<!-- legs ////////////////////////////////////////////////////////////////////////////////////// -->
+	<!-- 남자 ///////////////////////////////////////////////// -->
+	<ITEM id="523001" name="Rank Ceremonial Dress Trousers" mesh_name="eq_legs_16" totalpoint="0" type="equip" iscashitem="true"
+		res_sex="m" res_level="7" slot="legs" weight="13" bt_price="50000" hp="4" ap="15"
+		maxwt="0" sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF" desc="Ceremonial dress trousers that the general ranks of the Empire wear at important ceremonies." />
+	<ITEM id="523002" name="Men's Gunners' Heaven Formal Trousers" mesh_name="eq_legs_05" totalpoint="0" type="equip"
+		iscashitem="true" res_sex="m" res_level="15" slot="legs" weight="14" bt_price="500000"
+		hp="3" ap="24" maxwt="0" sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF" desc="Trousers exclusively for the Gunners' Heaven, private organization of the Republic." />
+	<ITEM id="523003" name="Men's Eternal Blue Trousers" mesh_name="eq_legs_17" totalpoint="0" type="equip"
+		iscashitem="true" res_sex="m" res_level="15" slot="legs" weight="14" bt_price="500000"
+		hp="2" ap="26" maxwt="0" sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF" desc="Men's uniform trousers for Eternal Blue, outlaw at the sea." />
+	<ITEM id="523004" name="Men's Adventurer Trousers" mesh_name="eq_legs_07" totalpoint="0" type="equip"
+		iscashitem="true" res_sex="m" res_level="0" slot="legs" weight="10" bt_price="500000"
+		hp="1" ap="12" maxwt="0" sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF" desc="Men's trousers recommended for the novice adventurers and those who hate a heavy outfit and equipment." />
+	<ITEM id="523005" name="Men's Blue Whistle Trousers" mesh_name="eq_legs_09" totalpoint="0" type="equip"
+		iscashitem="true" res_sex="m" res_level="7" slot="legs" weight="13" bt_price="50000"
+		hp="3" ap="17" maxwt="0" sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF" desc="Men's trousers for Blue Whistle, called the headache of the Empire." />
+	<ITEM id="523006" name="Men's Ipot Swimming Pants" mesh_name="eq_legs_20" totalpoint="0" type="equip"
+		iscashitem="true" res_sex="m" res_level="0" slot="legs" weight="9" bt_price="50000"
+		hp="3" ap="8" maxwt="0" sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF" desc="Swimming pants for cool women on a hot summer beach." />
+	<ITEM id="523007" name="Men's Iron Crow Trousers" mesh_name="eq_legs_23" totalpoint="0" type="equip"
+		iscashitem="true" res_sex="m" res_level="15" slot="legs" weight="13" bt_price="50000"
+		hp="2" ap="24" maxwt="0" sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF" desc="Iron Crow men's trousers worn in Iron Crow, the center of the Havani, main city for outlaws" />
+	<ITEM id="523008" name="Men's Santa Claus Trousers" mesh_name="eq_legs_santa" totalpoint="0" type="equip"
+		iscashitem="true" res_sex="m" res_level="0" slot="legs" weight="10" bt_price="50000"
+		hp="1" ap="15" maxwt="0" sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF" desc="Christmas season item. For men." />
+	<ITEM id="523009" name="Men's Phantom Breed Trousers" mesh_name="eq_legs_24" totalpoint="0" type="equip"
+		iscashitem="true" res_sex="m" res_level="7" slot="legs" weight="15" bt_price="50000"
+		hp="5" ap="15" maxwt="0" sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF" desc="Men's trousers for a spy organization handed down from the ancient times. They are somewhat heavy." />
+	<ITEM id="523010" name="Republic Gun Priest Trousers" mesh_name="eq_legs_22" totalpoint="0" type="equip"
+		iscashitem="true" res_sex="m" res_level="15" slot="legs" weight="13" bt_price="50000"
+		hp="2" ap="24" maxwt="0" sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF" desc="Men's trousers for a secret organization related with religious groups. They are light-weight." />
+	<ITEM id="523011" name="Men's Gray Dust Trousers" mesh_name="eq_legs_19" totalpoint="0" type="equip"
+		iscashitem="true" res_sex="m" res_level="15" slot="legs" weight="14" bt_price="50000"
+		hp="2" ap="26" maxwt="0" sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF" desc="Men's Uniform trousers for Gray Dust, elite troops of the Empire." />
+	<ITEM id="523012" name="Men's LOK Trouser" mesh_name="eq_legs_18" totalpoint="0" type="equip"
+		iscashitem="true" res_sex="m" res_level="15" slot="legs" weight="14" bt_price="50000"
+		hp="3" ap="24" maxwt="0" sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF" desc="Men's LOK Trouser" />
+	<!-- 여자 ////////////////////////////////////////////////// -->
+	<ITEM id="523501" name="Women's Ceremonial Dress Trousers" mesh_name="eq_legs_014" totalpoint="0" type="equip" iscashitem="true"
+		res_sex="f" res_level="7" slot="legs" weight="13" bt_price="50000" hp="2" ap="18"
+		maxwt="0" sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF" desc="Ceremonial dress set trousers supplied to the general female soldiers of the Empire." />
+	<ITEM id="523502" name="Women's Gunners' Heaven Trousers" mesh_name="eq_legs_017" totalpoint="0" type="equip"
+		iscashitem="true" res_sex="f" res_level="15" slot="legs" weight="14" bt_price="500000"
+		hp="3" ap="24" maxwt="0" sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF" desc="Women's trousers exclusively for the Gunners' Heaven, private organization of the Republic." />
+	<ITEM id="523503" name="Women's Eternal Blue Trousers" mesh_name="eq_legs_019" totalpoint="0" type="equip"
+		iscashitem="true" res_sex="f" res_level="15" slot="legs" weight="14" bt_price="500000"
+		hp="2" ap="26" maxwt="0" sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF" desc="Women's uniform trousers for Eternal Blue, outlaw at the sea." />
+	<ITEM id="523504" name="Women's Adventurer Trousers" mesh_name="eq_legs_006" totalpoint="0" type="equip"
+		iscashitem="true" res_sex="f" res_level="0" slot="legs" weight="10" bt_price="500000"
+		hp="1" ap="12" maxwt="0" sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF" desc="Women's trousers recommended for the novice adventurers and those who hate a heavy outfit and equipment." />
+	<ITEM id="523505" name="Women's Blue Whistle Trousers" mesh_name="eq_legs_008" totalpoint="0" type="equip"
+		iscashitem="true" res_sex="f" res_level="7" slot="legs" weight="13" bt_price="50000"
+		hp="3" ap="17" maxwt="0" sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF" desc="Women's Trousers for Blue Whistle, called the headache of the Empire." />
+	<ITEM id="523506" name="Women's Ipot Bikini Trousers" mesh_name="eq_legs_20" totalpoint="0" type="equip"
+		iscashitem="true" res_sex="f" res_level="0" slot="legs" weight="9" bt_price="50000"
+		hp="3" ap="8" maxwt="0" sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF" desc="Bikini garment for cool women on a hot summer beach." />
+	<ITEM id="523507" name="Women's Iron Crow Trousers" mesh_name="eq_legs_23" totalpoint="0" type="equip"
+		iscashitem="true" res_sex="f" res_level="15" slot="legs" weight="13" bt_price="50000"
+		hp="2" ap="24" maxwt="0" sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF" desc="Iron Crow women's trousers worn in Iron Crow, the center of the Havani, main city for outlaws." />
+	<ITEM id="523508" name="Women's Santa Claus Trousers" mesh_name="eq_legs_santa" totalpoint="0" type="equip"
+		iscashitem="true" res_sex="f" res_level="0" slot="legs" weight="10" bt_price="50000"
+		hp="1" ap="15" maxwt="0" sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF" desc="Christmas weapon item. For women." />
+	<ITEM id="523509" name="Women's Phantom Breed Trousers" mesh_name="eq_legs_24" totalpoint="0" type="equip"
+		iscashitem="true" res_sex="f" res_level="7" slot="legs" weight="15" bt_price="50000"
+		hp="5" ap="15" maxwt="0" sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF" desc="Women's trousers handed down from the ancient times. They are somewhat heavy." />
+	<ITEM id="523510" name="Republic Gun Priestess Trousers" mesh_name="eq_legs_22" totalpoint="0" type="equip"
+		iscashitem="true" res_sex="f" res_level="15" slot="legs" weight="13" bt_price="50000"
+		hp="2" ap="24" maxwt="0" sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF" desc="Women's trousers for a secret organization related with religious groups. They are light-weight." />
+	<ITEM id="523511" name="Women's Gray Dust Trousers" mesh_name="eq_legs_018" totalpoint="0" type="equip"
+		iscashitem="true" res_sex="f" res_level="15" slot="legs" weight="14" bt_price="50000"
+		hp="2" ap="26" maxwt="0" sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF" desc="Women's uniform trousers for Gray Dust, elite troops of the Empire." />
+	<ITEM id="523512" name="Women's LOK Trousers" mesh_name="eq_legs_26" totalpoint="0" type="equip"
+		iscashitem="true" res_sex="f" res_level="15" slot="legs" weight="14" bt_price="50000"
+		hp="3" ap="24" maxwt="0" sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF" desc="Women's LOK Trousers" />
+	<!-- feet //////////////////////////////////////////////////////////////////////////////////////// -->
+	<!-- 남자 //////////////////////////////////////////////// -->
+	<ITEM id="524001" name="Rank Ceremonial Dress Shoes" mesh_name="eq_feet_16" totalpoint="0" type="equip" res_sex="m"
+		res_level="7" slot="feet" weight="3" bt_price="50000" hp="2" ap="10" maxwt="0" sf="0"
+		fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF" desc="Ceremonial dress set shoes that the ranks of the Empire wear at important ceremonies." />
+	<ITEM id="524002" name="Men's Gunners' Heaven Leather Shoes" mesh_name="eq_feet_06" totalpoint="0" type="equip"
+		iscashitem="true" res_sex="m" res_level="15" slot="feet" weight="4" bt_price="500000"
+		hp="3" ap="15" maxwt="0" sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF" desc="Leather shoes exclusively for the Gunners' Heaven, a private organization at the Republic." />
+	<ITEM id="524003" name="Men's Eternal Blue Boots" mesh_name="eq_feet_17" totalpoint="0" type="equip"
+		iscashitem="true" res_sex="m" res_level="15" slot="feet" weight="4" bt_price="500000"
+		hp="2" ap="17" maxwt="0" sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF" desc="Men's uniform boots for Eternal Blue, outlaw at the sea." />
+	<ITEM id="524004" name="Men's Adventurer Boots" mesh_name="eq_feet_08" totalpoint="0" type="equip"
+		iscashitem="true" res_sex="m" res_level="0" slot="feet" weight="2" bt_price="500000"
+		hp="1" ap="8" maxwt="0" sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF" desc="Men's shoes recommended for the novice adventurers and those who hate a heavy outfit and equipment." />
+	<ITEM id="524005" name="Men's Blue Whistle Shoes" mesh_name="eq_feet_11" totalpoint="0" type="equip"
+		res_sex="m" res_level="7" slot="feet" weight="3" bt_price="50000" hp="1" ap="12" maxwt="0"
+		sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF" desc="Men's shoes for Blue Whistle, called the headache of the Empire." />
+	<ITEM id="524006" name="Men's Ipot Aqua Shoes" mesh_name="eq_feet_20" totalpoint="0" type="equip"
+		res_sex="m" res_level="0" slot="feet" weight="2" bt_price="50000" hp="1" ap="8" maxwt="0"
+		sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF" desc="Aqua shoes for cool guys on a hot summer beach." />
+	<ITEM id="524007" name="Men's Iron Crow Shoes" mesh_name="eq_feet_23" totalpoint="0" type="equip"
+		iscashitem="true" res_sex="m" res_level="15" slot="feet" weight="4" bt_price="500000"
+		hp="3" ap="15" maxwt="0" sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF" desc="Iron Crow men's shoes worn in Iron Crow, the center of the Havani, main city for outlaws." />
+	<ITEM id="524008" name="Men's Santa Claus Boots" mesh_name="eq_feet_santa" totalpoint="0" type="equip"
+		iscashitem="true" res_sex="m" res_level="0" slot="feet" weight="2" bt_price="500000"
+		hp="0" ap="11" maxwt="0" sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF" desc="Christmas season item. For men." />
+	<ITEM id="524009" name="Men's Phantom Breed Shoes" mesh_name="eq_feet_24" totalpoint="0" type="equip"
+		res_sex="m" res_level="7" slot="feet" weight="4" bt_price="50000" hp="3" ap="10" maxwt="0"
+		sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF" desc="Men's shoes for a spy organization handed down from the ancient times. They are somewhat heavy." />
+	<ITEM id="524010" name="Republic Gun Priest Boots" mesh_name="eq_feet_22" totalpoint="0" type="equip"
+		res_sex="m" res_level="15" slot="feet" weight="3" bt_price="50000" hp="2" ap="15" maxwt="0"
+		sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF" desc="Men's shoes for a secret organization related with religious groups. It is light-weight." />
+	<ITEM id="524011" name="Men's Gray Dust Shoes" mesh_name="eq_feet_19" totalpoint="0" type="equip"
+		res_sex="m" res_level="15" slot="feet" weight="4" bt_price="50000" hp="2" ap="17" maxwt="0"
+		sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF" desc="Men's uniform shoes for Gray Dust, elite troops of the Empire." />
+	<ITEM id="524012" name="Men's LOK Shoes" mesh_name="eq_feet_18" totalpoint="0" type="equip"
+		res_sex="m" res_level="15" slot="feet" weight="4" bt_price="50000" hp="2" ap="17" maxwt="0"
+		sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF" desc="Men's LOK Shoes" />
+	<!-- 여성 //////////////////////////////////////////////// -->
+	<ITEM id="524501" name="Women's Ceremonial Dress Shoes" mesh_name="eq_feets_014" totalpoint="0" type="equip"
+		res_sex="f" res_level="7" slot="feet" weight="3" bt_price="50000" hp="2" ap="10" maxwt="0"
+		sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF" desc="Ceremonial Dress Set Shoes supplied to the general female soldiers of the Empire." />
+	<ITEM id="524502" name="Women's Gunners' Heaven Reinforced Leather Shoes" mesh_name="eq_feet_017" totalpoint="0" type="equip"
+		iscashitem="true" res_sex="f" res_level="15" slot="feet" weight="4" bt_price="500000"
+		hp="3" ap="15" maxwt="0" sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF" desc="Shoes for the Gunners' Heaven, private organization of the Republic. Made of sturdy reinforced leather." />
+	<ITEM id="524503" name="Women's Eternal Blue Boots" mesh_name="eq_feet_019" totalpoint="0" type="equip"
+		iscashitem="true" res_sex="f" res_level="15" slot="feet" weight="4" bt_price="500000"
+		hp="2" ap="17" maxwt="0" sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF" desc="Women's uniform boots for Eternal Blue, outlaw at the sea." />
+	<ITEM id="524504" name="Women's Adventurer Boots" mesh_name="eq_feets_006" totalpoint="0" type="equip"
+		iscashitem="true" res_sex="f" res_level="0" slot="feet" weight="2" bt_price="500000"
+		hp="1" ap="8" maxwt="0" sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF" desc="Women's shoes recommended for the novice adventurers and those who hate a heavy outfit and equipment." />
+	<ITEM id="524505" name="Women's Blue Whistle Shoes" mesh_name="eq_feet_005" totalpoint="0" type="equip"
+		res_sex="f" res_level="7" slot="feet" weight="3" bt_price="50000" hp="1" ap="12" maxwt="0"
+		sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF" desc="Women's shoes for Blue Whistle, called the headache of the Empire." />
+	<ITEM id="524506" name="Women's Ipot Sandals" mesh_name="eq_feet_20" totalpoint="0" type="equip"
+		res_sex="f" res_level="0" slot="feet" weight="2" bt_price="50000" hp="1" ap="8" maxwt="0"
+		sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF" desc="Sandals for cool women on a hot summer beach." />
+	<ITEM id="524507" name="Women's Iron Crow Shoes" mesh_name="eq_feet_23" totalpoint="0" type="equip"
+		iscashitem="true" res_sex="f" res_level="15" slot="feet" weight="4" bt_price="500000"
+		hp="3" ap="15" maxwt="0" sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF" desc="Iron Crow women's shoes worn in Iron Crow, the center of the Havani, main city for outlaws." />
+	<ITEM id="524508" name="Women's Santa Claus Boots" mesh_name="eq_feet_santa" totalpoint="0" type="equip"
+		iscashitem="true" res_sex="f" res_level="0" slot="feet" weight="2" bt_price="500000"
+		hp="0" ap="11" maxwt="0" sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF" desc="Christmas season item. For women." />
+	<ITEM id="524509" name="Women's Phantom Breed Shoes" mesh_name="eq_feet_24" totalpoint="0" type="equip"
+		res_sex="f" res_level="7" slot="feet" weight="4" bt_price="50000" hp="3" ap="10" maxwt="0"
+		sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF" desc="Women's Shoes for a spy organization handed down from the ancient times. They are somewhat heavy." />
+	<ITEM id="524510" name="Republic Gun Priestess Boots" mesh_name="eq_feet_22" totalpoint="0" type="equip"
+		res_sex="f" res_level="15" slot="feet" weight="3" bt_price="50000" hp="2" ap="15" maxwt="0"
+		sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF" desc="Women's Shoes for a secret organization related with religious groups. It is light-weight." />
+	<ITEM id="524511" name="Women's Gray Dust Shoes" mesh_name="eq_feet_018" totalpoint="0" type="equip"
+		res_sex="f" res_level="15" slot="feet" weight="4" bt_price="50000" hp="2" ap="17" maxwt="0"
+		sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF" desc="Women's uniform shoes for Gray Dust, elite troops of the Empire." />
+	<ITEM id="524512" name="Women's LOK Shoes" mesh_name="eq_feet_26" totalpoint="0" type="equip"
+		res_sex="f" res_level="15" slot="feet" weight="4" bt_price="50000" hp="2" ap="17" maxwt="0"
+		sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF" desc="Women's LOK Shoes" />
+	<!--
+      /////////////////////////////////////////////////////////////////////////////////////////////////////////////
+      인챈트 아이템 ///////////////////////////////////////////////////////////////////////////////////////////////
+	-->
+	<!-- FIRE 속성 -->
+	<ITEM id="600001" name="Canopus' Coin" type="custom" weapon="enchant_fire" res_sex="a" res_level="15"
+		slot="custom" bt_price="500" image_id="3" effect_level="1" damage="1" delay="5000" weight="3" 
+        desc="A coin empowered by the God of Flame, Canopus." />
+	<ITEM id="600002" name="Canopus' Hand Stamp" type="custom" weapon="enchant_fire" res_sex="a" res_level="30"
+		slot="custom" bt_price="500" image_id="3" effect_level="1" damage="2" delay="5000" weight="3" 
+		desc="A had stamp empowered by the God of Flame, Canopus." />
+	<ITEM id="600003" name="Canopus' Medal" type="custom" weapon="enchant_fire" res_sex="a" res_level="45"
+		slot="custom" bt_price="500" image_id="3" effect_level="2" damage="3" delay="5000" weight="3" 
+		desc="A medal empowered by the God of Flame, Canopus." />
+	<ITEM id="600004" name="Canopus' Jewel" type="custom" weapon="enchant_fire" res_sex="a" res_level="50"
+		slot="custom" bt_price="500" image_id="3" effect_level="2" damage="4" delay="5000" weight="3" 
+		desc="A jewel empowered by the God of Flame, Canopus." />
+	<ITEM id="600005" name="Canopus' Eye" type="custom" weapon="enchant_fire" res_sex="a" res_level="55"
+		slot="custom" bt_price="500" image_id="3" effect_level="3" damage="5" delay="5000" weight="3" 
+		desc="An eye empowered by the God of Flame, Canopus." />
+	<!-- COLD 속성 -->
+	<ITEM id="600101" name="Enia's Coin" type="custom" weapon="enchant_cold" res_sex="a" res_level="15"
+		slot="custom" bt_price="500" image_id="3" effect_level="1" delay="4000" weight="3" 
+		limitspeed="90" desc="A coin empowered by the God of Water and Ice, Enia." />
+	<ITEM id="600102" name="Enia's Hand Stamp" type="custom" weapon="enchant_cold" res_sex="a" res_level="30"
+		slot="custom" bt_price="500" image_id="3" effect_level="1" delay="5000" weight="3" 
+		limitspeed="80" desc="A hand stamp empowered by the God of Water and Ice, Enia." />
+	<ITEM id="600103" name="Enia's Medal" type="custom" weapon="enchant_cold" res_sex="a" res_level="45"
+		slot="custom" bt_price="500" image_id="3" effect_level="2" delay="6000" weight="3" 
+		limitspeed="70" desc="A medal empowered by the God of Water and Ice, Enia." />
+	<ITEM id="600104" name="Enia's Jewel" type="custom" weapon="enchant_cold" res_sex="a" res_level="50"
+		slot="custom" bt_price="500" image_id="3" effect_level="2" delay="7000" weight="3" 
+		limitspeed="60" desc="A jewel empowered by the God of Water and Ice, Enia." />
+	<ITEM id="600105" name="Enia's Eye" type="custom" weapon="enchant_cold" res_sex="a" res_level="55"
+		slot="custom" bt_price="500" image_id="3" effect_level="3" delay="8000" weight="3" 
+		limitspeed="50" desc="Eye of the God of Water and Ice, Enia." />
+	<!-- LIGHTNING 속성 -->
+	<ITEM id="600201" name="Winscar's Coin" type="custom" weapon="enchant_lightning" res_sex="a"
+		res_level="15" slot="custom" bt_price="500" image_id="3" effect_level="1" weight="3" 
+		delay="1000" damage="5" desc="A coin empowered by the Lord of Wind and Sky, Winscar." />
+	<ITEM id="600202" name="Winscar's Hand Stamp" type="custom" weapon="enchant_lightning" res_sex="a"
+		res_level="25" slot="custom" bt_price="500" image_id="3" effect_level="1" weight="3" 
+		delay="1000" damage="5" desc="A hand stamp empowered by the Lord of Wind and Sky, Winscar." />
+	<ITEM id="600203" name="Winscar's Medal" type="custom" weapon="enchant_lightning" res_sex="a"
+		res_level="35" slot="custom" bt_price="500" image_id="3" effect_level="2" weight="3" 
+		delay="2000" damage="5" desc="A medal empowered by the Lord of Wind and Sky, Winscar." />
+	<ITEM id="600204" name="Winscar's Jewel" type="custom" weapon="enchant_lightning" res_sex="a"
+		res_level="45" slot="custom" bt_price="500" image_id="3" effect_level="2" weight="3" 
+		delay="2000" damage="5" desc="A jewel empowered by the Lord of Wind and Sky, Winscar." />
+	<ITEM id="600205" name="Winscar's Eye" type="custom" weapon="enchant_lightning" res_sex="a" res_level="50"
+		slot="custom" bt_price="500" image_id="3" effect_level="3" delay="3000" weight="3" 
+		damage="5" desc="Eye of the God of Wind and Sky, Winscar." />
+	<!-- POISON 속성 -->
+	<ITEM id="600301" name="Giston's Coin" type="custom" weapon="enchant_poison" res_sex="a" res_level="15"
+		slot="custom" bt_price="500" image_id="3" effect_level="1" delay="3000" weight="3" 
+		damage="1" desc="A coin empowered by the God of Earth, Giston." />
+	<ITEM id="600302" name="Giston's Hand Stamp" type="custom" weapon="enchant_poison" res_sex="a" res_level="25"
+		slot="custom" bt_price="500" image_id="3" effect_level="1" delay="4000" weight="3" 
+		damage="2" desc="A hand stamp empowered by the God of Earth, Giston." />
+	<ITEM id="600303" name="Giston's Medal" type="custom" weapon="enchant_poison" res_sex="a" res_level="35"
+		slot="custom" bt_price="500" image_id="3" effect_level="2" delay="5000" weight="3" 
+		damage="3" desc="A medal empowered by the God of Earth, Giston." />
+	<ITEM id="600304" name="Giston's Jewel" type="custom" weapon="enchant_poison" res_sex="a" res_level="45"
+		slot="custom" bt_price="500" image_id="3" effect_level="2" delay="6000" weight="3" 
+		damage="4" desc="A jewel empowered by the God of Earth, Giston." />
+	<ITEM id="600305" name="Giston's Eye" type="custom" weapon="enchant_poison" res_sex="a" res_level="50"
+		slot="custom" bt_price="500" image_id="3" effect_level="3" delay="7000" weight="3" 
+		damage="5" desc="Eye of the God of Earth, Giston." />
+</XML>

@@ -1,0 +1,92 @@
+<?xml version="1.0"?>
+<!--
+	GAMETYPE_DEATHMATCH_SOLO	=0
+    GAMETYPE_DEATHMATCH_TEAM	=1
+	GAMETYPE_GLADIATOR_SOLO		=2
+	GAMETYPE_GLADIATOR_TEAM		=3
+	GAMETYPE_ASSASSINATE		=4
+	GAMETYPE_TRAINING			=5
+	GAMETYPE_SURVIVAL			=6
+	GAMETYPE_QUEST				=7
+	GAMETYPE_BERSERKER			=8 
+-->
+
+<XML id="channelrule">
+	<CHANNELRULE id="0" name="novice">
+		<MAP name="Mansion"/>
+		<MAP name="Prison"/>
+		<MAP name="Prison II"/>
+		<MAP name="Station"/>
+		<MAP name="Battle Arena"/>
+		<MAP name="Town"/>
+		<MAP name="Island"/>
+		<MAP name="Garden"/>
+		<MAP name="Factory"/>
+		
+        <GAMETYPE id="0" />
+        <GAMETYPE id="1" />
+        <GAMETYPE id="2" />
+        <GAMETYPE id="3" />
+        <GAMETYPE id="4" />
+        <GAMETYPE id="5" />
+	</CHANNELRULE>
+	<CHANNELRULE id="1" name="rookie">
+		<MAP name="Mansion"/>
+		<MAP name="Prison"/>
+		<MAP name="Prison II"/>
+		<MAP name="Station"/>
+		<MAP name="Battle Arena"/>
+		<MAP name="Town"/>
+		<MAP name="Ruin"/>
+		<MAP name="Island"/>
+		<MAP name="Garden"/>
+		<MAP name="Factory"/>
+		
+        <GAMETYPE id="0" />
+        <GAMETYPE id="1" />
+        <GAMETYPE id="2" />
+        <GAMETYPE id="3" />
+        <GAMETYPE id="4" />
+        <GAMETYPE id="5" />
+	</CHANNELRULE>	
+	<CHANNELRULE id="2" name="mastery">
+		<MAP name="Mansion"/>
+		<MAP name="Prison"/>
+		<MAP name="Prison II"/>
+		<MAP name="Station"/>
+		<MAP name="Battle Arena"/>
+		<MAP name="Town"/>
+		<MAP name="Ruin"/>
+		<MAP name="Dungeon"/>
+		<MAP name="Castle"/>
+		<MAP name="Island"/>
+		<MAP name="Garden"/>
+		<MAP name="Factory"/>
+		
+        <GAMETYPE id="0" />
+        <GAMETYPE id="1" />
+        <GAMETYPE id="2" />
+        <GAMETYPE id="3" />
+        <GAMETYPE id="4" />
+        <GAMETYPE id="5" />
+        <GAMETYPE id="8" />        
+	</CHANNELRULE>
+	<CHANNELRULE id="3" name="newbie">
+		<MAP name="Mansion"/>
+		<MAP name="Prison"/>
+		<MAP name="Prison II"/>
+		<MAP name="Station"/>
+		<MAP name="Battle Arena"/>
+		<MAP name="Town"/>
+		<MAP name="Island"/>
+		<MAP name="Garden"/>
+		<MAP name="Factory"/>
+		
+        <GAMETYPE id="0" />
+        <GAMETYPE id="1" />
+        <GAMETYPE id="2" />
+        <GAMETYPE id="3" />
+        <GAMETYPE id="4" />
+        <GAMETYPE id="5" />
+	</CHANNELRULE>
+</XML>

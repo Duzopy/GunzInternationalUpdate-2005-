@@ -1,0 +1,54 @@
+<?xml version="1.0"?>
+<XML>
+	<SERVER0>
+		<IP>222.111.150.82</IP>
+		<PORT>6000</PORT>
+		<TYPE>2</TYPE>
+		<NAME>Match server %d</NAME>
+	</SERVER0>
+	<SERVER1>
+		<IP>222.111.150.83</IP>
+		<PORT>6000</PORT>
+		<TYPE>2</TYPE>
+		<NAME>Match server %d</NAME>
+	</SERVER1>
+	<SERVER2>
+		<IP>222.111.150.84</IP>
+		<PORT>6000</PORT>
+		<TYPE>2</TYPE>
+		<NAME>Match server %d</NAME>
+	</SERVER2>
+	<SERVER3>
+		<IP>222.111.150.85</IP>
+		<PORT>6000</PORT>
+		<TYPE>2</TYPE>
+		<NAME>Match server %d</NAME>
+	</SERVER3>
+	<SERVER4>
+		<IP>222.111.150.86</IP>
+		<PORT>6000</PORT>
+		<TYPE>2</TYPE>
+		<NAME>Match server %d</NAME>
+	</SERVER4>
+	<SERVER5>
+		<IP>222.111.150.87</IP>
+		<PORT>6000</PORT>
+		<TYPE>2</TYPE>
+		<NAME>Match server %d</NAME>
+	</SERVER5>
+	
+	<BAREPORT>
+		<ADDR>www.battlearena.com</ADDR>
+		<DIR>incoming/gunz_global</DIR>
+	</BAREPORT>
+
+	<XMLHEADER>version="1.0"</XMLHEADER>
+	
+	<SKIN>Default</SKIN>
+	
+	<LANG>international</LANG>
+	
+	<DEFFONT>Arial</DEFFONT>
+	
+	<IME>false</IME>
+</XML>

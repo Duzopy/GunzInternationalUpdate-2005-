@@ -1,0 +1,75 @@
+<?xml version="1.0"?>
+<XML ID="SelChar">
+	<Schema xmlns="MaietData" xmlns:dt="MaietDataTypes" />
+
+	<FRAME item="112Confirm">
+		<FRAMELOOK>DefaultFrameLook</FRAMELOOK>
+		<BOUNDS>
+			<X>584</X>
+			<Y>278</Y>
+			<W>300</W>
+			<H>181</H>
+		</BOUNDS>
+		<ALIGN>
+			<HALIGN>center</HALIGN>
+			<VALIGN>center</VALIGN>
+		</ALIGN>
+		<RESIZABLE>false</RESIZABLE>
+		<MOVABLE>false</MOVABLE>
+		<TEXT>Report</TEXT>
+		<VISIBLE>FALSE</VISIBLE>
+	</FRAME>
+
+	<LABEL item="112_Label" parent="112Confirm">
+		<BOUNDS>
+			<X>19</X>
+			<Y>40</Y>
+			<W>260</W>
+			<H>20</H>
+		</BOUNDS>
+		<TEXT>Enter the reasons for filing the report.</TEXT>
+	</LABEL>
+	<LABEL item="112_Label" parent="112Confirm">
+		<BOUNDS>
+			<X>19</X>
+			<Y>55</Y>
+			<W>260</W>
+			<H>20</H>
+		</BOUNDS>
+		<TEXT>(up to 10 words)</TEXT>
+	</LABEL>
+	<EDIT item="112_ConfirmEdit" parent="112Confirm">
+		<EDITLOOK>NormalEditLook</EDITLOOK>
+		<BOUNDS>
+			<X>19</X>
+			<Y>92</Y>
+			<W>200</W>
+			<H>24</H>
+		</BOUNDS>
+		<ALIGN>
+			<HALIGN>center</HALIGN>
+		</ALIGN>
+	</EDIT>
+	<BUTTON item="112_ConfirmOKButton" parent="112Confirm">
+		<BUTTONLOOK>DefaultButtonLook</BUTTONLOOK>
+		<BOUNDS>
+			<X>76</X>
+			<Y>130</Y>
+			<W>100</W>
+			<H>32</H>
+		</BOUNDS>
+		<TEXT>OK(&amp;O)</TEXT>
+	</BUTTON>
+	<BUTTON item="112_ConfirmCancelButton" parent="112Confirm">
+		<BUTTONLOOK>DefaultButtonLook</BUTTONLOOK>
+		<BOUNDS>
+			<X>181</X>
+			<Y>130</Y>
+			<W>100</W>
+			<H>32</H>
+		</BOUNDS>
+		<DEFAULTKEY>ESC</DEFAULTKEY>
+		<TEXT>Cancel(&amp;C)</TEXT>
+	</BUTTON>
+
+</XML>

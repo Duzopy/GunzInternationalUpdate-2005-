@@ -1,0 +1,443 @@
+<?xml version="1.0"?>
+<XML id="npccatalogue">
+<!--
+	NPC_GOBLIN					= 11,	// 병정 고블린
+	NPC_GOBLIN_GUNNER			= 12,	// 고블린 거너
+	NPC_GOBLIN_WIZARD			= 13,	// 고블린 위저드
+	NPC_GOBLIN_COMMANDER		= 14,	// 대장 고블린
+	NPC_GOBLIN_CHIEF			= 15,	// 고블린 족장
+	NPC_GOBLIN_KING				= 16,	// 고블린 킹
+
+	NPC_PALMPOA					= 21,	// 팜포아
+	NPC_PALMPOA_COMMANDER		= 22,	// 대장 팜포아
+	NPC_PALMPOW					= 23,	// 팜포우
+	NPC_CURSED_PALMPOW			= 24,	// 저주받은 팜포우
+	NPC_PALMPOW_BABY			= 25,	// 팜포우 베이비
+
+	NPC_SKELETON				= 31,	// 스켈레톤
+	NPC_SKELETON_MAGE			= 32,	// 스켈레톤 메이지
+	NPC_SKELETON_COMMANDER		= 33,	// 대장 스켈레톤
+	NPC_GIANT_SKELETON			= 34,	// 거대 스켈레톤
+	NPC_THE_UNHOLY				= 35,	// 저주받은 시신
+	NPC_LICH					= 36,	// 리치
+
+	NPC_KOBOLD					= 41,	// 코볼트
+	NPC_KOBOLD_SHAMAN			= 42,	// 코볼트 샤만
+	NPC_KOBOLD_COMMANDER		= 43,	// 대장 코볼트
+	NPC_KOBOLD_KING				= 44,	// 코볼트 왕
+	NPC_BROKEN_GOLEM			= 45,	// 고장난 골렘
+	NPC_SCRIDER					= 46,	// 스크라이더
+
+
+
+<NPC id="NPC아이디"
+	 name="이름"
+	 meshname="메쉬이름"
+	 grade="등급"
+	 max_hp="최대HP"
+	 max_ap="최대AP"
+	 dc="난이도 상수">
+	 <COLLISION radius="충돌반지름" height="충돌높이"/>
+	 <ATTACK type="공격타입" range="공격범위" weaponitem_id="장착무기ItemID" hitrate="명중률" />
+	 <SPEED default="기본속도" rotate="방향전환속도" />
+	 <FLAG never_blasted="칼로 띄워올리기 등 적용 여부(true,false) 기본값=false"
+		   never_damaged_melee="근접 공격에 맞는지 여부(true,false) 기본값=false"
+		   never_damaged_range="원근 공격에 맞는지 여부(true,false) 기본값=false"
+		   never_pushed = 공격 받았을때 밀릴것인가?
+		   never_attack_cancel = 공격 받았을때 하던 공격이 취소되는가?
+		   shadow="그림자 적용 여부(true,false) 기본값=true"  />
+</NPC>
+
+
+	등급		: "regular" "veteran"	"elite"	"boss"	"legendary"
+	공격타입	: "none"	"melee"		"range" "magic"
+
+
+
+-->
+
+<AI_VALUE>
+  <SHAKING pathfinding_update="0.1" attack_update="0.1" speed="0.2" />
+  <INTELLIGENCE>
+    <TIME step="1">0.4</TIME>
+    <TIME step="2">0.6</TIME>
+    <TIME step="3">1</TIME>
+    <TIME step="4">2</TIME>
+    <TIME step="5">3</TIME>
+  </INTELLIGENCE>
+  <AGILITY>
+    <TIME step="1">0.2</TIME>
+    <TIME step="2">0.5</TIME>
+    <TIME step="3">1</TIME>
+    <TIME step="4">2</TIME>
+    <TIME step="5">3</TIME>
+  </AGILITY>
+</AI_VALUE>
+
+
+<!-- 고블린 /////////////////////////////////////////////////////////////// -->
+<NPC id="11"
+	 name="Soldier Goblin"
+	 desc=""
+	 meshname="goblin"
+	 grade="regular"
+	 max_hp="40"
+	 max_ap="40"
+	 int="3"
+	 agility="1"
+	 dc="5">
+	 <COLLISION radius="35" height="100"/>
+	 <ATTACK type="melee" weaponitem_id="300000" />
+	 <SPEED default="300" />
+	 <DROP table="r1" />
+</NPC>
+
+<NPC id="12"
+	 name="Goblin Gunner"
+	 meshname="goblinG"
+	 grade="regular"
+	 max_hp="30"
+	 max_ap="60"
+	 int="3"
+	 agility="1"
+	 dc="5"
+	 spawn_weight="50" >
+	 <COLLISION radius="35" height="100"/>
+	 <ATTACK type="range" range="1500" weaponitem_id="300001" hitrate="10" />
+	 <SPEED default="300" />
+	 <DROP table="r1" />
+</NPC>
+
+<NPC id="13"
+	 name="Goblin Wizard"
+	 meshname="goblinW"
+	 grade="veteran"
+	 update_tick="0.2"
+	 max_hp="50"
+	 max_ap="50"
+	 dc="5"
+	 spawn_weight="30">
+	 <COLLISION radius="35" height="140"/>
+	 <ATTACK type="melee" range="150" weaponitem_id="300002" hitrate="10" />
+	 <SPEED default="300" />
+	 <SKILL id="7"/>
+	 <DROP table="v1" />
+</NPC>
+
+
+<NPC id="14"
+	 name="General Goblin"
+	 meshname="goblinH"
+	 grade="veteran"
+	 update_tick="0.2"
+	 max_hp="80"
+	 max_ap="80"
+	 int="2"
+	 agility="1"
+	 dc="5"
+	 spawn_weight="70">
+	 <COLLISION radius="35" height="100"/>
+	 <FLAG never_pushed="true" />
+	 <ATTACK type="melee" range="150" weaponitem_id="300002" />
+	 <SPEED default="360" />
+	 <DROP table="v1" />
+</NPC>
+
+<NPC id="15"
+	 name="Elder Goblin"
+	 meshname="goblinC"
+	 grade="elite"
+	 max_hp="150"
+	 max_ap="150"
+	 scale="1.2 1.2 1.2"
+	 dc="5"
+	 spawn_weight="30" >
+	 <COLLISION radius="35" height="160"/>
+	 <ATTACK type="melee" range="150" weaponitem_id="300003" hitrate="10" />
+	 <FLAG never_blasted="true" never_pushed="true" never_attack_cancel="true"/>
+	 <SPEED default="300" />
+	 <SKILL id="1"/>
+	 <SKILL id="2"/>
+	 <DROP table="e2" />
+</NPC>
+
+
+<NPC id="16"
+	 name="Goblin King"
+	 meshname="goblinK"
+	 grade="boss"
+	 max_hp="1000"
+	 max_ap="1000"
+	 dc="60"
+	 spawn_weight="10"
+	 scale="2.5 2.5 2.5">
+	 <COLLISION radius="70" height="200"/>
+	 <ATTACK type="melee" range="300" weaponitem_id="300004" />
+	 <SPEED default="200" rotate="4.712" />
+	 <FLAG never_blasted="true" never_pushed="true" never_attack_cancel="true"/>
+	 <SKILL id="3"/>
+	 <DROP table="b2" />
+</NPC>
+
+<!-- 팜포아 /////////////////////////////////////////////////////////////// -->
+<NPC id="21"
+	 name="Pampoa"
+	 meshname="palmpoa"
+	 grade="veteran"
+	 max_hp="50"
+	 max_ap="50"
+	 dc="5"
+	 scale="1.2 1.2 1.2"
+	 >
+	 <COLLISION radius="25" height="120"/>
+	 <ATTACK type="melee" range="80" weaponitem_id="300000" hitrate="10" />
+	 <SPEED default="150" rotate="2.356" />
+	 <SKILL id="4"/>
+	 <DROP table="v4" />
+</NPC>
+
+<NPC id="22"
+	 name="General Pampoa"
+	 meshname="palmpoaH"
+	 grade="elite"
+	 max_hp="80"
+	 max_ap="80"
+	 scale="1.2 1.2 1.2"
+	 dc="30">
+	 <COLLISION radius="25" height="120"/>
+	 <ATTACK type="melee" range="80" weaponitem_id="300000" hitrate="10" />
+	 <SPEED default="150" rotate="2.356" />
+	 <SKILL id="4"/>
+	 <DROP table="e1" />
+</NPC>
+
+
+<NPC id="23"
+	 name="Pampow"
+	 meshname="palmpou"
+	 grade="boss"
+	 max_hp="600"
+	 max_ap="600"
+	 scale="2 2 2"
+	 dc="5">
+	 <COLLISION radius="25" height="120"/>
+	 <ATTACK type="melee" range="80" weaponitem_id="300000" hitrate="10" />
+	 <FLAG never_blasted="true" never_pushed="true" never_attack_cancel="true"/>
+	 <SPEED default="150" rotate="2.356" />
+	 <SKILL id="5"/>
+	 <DROP table="b1" />
+</NPC>
+
+<NPC id="24"
+	 name="Cursed Pampow"
+	 meshname="cpalmpoa"
+	 grade="legendary"
+	 max_hp="1000"
+	 max_ap="1000"
+	 scale="2 2 2"
+	 dc="5">
+	 <COLLISION radius="25" height="120"/>
+	 <ATTACK type="melee" range="80" weaponitem_id="300000" hitrate="10" />
+	 <FLAG never_blasted="true" never_pushed="true" never_attack_cancel="true"/>
+	 <SPEED default="150" rotate="2.356" />
+	 <SKILL id="6"/>
+	 <DROP table="l1" />
+</NPC>
+
+<NPC id="25"
+	 name="Pampow Baby"
+	 meshname="palmpou_baby"
+	 grade="regular"
+	 max_hp="600"
+	 max_ap="0"
+	 dc="5">
+	 <COLLISION radius="25" height="120"/>
+	 <ATTACK type="melee" range="80" weaponitem_id="300000" hitrate="10" />
+	 <SPEED default="150" rotate="2.356" />
+	 <SKILL id="6"/>
+	 <DROP table="r2" />
+</NPC>
+
+<!-- 스켈레톤 /////////////////////////////////////////////////////////////// -->
+
+<NPC id="31"
+	 name="Skeleton"
+	 meshname="skeleton"
+	 grade="regular"
+	 max_hp="80"
+	 max_ap="20"
+	 scale="1.2 1.2 1.2"
+	 dc="5">
+	 <COLLISION radius="25" height="120"/>
+	 <ATTACK type="melee" range="80" weaponitem_id="300002" hitrate="10" />
+	 <SPEED default="150" rotate="2.356" />
+	 <DROP table="r1" />
+</NPC>
+
+<NPC id="32"
+	 name="Skeleton Mage"
+	 meshname="skeletonM"
+	 grade="veteran"
+	 max_hp="50"
+	 max_ap="0"
+	 dc="5">
+	 <COLLISION radius="25" height="120"/>
+	 <ATTACK type="melee" range="80" weaponitem_id="300000" hitrate="10" />
+	 <SPEED default="150" rotate="2.356" />
+	 <SKILL id="8"/>
+	 <SKILL id="1"/>
+	 <SKILL id="10"/>
+	 <DROP table="v2" />
+</NPC>
+
+<NPC id="33"
+	 name="General Skeleton"
+	 meshname="skeletonC"
+	 grade="veteran"
+	 max_hp="50"
+	 max_ap="0"
+	 dc="5">
+	 <COLLISION radius="25" height="120"/>
+	 <ATTACK type="melee" range="80" weaponitem_id="300000" hitrate="10" />
+	 <SPEED default="150" rotate="2.356" />
+	 <SKILL id="11"/>
+	 <DROP table="v2" />
+</NPC>
+
+<NPC id="34"
+	 name="Giant Skeleton"
+	 meshname="skeletonB"
+	 grade="elite"
+	 max_hp="50"
+	 max_ap="0"
+	 dc="5">
+	 <COLLISION radius="25" height="120"/>
+	 <ATTACK type="melee" range="80" weaponitem_id="300000" hitrate="10" />
+	 <SPEED default="150" rotate="2.356" />
+	 <SKILL id="11"/>
+	 <DROP table="e3" />
+</NPC>
+
+<NPC id="35"
+	 name="Cursed Corpse"
+	 meshname="theUnholy"
+	 grade="boss"
+	 max_hp="50"
+	 max_ap="0"
+	 dc="5">
+	 <COLLISION radius="25" height="120"/>
+	 <ATTACK type="melee" range="80" weaponitem_id="300000" hitrate="10" />
+	 <SPEED default="150" rotate="2.356" />
+	 <SKILL id="11"/>
+	 <SKILL id="12"/>
+	 <DROP table="b3" />
+</NPC>
+
+<NPC id="36"
+	 name="Richie"
+	 meshname="Lich"
+	 grade="boss"
+	 max_hp="50"
+	 max_ap="0"
+	 dc="5">
+	 <COLLISION radius="25" height="120"/>
+	 <ATTACK type="melee" range="80" weaponitem_id="300000" hitrate="10" />
+	 <SPEED default="150" rotate="2.356" />
+	 <SKILL id="13"/>
+	 <SKILL id="9"/>
+	 <DROP table="b4" />
+</NPC>
+
+<!-- 코볼트 /////////////////////////////////////////////////////////////// -->
+
+<NPC id="41"
+	 name="Kobold"
+	 meshname="kobolt"
+	 grade="regular"
+	 max_hp="60"
+	 max_ap="60"
+	 dc="5">
+	 <COLLISION radius="40" height="150"/>
+	 <ATTACK type="melee" range="100" weaponitem_id="300000" />
+	 <SPEED default="150" rotate="4.712" />
+	 <DROP table="r1" />
+</NPC>
+
+<NPC id="42"
+	 name="Kobold Shaman"
+	 meshname="kobold_shaman"
+	 grade="veteran"
+	 max_hp="80"
+	 max_ap="80"
+	 dc="5">
+	 <COLLISION radius="40" height="150"/>
+	 <ATTACK type="melee" range="100" weaponitem_id="300002" />
+	 <SPEED default="150" rotate="4.712" />
+	 <SKILL id="7"/>
+	 <SKILL id="1"/>
+	 <SKILL id="14"/>
+	 <DROP table="v3" />
+</NPC>
+
+<NPC id="43"
+	 name="General Kobold"
+	 meshname="koboltC"
+	 grade="veteran"
+	 max_hp="110"
+	 max_ap="110"
+	 dc="5">
+	 <COLLISION radius="40" height="150"/>
+	 <ATTACK type="melee" range="100" weaponitem_id="300002" />
+	 <SPEED default="150" rotate="4.712" />
+	 <SKILL id="11"/>
+	 <DROP table="v3" />
+</NPC>
+
+<NPC id="44"
+	 name="Kobold King"
+	 meshname="koboltK"
+	 grade="boss"
+	 max_hp="1000"
+	 max_ap="1000"
+	 dc="5">
+	 <COLLISION radius="40" height="150"/>
+	 <ATTACK type="melee" range="100" weaponitem_id="300004" />
+	 <SPEED default="150" rotate="4.712" />
+	 <SKILL id="15"/>
+	 <DROP table="b5" />
+</NPC>
+
+<!-- 아직모델없음 -->
+
+<NPC id="45"
+	 name="Broken Golem"
+	 meshname="golem"
+	 grade="boss"
+	 max_hp="100"
+	 max_ap="0"
+	 dc="5">
+	 <COLLISION radius="40" height="150"/>
+	 <ATTACK type="melee" range="100" weaponitem_id="300000" />
+	 <SPEED default="150" rotate="4.712" />
+	 <SKILL id="16"/>
+	 <DROP table="b6" />
+</NPC>
+
+<NPC id="46"
+	 name="Scrider"
+	 meshname="Scrider"
+	 grade="legendary"
+	 max_hp="100"
+	 max_ap="0"
+	 dc="5">
+	 <COLLISION radius="40" height="150"/>
+	 <ATTACK type="melee" range="100" weaponitem_id="300000" />
+	 <SPEED default="150" rotate="4.712" />
+	 <SKILL id="18"/>
+	 <SKILL id="17"/>
+	 <SKILL id="16"/>
+	 <DROP table="l2" />
+</NPC>
+
+
+</XML>

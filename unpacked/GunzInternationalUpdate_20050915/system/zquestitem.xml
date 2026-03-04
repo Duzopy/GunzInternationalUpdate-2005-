@@ -1,0 +1,111 @@
+<?xml version="1.0"?>
+<XML xmlns="http://tempuri.org/zitem.xsd" id="zquestitem">
+<!-- id값은 절대 바뀌면 안된다. DB랑도 연관있음. -->
+
+	<!-- 200001 ~ 200256까지는 DB에 저장되는 퀘스트 아이템 -->
+	<!-- Page -->
+	<ITEM id="200001" name="Torn Page 13" level="0" type="page" desc="A page torn out of a book. The faint print says page 13."
+			unique="0" price="100" secrifice="1" param="0" />
+	<ITEM id="200002" name="Torn Page 25" level="0" type="page" desc="A page torn out of a book. The faint print says page 25."
+			unique="0" price="500" secrifice="1" param="0" />
+	<ITEM id="200003" name="Torn Page 41" level="0" type="page" desc="A page torn out of a book. The faint print says page 41."
+			unique="0" price="1000" secrifice="1" param="0" />
+	<ITEM id="200004" name="Torn Page 65" level="0" type="page" desc="A page torn out of a book. The faint print says page 65."
+			unique="0" price="2000" secrifice="1" param="0" />
+			
+	<!-- Skull -->
+	<ITEM id="200005" name="Small Skull" level="0" type="skull" desc="Mysterious Skull. It looks like it is a skull of a bird."
+			unique="0" price="20" secrifice="1" param="0" />
+	<ITEM id="200006" name="Large Skull" level="0" type="skull" desc="Mysterious Skull. Not identified, the owner of the skull seems to have had a big head."
+			unique="0" price="80" secrifice="1" param="0" />
+	<ITEM id="200007" name="Mysterious Skull" level="0" type="skull" desc="Mysterious skull whose usage not identified."
+			unique="0" price="200" secrifice="1" param="0" />
+	<ITEM id="200008" name="Goblin's Skull" level="0" type="skull" desc="Skull of Goblin. An inscription on one side says, 'Call for a new world.'"
+			unique="0" price="80" secrifice="1" param="0" />
+	<ITEM id="200009" name="King Goblin's Skull" level="0" type="skull" desc="Skull of the King, Goblin."
+			unique="0" price="2000" secrifice="1" param="0" />
+	<ITEM id="200010" name="Enormously huge bone" level="0" type="skull" desc="It looks like bones of a man. However, the size is equivalent to that of a dinosaur."
+			unique="0" price="200" secrifice="1" param="0" />
+			
+	<!-- Fresh -->
+	<ITEM id="200011" name="Raw Meat" level="0" type="fresh" desc="Raw meat of unknown animal. It seemed to have been used as food."
+			unique="0" price="20" secrifice="1" param="0" />
+	<ITEM id="200012" name="Seasoned Meat (Bulgogi)" level="0" type="fresh" desc="Cooked seasoned meat. Looks very delicious."
+			unique="0" price="80" secrifice="1" param="0" />
+	<ITEM id="200013" name="Steak" level="0" type="fresh" desc="Very delicious looking steak. It must have been Monster's favorite."
+			unique="0" price="200" secrifice="1" param="0" />
+	
+	<!-- Ring -->		
+	<ITEM id="200014" name="Iron Earring" level="0" type="ring" desc="Iron-made earrings for the tribe, Kobold. Humans cannot wear them."
+			unique="0" price="20" secrifice="1" param="0" />
+	<ITEM id="200015" name="Silver Earring" level="0" type="ring" desc="Silver earrings for the tribe, Kobold. Humans cannot wear them."
+			unique="0" price="80" secrifice="1" param="0" />
+	<ITEM id="200016" name="Gold Earring" level="0" type="ring" desc="Gold earrings for the tribe, Kobold. Humans cannot wear them."
+			unique="0" price="200" secrifice="1" param="0" />
+	<ITEM id="200017" name="Platinum Earring" level="0" type="ring" desc="Earrings made of special metal used by the King, Kobold. Humans cannot wear them."
+			unique="0" price="800" secrifice="1" param="0" />
+			
+			
+	<!-- Necklace -->
+	<ITEM id="200018" name="Crimson's Necklace" level="0" type="necklace" desc="A necklace worn by the trial chief of Goblin. It is highly doubtful whether humans can wear it."
+			unique="1" price="200" secrifice="1" param="0" />
+
+			
+	<!-- Doll -->
+	<ITEM id="200019" name="Skeleton Doll" level="0" type="doll" desc="Doll made in the shape of the skeleton of a soldier. The taste of the maker is highly doubtful."
+			unique="0" price="400" secrifice="1" param="0" />
+	<ITEM id="200020" name="Kobold Doll" level="0" type="doll" desc="This doll looks exactly like Kobold! Will children be happy to get this doll?"
+			unique="0" price="400" secrifice="1" param="0" />
+	<ITEM id="200021" name="Goblin Doll" level="0" type="doll" desc="Just looks like Goblin! But it seems that it could be used for nothing."
+			unique="0" price="400" secrifice="1" param="0" />
+	<ITEM id="200022" name="Pampow Doll" level="0" type="doll" desc="Doll that just looks like the mischievous fairy, Pampow."
+			unique="0" price="400" secrifice="1" param="0" />
+	<ITEM id="200023" name="Rabbit Doll" level="0" type="doll" desc="Cute doll shaped like rabbit. What is it for then?!"
+			unique="0" price="400" secrifice="1" param="0" />
+	<ITEM id="200024" name="Stuffed Bear" level="0" type="doll" desc="Stuffed animal that kids used to have on their bed. How come it is in this...?!"
+			unique="1" price="400" secrifice="1" param="0" />
+	<ITEM id="200025" name="Cursed Bear" level="0" type="doll" desc="Kids may not want to have it on their bed. How come it is here... ?!"
+			unique="0" price="400" secrifice="1" param="0" />
+	<ITEM id="200026" name="Pampow Idol" level="0" type="doll" desc="Fairy shown in dreams. It just looks like Pampow."
+			unique="0" price="400" secrifice="1" param="0" />
+	<ITEM id="200027" name="Cursed Pampow Idol" level="0" type="doll" desc="It just looks like Pampow. However, it looks dreary somehow."
+			unique="0" price="400" secrifice="1" param="0" />
+			
+			
+	<!-- Book -->
+	<ITEM id="200028" name="Devil's Dictionary" level="0" type="book" desc="Dictionary that is full of strange contents."
+			unique="0" price="80000" secrifice="1" param="0" />
+	<ITEM id="200029" name="Scrider's Register Volume I" level="0" type="book" desc="A strange book full of people's names, volume I. It is said to have come from hell."
+			unique="0" price="40000" secrifice="1" param="0" />
+	<ITEM id="200030" name="Scrider's Register Volume II" level="0" type="book" desc="A strange book full of people's names, volume II. It is said to have come from hell."
+			unique="0" price="40000" secrifice="1" param="0" />
+			
+	
+	<!-- Object -->		
+	<ITEM id="200031" name="Blessed Cross" level="0" type="object" desc="It is similar to one that the gun priests had."
+			unique="0" price="200" secrifice="1" param="0" />
+	<ITEM id="200032" name="Cursed Cross" level="0" type="object" desc="It is similar to one that the gun priests had. But..."
+			unique="0" price="200" secrifice="1" param="0" />
+	<ITEM id="200033" name="Pickax" level="0" type="object" desc="This is a pickax that is used in a stope. But where to mine with it?"
+			unique="0" price="80" secrifice="1" param="0" />
+	<ITEM id="200034" name="Speaking Stone " level="0" type="object" desc="This stone utters weird things from time to time. It can move, too. "
+			unique="0" price="400" secrifice="1" param="0" />
+	<ITEM id="200035" name="Ice Crystal" level="0" type="object" desc="Ice crystal that seems not to be melted by usual heat."
+			unique="0" price="20" secrifice="1" param="0" />
+	<ITEM id="200036" name="Broken Gear" level="0" type="object" desc="Gear that has been broken. It seems no one can use it again."
+			unique="0" price="400" secrifice="1" param="0" />
+	<ITEM id="200037" name="High-class Gear" level="0" type="object" desc="Gear that seems to have had some important function in a machine."
+			unique="0" price="800" secrifice="1" param="0" />
+			
+	<!-- Sword -->		
+	<ITEM id="200038" name="Ax of Goblin King" level="0" type="sword" desc="Scary ax that is used by the King, Goblin King. It is regretful that humans cannot use it."
+			unique="0" price="800" secrifice="1" param="0" />
+			
+	<!-- 200256까지는 디비에 저장되는 퀘스트 아이템. -->
+	
+	<!-- Monster bible -->
+	<ITEM id="210001" name="Goblin's Picture Book" level="0" type="monbible" desc="A picture book containing the information about Goblin."
+			unique="0" price="0" secrifice="0" param="0" />
+			
+	<!-- 210000까지는 Monster bible -->
+</XML>

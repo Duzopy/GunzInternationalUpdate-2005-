@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<XML xmlns="http://tempuri.org/LcatorList.xml" id="LocatorList">
+<LOCATOR id="1" IP="222.111.150.82" />
+<LOCATOR id="2" IP="222.111.150.83" />
+<LOCATOR id="3" IP="222.111.150.84" />
+<LOCATOR id="4" IP="222.111.150.87" />
+</XML>

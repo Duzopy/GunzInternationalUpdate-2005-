@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<XML>
+	<XMLHEADER>version="1.0"</XMLHEADER>
+
+	<SERVER0>
+		<IP>222.111.150.86</IP>
+		<PORT>6000</PORT>
+		<NAME>GunZ Server 1</NAME>
+		<TYPE>2</TYPE>
+	</SERVER0>
+	<SERVER1>
+		<IP>222.111.150.87</IP>
+		<PORT>6000</PORT>
+		<NAME>GunZ Server 2</NAME>
+		<TYPE>2</TYPE>
+	</SERVER1>
+	<SERVER2>
+		<IP>222.111.150.82</IP>
+		<PORT>6000</PORT>
+		<NAME>GunZ Server 3</NAME>
+		<TYPE>2</TYPE>
+	</SERVER2>
+	<SERVER3>
+		<IP>222.111.150.83</IP>
+		<PORT>6000</PORT>
+		<NAME>GunZ Server 4</NAME>
+		<TYPE>2</TYPE>
+	</SERVER3>
+	<SERVER4>
+		<IP>222.111.150.84</IP>
+		<PORT>6000</PORT>
+		<NAME>GunZ Server 5</NAME>
+		<TYPE>2</TYPE>
+	</SERVER4>
+	<SERVER5>
+		<IP>222.111.150.85</IP>
+		<PORT>6000</PORT>
+		<NAME>GunZ Server 6</NAME>
+		<TYPE>2</TYPE>
+	</SERVER5>
+
+	<SKIN>Default</SKIN>
+
+	<DEFFONT>Arial</DEFFONT>
+
+	<IME>false</IME>
+
+	<BAREPORT>
+		<ADDR>www.battlearena.com</ADDR>
+		<DIR>incoming/gunz_global</DIR>
+	</BAREPORT>
+
+	<HOMEPAGE>
+	    <URL>http://www.gunzonline.com</URL>
+	    <TITLE>GunZ the Dual</TITLE>
+	</HOMEPAGE>
+</XML>

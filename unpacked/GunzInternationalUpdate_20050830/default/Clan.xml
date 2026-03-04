@@ -1,0 +1,605 @@
+<?xml version="1.0"?>
+<XML ID="SelChar">
+	<Schema xmlns="MaietData" xmlns:dt="MaietDataTypes" />
+
+<!-- 클랜 생성에 동의하시겠습니까 ? -->
+	<FRAME item="ClanSponsorAgreementConfirm">
+		<FRAMELOOK>DefaultFrameLook</FRAMELOOK>
+		<BOUNDS>
+			<X>584</X>
+			<Y>278</Y>
+			<W>330</W>
+			<H>181</H>
+		</BOUNDS>
+		<ALIGN>
+			<HALIGN>center</HALIGN>
+			<VALIGN>center</VALIGN>
+		</ALIGN>
+		<RESIZABLE>false</RESIZABLE>
+		<MOVABLE>false</MOVABLE>
+		<TEXT>Create a clan</TEXT>
+		<VISIBLE>FALSE</VISIBLE>
+	</FRAME>
+
+	<TEXTAREA item="ClanSponsorAgreementConfirm_Textarea" parent="ClanSponsorAgreementConfirm">
+		<BOUNDS>
+			<X>19</X>
+			<Y>46</Y>
+			<W>300</W>
+			<H>50</H>
+		</BOUNDS>
+		<TEXT></TEXT>
+		<EDITABLE>false</EDITABLE>
+	</TEXTAREA>
+	<BUTTON item="ClanSponsorAgreementConfirm_OK" parent="ClanSponsorAgreementConfirm">
+		<BUTTONLOOK>DefaultButtonLook</BUTTONLOOK>
+		<BOUNDS>
+			<X>76</X>
+			<Y>130</Y>
+			<W>100</W>
+			<H>32</H>
+		</BOUNDS>
+		<TEXT>Agree(&amp;A)</TEXT>
+	</BUTTON>
+	<BUTTON item="ClanSponsorAgreementConfirm_Cancel" parent="ClanSponsorAgreementConfirm">
+		<BUTTONLOOK>DefaultButtonLook</BUTTONLOOK>
+		<BOUNDS>
+			<X>181</X>
+			<Y>130</Y>
+			<W>100</W>
+			<H>32</H>
+		</BOUNDS>
+		<DEFAULTKEY>ESC</DEFAULTKEY>
+		<TEXT>Deny(&amp;D)</TEXT>
+	</BUTTON>
+	<LABEL item="ClanSponsorAgreementConfirm_RemainDesc" parent="ClanSponsorAgreementConfirm">
+		<FONT>FONTab11b</FONT>
+		<ALIGN>
+			<HALIGN>center</HALIGN>
+			<VALIGN>center</VALIGN>
+		</ALIGN>
+		<BOUNDS>
+			<X>20</X>
+			<Y>80</Y>
+			<W>200</W>
+			<H>30</H>
+		</BOUNDS>
+		<TEXT>Time Limit :</TEXT>
+	</LABEL>
+	<LABEL item="ClanSponsorAgreementConfirm_Remain" parent="ClanSponsorAgreementConfirm">
+		<FONT>FONTb11b</FONT>
+		<ALIGN>
+			<HALIGN>center</HALIGN>
+			<VALIGN>center</VALIGN>
+		</ALIGN>
+		<BOUNDS>
+			<X>120</X>
+			<Y>80</Y>
+			<W>200</W>
+			<H>30</H>
+		</BOUNDS>
+	</LABEL>
+
+<!-- 클랜 생성 멤버들이 동의할동안 기다려주십시오  -->
+	<FRAME item="ClanSponsorAgreementWait">
+		<FRAMELOOK>DefaultFrameLook</FRAMELOOK>
+		<BOUNDS>
+			<X>584</X>
+			<Y>278</Y>
+			<W>330</W>
+			<H>181</H>
+		</BOUNDS>
+		<ALIGN>
+			<HALIGN>center</HALIGN>
+			<VALIGN>center</VALIGN>
+		</ALIGN>
+		<RESIZABLE>false</RESIZABLE>
+		<MOVABLE>false</MOVABLE>
+		<TEXT>Agree to create a clan</TEXT>
+		<VISIBLE>FALSE</VISIBLE>
+	</FRAME>
+	<TEXTAREA item="ClanSponsorAgreementWait_Textarea" parent="ClanSponsorAgreementWait">
+		<BOUNDS>
+			<X>19</X>
+			<Y>46</Y>
+			<W>300</W>
+			<H>50</H>
+		</BOUNDS>
+		<TEXT>Wait until the members agree to clan creation.</TEXT>
+		<EDITABLE>false</EDITABLE>
+	</TEXTAREA>
+	<BUTTON item="ClanSponsorAgreementWait_Cancel" parent="ClanSponsorAgreementWait">
+		<BUTTONLOOK>DefaultButtonLook</BUTTONLOOK>
+		<BOUNDS>
+			<X>200</X>
+			<Y>130</Y>
+			<W>110</W>
+			<H>32</H>
+		</BOUNDS>
+		<DEFAULTKEY>ESC</DEFAULTKEY>
+		<TEXT>Cancel(&amp;C)</TEXT>
+		<VISIBLE>true</VISIBLE>
+	</BUTTON>
+
+	<LABEL item="ClanSponsorAgreementWait_RemainDesc" parent="ClanSponsorAgreementWait">
+		<FONT>FONTb11b</FONT>
+		<ALIGN>
+			<HALIGN>center</HALIGN>
+			<VALIGN>center</VALIGN>
+		</ALIGN>
+		<BOUNDS>
+			<X>20</X>
+			<Y>130</Y>
+			<W>200</W>
+			<H>30</H>
+		</BOUNDS>
+		<TEXT>Time Limit :</TEXT>
+	</LABEL>
+	<LABEL item="ClanSponsorAgreementWait_Remain" parent="ClanSponsorAgreementWait">
+		<FONT>FONTb11b</FONT>
+		<ALIGN>
+			<HALIGN>center</HALIGN>
+			<VALIGN>center</VALIGN>
+		</ALIGN>
+		<BOUNDS>
+			<X>120</X>
+			<Y>130</Y>
+			<W>200</W>
+			<H>30</H>
+		</BOUNDS>
+	</LABEL>
+
+<!-- 클랜 가입에 동의하시겠습니까 ? -->
+
+	<FRAME item="ClanJoinerAgreementConfirm">
+		<FRAMELOOK>DefaultFrameLook</FRAMELOOK>
+		<BOUNDS>
+			<X>584</X>
+			<Y>278</Y>
+			<W>330</W>
+			<H>181</H>
+		</BOUNDS>
+		<ALIGN>
+			<HALIGN>center</HALIGN>
+			<VALIGN>center</VALIGN>
+		</ALIGN>
+		<RESIZABLE>false</RESIZABLE>
+		<MOVABLE>false</MOVABLE>
+		<TEXT>Agreement from the clan members</TEXT>
+		<VISIBLE>FALSE</VISIBLE>
+	</FRAME>
+	<TEXTAREA item="ClanJoinerAgreementConfirm_Textarea" parent="ClanJoinerAgreementConfirm">
+		<BOUNDS>
+			<X>19</X>
+			<Y>46</Y>
+			<W>300</W>
+			<H>50</H>
+		</BOUNDS>
+		<TEXT></TEXT>
+		<EDITABLE>false</EDITABLE>
+	</TEXTAREA>
+	<BUTTON item="ClanJoinerAgreementConfirm_OK" parent="ClanJoinerAgreementConfirm">
+		<BUTTONLOOK>DefaultButtonLook</BUTTONLOOK>
+		<BOUNDS>
+			<X>76</X>
+			<Y>130</Y>
+			<W>100</W>
+			<H>32</H>
+		</BOUNDS>
+		<TEXT>Agree(&amp;A)</TEXT>
+	</BUTTON>
+	<BUTTON item="ClanJoinerAgreementConfirm_Cancel" parent="ClanJoinerAgreementConfirm">
+		<BUTTONLOOK>DefaultButtonLook</BUTTONLOOK>
+		<BOUNDS>
+			<X>181</X>
+			<Y>130</Y>
+			<W>100</W>
+			<H>32</H>
+		</BOUNDS>
+		<DEFAULTKEY>ESC</DEFAULTKEY>
+		<TEXT>Deny(&amp;D)</TEXT>
+	</BUTTON>
+	<LABEL item="ClanJoinerAgreementConfirm_RemainDesc" parent="ClanJoinerAgreementConfirm">
+		<FONT>FONTb11b</FONT>
+		<ALIGN>
+			<HALIGN>center</HALIGN>
+			<VALIGN>center</VALIGN>
+		</ALIGN>
+		<BOUNDS>
+			<X>20</X>
+			<Y>80</Y>
+			<W>200</W>
+			<H>30</H>
+		</BOUNDS>
+		<TEXT>Time Limit :</TEXT>
+	</LABEL>
+	<LABEL item="ClanJoinerAgreementConfirm_Remain" parent="ClanJoinerAgreementConfirm">
+		<FONT>FONTb11b</FONT>
+		<ALIGN>
+			<HALIGN>center</HALIGN>
+			<VALIGN>center</VALIGN>
+		</ALIGN>
+		<BOUNDS>
+			<X>120</X>
+			<Y>80</Y>
+			<W>200</W>
+			<H>30</H>
+		</BOUNDS>
+	</LABEL>
+
+<!-- 가입자가 동의할동안 기다려주십시오 -->
+	<FRAME item="ClanJoinerAgreementWait">
+		<FRAMELOOK>DefaultFrameLook</FRAMELOOK>
+		<BOUNDS>
+			<X>584</X>
+			<Y>278</Y>
+			<W>330</W>
+			<H>181</H>
+		</BOUNDS>
+		<ALIGN>
+			<HALIGN>center</HALIGN>
+			<VALIGN>center</VALIGN>
+		</ALIGN>
+		<RESIZABLE>false</RESIZABLE>
+		<MOVABLE>false</MOVABLE>
+		<TEXT>Agreement from the clan members</TEXT>
+		<VISIBLE>FALSE</VISIBLE>
+	</FRAME>
+	<TEXTAREA item="ClanJoinerAgreementWait_Textarea" parent="ClanJoinerAgreementWait">
+		<BOUNDS>
+			<X>19</X>
+			<Y>46</Y>
+			<W>300</W>
+			<H>50</H>
+		</BOUNDS>
+		<TEXT>Wait for the clan members to agree.</TEXT>
+		<EDITABLE>false</EDITABLE>
+	</TEXTAREA>
+	<BUTTON item="ClanJoinerAgreementWait_Cancel" parent="ClanJoinerAgreementWait">
+		<BUTTONLOOK>DefaultButtonLook</BUTTONLOOK>
+		<BOUNDS>
+			<X>200</X>
+			<Y>130</Y>
+			<W>110</W>
+			<H>32</H>
+		</BOUNDS>
+		<DEFAULTKEY>ESC</DEFAULTKEY>
+		<TEXT>Cancel(&amp;C)</TEXT>
+		<VISIBLE>true</VISIBLE>
+	</BUTTON>
+
+	<LABEL item="ClanJoinerAgreementWait_RemainDesc" parent="ClanJoinerAgreementWait">
+		<FONT>FONTb11b</FONT>
+		<ALIGN>
+			<HALIGN>center</HALIGN>
+			<VALIGN>center</VALIGN>
+		</ALIGN>
+		<BOUNDS>
+			<X>20</X>
+			<Y>130</Y>
+			<W>200</W>
+			<H>30</H>
+		</BOUNDS>
+		<TEXT>Time Limit :</TEXT>
+	</LABEL>
+	<LABEL item="ClanJoinerAgreementWait_Remain" parent="ClanJoinerAgreementWait">
+		<FONT>FONTb11b</FONT>
+		<ALIGN>
+			<HALIGN>center</HALIGN>
+			<VALIGN>center</VALIGN>
+		</ALIGN>
+		<BOUNDS>
+			<X>120</X>
+			<Y>130</Y>
+			<W>200</W>
+			<H>30</H>
+		</BOUNDS>
+	</LABEL>
+
+
+	<!-- 클랜 생성할때 나오는 다이얼로그 프레임 -->
+	<FRAME item="ClanCreateDialog" >
+		<BOUNDS>
+			<X>200</X>
+			<Y>150</Y>
+			<W>400</W>
+			<H>335</H>
+		</BOUNDS>
+		<ALIGN>
+			<HALIGN>center</HALIGN>
+			<VALIGN>center</VALIGN>
+		</ALIGN>
+		<VISIBLE>false</VISIBLE>
+		<MOVABLE>false</MOVABLE>
+		<RESIZABLE>false</RESIZABLE>
+		<FRAMELOOK>DefaultFrameLook</FRAMELOOK>
+		<TEXT>Clan creation</TEXT>
+	</FRAME>
+	<LABEL item="Lobby_PlayerName" parent="ClanCreateDialog">
+		<FONT>FONTa9b</FONT>
+		<TEXTCOLOR>
+			<R>255</R>
+			<G>247</G>
+			<B>153</B>
+		</TEXTCOLOR>
+		<ANCHORS>
+			<LEFT>true</LEFT>
+			<TOP>true</TOP>
+			<RIGHT>false</RIGHT>
+			<BOTTOM>false</BOTTOM>
+		</ANCHORS>
+		<BOUNDS>
+			<X>25</X>
+			<Y>100</Y>
+			<W>100</W>
+			<H>20</H>
+		</BOUNDS>
+		<TEXT>Clan Name</TEXT>
+	</LABEL>
+	<EDIT item="ClanCreate_ClanName" parent="ClanCreateDialog">
+		<FONT>FONTa9</FONT>
+		<TEXTCOLOR>
+			<R>205</R>
+			<G>205</G>
+			<B>205</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>100</X>
+			<Y>100</Y>
+			<W>277</W>
+			<H>24</H>
+		</BOUNDS>
+		<MAXLENGTH>12</MAXLENGTH>
+	</EDIT>
+	<TEXTAREA item = "ClanCreate_Message" parent = "ClanCreateDialog">
+		<FONT>FONTa9</FONT>
+		<TEXTCOLOR>
+			<R>205</R>
+			<G>205</G>
+			<B>205</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>14</X>
+			<Y>40</Y>
+			<W>365</W>
+			<H>40</H>
+		</BOUNDS>
+		<TEXT>Clan creation requires 10 levels or more and 1000 BP along with additional four founding members of a clan. Please create a unique name up to 12 letters.</TEXT>
+		<EDITABLE>FALSE</EDITABLE>
+	</TEXTAREA>
+	<LABEL item="Lobby_PlayerName" parent="ClanCreateDialog">
+		<FONT>FONTa9b</FONT>
+		<TEXTCOLOR>
+			<R>255</R>
+			<G>247</G>
+			<B>153</B>
+		</TEXTCOLOR>
+		<ANCHORS>
+			<LEFT>true</LEFT>
+			<TOP>true</TOP>
+			<RIGHT>false</RIGHT>
+			<BOTTOM>false</BOTTOM>
+		</ANCHORS>
+		<BOUNDS>
+			<X>25</X>
+			<Y>133</Y>
+			<W>120</W>
+			<H>20</H>
+		</BOUNDS>
+		<TEXT>Founding</TEXT>
+	</LABEL>
+	<LABEL item="Lobby_PlayerName" parent="ClanCreateDialog">
+		<FONT>FONTa9b</FONT>
+		<TEXTCOLOR>
+			<R>255</R>
+			<G>247</G>
+			<B>153</B>
+		</TEXTCOLOR>
+		<ANCHORS>
+			<LEFT>true</LEFT>
+			<TOP>true</TOP>
+			<RIGHT>false</RIGHT>
+			<BOTTOM>false</BOTTOM>
+		</ANCHORS>
+		<BOUNDS>
+			<X>25</X>
+			<Y>146</Y>
+			<W>120</W>
+			<H>20</H>
+		</BOUNDS>
+		<TEXT>Members</TEXT>
+	</LABEL>
+	<PLAYERSELECTLISTBOX item="ClanSponsorSelect" parent="ClanCreateDialog">
+		<BOUNDS>
+			<X>100</X>
+			<Y>133</Y>
+			<W>277</W>
+			<H>130</H>
+		</BOUNDS>
+		<MULTISELECT/>
+	</PLAYERSELECTLISTBOX>
+
+	<BUTTON item="ClanCreateDialogOk" parent="ClanCreateDialog">
+		<BUTTONLOOK>DefaultButtonLook</BUTTONLOOK>
+		<ANCHORS>
+			<LEFT>false</LEFT>
+			<TOP>false</TOP>
+			<RIGHT>true</RIGHT>
+			<BOTTOM>true</BOTTOM>
+		</ANCHORS>
+		<BOUNDS>
+			<X>172</X>
+			<Y>280</Y>
+			<W>100</W>
+			<H>32</H>
+		</BOUNDS>
+		<DEFAULTKEY>ESC</DEFAULTKEY>
+		<TEXT>OK(&amp;O)</TEXT>
+	</BUTTON>
+	<BUTTON item="ClanCreateDialogClose" parent="ClanCreateDialog">
+		<BUTTONLOOK>DefaultButtonLook</BUTTONLOOK>
+		<ANCHORS>
+			<LEFT>false</LEFT>
+			<TOP>false</TOP>
+			<RIGHT>true</RIGHT>
+			<BOTTOM>true</BOTTOM>
+		</ANCHORS>
+		<BOUNDS>
+			<X>280</X>
+			<Y>280</Y>
+			<W>100</W>
+			<H>32</H>
+		</BOUNDS>
+		<DEFAULTKEY>ESC</DEFAULTKEY>
+		<TEXT>Cancel(&amp;C)</TEXT>
+	</BUTTON>
+
+
+<!-- 범용적인 동의대기창  -->
+	<FRAME item="ProposalAgreementWait">
+		<FRAMELOOK>DefaultFrameLook</FRAMELOOK>
+		<BOUNDS>
+			<X>584</X>
+			<Y>278</Y>
+			<W>330</W>
+			<H>181</H>
+		</BOUNDS>
+		<ALIGN>
+			<HALIGN>center</HALIGN>
+			<VALIGN>center</VALIGN>
+		</ALIGN>
+		<RESIZABLE>false</RESIZABLE>
+		<MOVABLE>false</MOVABLE>
+		<TEXT>Wait for consent</TEXT>
+		<VISIBLE>FALSE</VISIBLE>
+	</FRAME>
+	<TEXTAREA item="ProposalAgreementWait_Textarea" parent="ProposalAgreementWait">
+		<BOUNDS>
+			<X>19</X>
+			<Y>46</Y>
+			<W>300</W>
+			<H>50</H>
+		</BOUNDS>
+		<TEXT></TEXT>
+		<EDITABLE>false</EDITABLE>
+	</TEXTAREA>
+	<BUTTON item="ProposalAgreementWait_Cancel" parent="ProposalAgreementWait">
+		<BUTTONLOOK>DefaultButtonLook</BUTTONLOOK>
+		<BOUNDS>
+			<X>200</X>
+			<Y>130</Y>
+			<W>110</W>
+			<H>32</H>
+		</BOUNDS>
+		<DEFAULTKEY>ESC</DEFAULTKEY>
+		<TEXT>Cancel(&amp;C)</TEXT>
+		<VISIBLE>true</VISIBLE>
+	</BUTTON>
+
+	<LABEL item="ProposalAgreementWait_RemainDesc" parent="ProposalAgreementWait">
+		<FONT>FONTb11b</FONT>
+		<ALIGN>
+			<HALIGN>center</HALIGN>
+			<VALIGN>center</VALIGN>
+		</ALIGN>
+		<BOUNDS>
+			<X>20</X>
+			<Y>130</Y>
+			<W>200</W>
+			<H>30</H>
+		</BOUNDS>
+		<TEXT>Time Limit :</TEXT>
+	</LABEL>
+	<LABEL item="ProposalAgreementWait_Remain" parent="ProposalAgreementWait">
+		<FONT>FONTb11b</FONT>
+		<ALIGN>
+			<HALIGN>center</HALIGN>
+			<VALIGN>center</VALIGN>
+		</ALIGN>
+		<BOUNDS>
+			<X>120</X>
+			<Y>130</Y>
+			<W>200</W>
+			<H>30</H>
+		</BOUNDS>
+	</LABEL>
+
+<!-- 범용적인 동의 응답창 -->
+	<FRAME item="ProposalAgreementConfirm">
+		<FRAMELOOK>DefaultFrameLook</FRAMELOOK>
+		<BOUNDS>
+			<X>584</X>
+			<Y>278</Y>
+			<W>330</W>
+			<H>181</H>
+		</BOUNDS>
+		<ALIGN>
+			<HALIGN>center</HALIGN>
+			<VALIGN>center</VALIGN>
+		</ALIGN>
+		<RESIZABLE>false</RESIZABLE>
+		<MOVABLE>false</MOVABLE>
+		<TEXT>Consented</TEXT>
+		<VISIBLE>FALSE</VISIBLE>
+	</FRAME>
+
+	<TEXTAREA item="ProposalAgreementConfirm_Textarea" parent="ProposalAgreementConfirm">
+		<BOUNDS>
+			<X>19</X>
+			<Y>46</Y>
+			<W>300</W>
+			<H>50</H>
+		</BOUNDS>
+		<TEXT></TEXT>
+		<EDITABLE>false</EDITABLE>
+	</TEXTAREA>
+	<BUTTON item="ProposalAgreementConfirm_OK" parent="ProposalAgreementConfirm">
+		<BUTTONLOOK>DefaultButtonLook</BUTTONLOOK>
+		<BOUNDS>
+			<X>76</X>
+			<Y>130</Y>
+			<W>100</W>
+			<H>32</H>
+		</BOUNDS>
+		<TEXT>Agree(&amp;A)</TEXT>
+	</BUTTON>
+	<BUTTON item="ProposalAgreementConfirm_Cancel" parent="ProposalAgreementConfirm">
+		<BUTTONLOOK>DefaultButtonLook</BUTTONLOOK>
+		<BOUNDS>
+			<X>181</X>
+			<Y>130</Y>
+			<W>100</W>
+			<H>32</H>
+		</BOUNDS>
+		<DEFAULTKEY>ESC</DEFAULTKEY>
+		<TEXT>Deny(&amp;D)</TEXT>
+	</BUTTON>
+	<LABEL item="ProposalAgreementConfirm_RemainDesc" parent="ProposalAgreementConfirm">
+		<FONT>FONTb11b</FONT>
+		<ALIGN>
+			<HALIGN>center</HALIGN>
+			<VALIGN>center</VALIGN>
+		</ALIGN>
+		<BOUNDS>
+			<X>20</X>
+			<Y>80</Y>
+			<W>200</W>
+			<H>30</H>
+		</BOUNDS>
+		<TEXT>Time Limit :</TEXT>
+	</LABEL>
+	<LABEL item="ProposalAgreementConfirm_Remain" parent="ProposalAgreementConfirm">
+		<FONT>FONTb11b</FONT>
+		<ALIGN>
+			<HALIGN>center</HALIGN>
+			<VALIGN>center</VALIGN>
+		</ALIGN>
+		<BOUNDS>
+			<X>120</X>
+			<Y>80</Y>
+			<W>200</W>
+			<H>30</H>
+		</BOUNDS>
+	</LABEL>
+
+</XML>

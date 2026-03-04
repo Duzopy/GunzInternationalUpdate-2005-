@@ -1,0 +1,287 @@
+<?xml version="1.0"?>
+<XML ID="StageList">
+	<Schema xmlns="MaietData" xmlns:dt="MaietDataTypes" />
+
+<!--
+   Stage 화면 구성
+   
+   Last Update : 5.NOV.2004
+   Editor      : Lim Dong Hwan
+-->
+
+<!-- 프레임 생성 : StageSettingFrame -->
+	<FRAME item="StageSettingFrame">
+		<FRAMELOOK>DefaultFrameLook</FRAMELOOK>
+		<BOUNDS>
+			<X>0</X>
+			<Y>0</Y>
+			<W>310</W>
+			<H>340</H>
+		</BOUNDS>
+		<ALIGN>
+			<HALIGN>center</HALIGN>
+			<VALIGN>center</VALIGN>
+		</ALIGN>
+		<TEXT>Misc. Game Setting</TEXT>
+		<VISIBLE>false</VISIBLE>
+		<RESIZABLE>false</RESIZABLE>
+	</FRAME>
+
+	<!-- Label : 제한 시간 -->
+	<LABEL item="Label" parent="StageSettingFrame">
+		<BOUNDS>
+			<X>20</X>
+			<Y>40</Y>
+			<W>110</W>
+			<H>24</H>
+		</BOUNDS>
+		<TEXT>Time Limit</TEXT>
+	</LABEL>	
+	
+	<!-- COMBOBOX : 제한 시간 콤보박스 -->
+	<COMBOBOX item="StageLimitTime" parent="StageSettingFrame">
+		<LISTBOXLOOK>CustomListBoxLook</LISTBOXLOOK>
+		<BUTTONLOOK>ListBoxButtonLook</BUTTONLOOK>
+		<TEXTALIGN>
+			<HALIGN>center</HALIGN>
+			<VALIGN>center</VALIGN>
+		</TEXTALIGN>
+		<ITEMHEIGHT>18</ITEMHEIGHT>
+		<BOUNDS>
+			<X>135</X>
+			<Y>40</Y>
+			<W>150</W>
+			<H>24</H>
+		</BOUNDS>
+		<DROPSIZE>210</DROPSIZE>
+	</COMBOBOX>
+
+	<!-- Label : 난입 허용 -->
+	<LABEL item="Label" parent="StageSettingFrame">
+		<BOUNDS>
+			<X>20</X>
+			<Y>72</Y>
+			<W>110</W>
+			<H>24</H>
+		</BOUNDS>
+		<TEXT>Intrusion</TEXT>
+	</LABEL>	
+
+	<!-- COMBOBOX : 난입 허용 콤보박스 -->
+	<COMBOBOX item="StageIntrude" parent="StageSettingFrame">
+		<LISTBOXLOOK>CustomListBoxLook</LISTBOXLOOK>
+		<BUTTONLOOK>ListBoxButtonLook</BUTTONLOOK>
+		<TEXTALIGN>
+			<HALIGN>center</HALIGN>
+			<VALIGN>center</VALIGN>
+		</TEXTALIGN>
+		<ITEMHEIGHT>18</ITEMHEIGHT>
+		<BOUNDS>
+			<X>135</X>
+			<Y>72</Y>
+			<W>150</W>
+			<H>24</H>
+		</BOUNDS>
+		<DROPSIZE>210</DROPSIZE>
+		<COMBOTYPE>1</COMBOTYPE>
+		<COMBOFIRSTSIZE>51</COMBOFIRSTSIZE>
+	</COMBOBOX>
+	
+	<!-- LABEL : 팀킬 여부 -->
+	<LABEL item="Label" parent="StageSettingFrame">
+		<BOUNDS>
+			<X>20</X>
+			<Y>104</Y>
+			<W>110</W>
+			<H>24</H>
+		</BOUNDS>
+		<TEXT>Friendly Damage</TEXT>
+	</LABEL>	
+
+	<!-- COMBOBOX : 팀킬 여부 콤보 박스 -->
+	<COMBOBOX item="StageTeamKill" parent="StageSettingFrame">
+		<LISTBOXLOOK>CustomListBoxLook</LISTBOXLOOK>
+		<BUTTONLOOK>ListBoxButtonLook</BUTTONLOOK>
+		<TEXTALIGN>
+			<HALIGN>center</HALIGN>
+			<VALIGN>center</VALIGN>
+		</TEXTALIGN>
+		<ITEMHEIGHT>18</ITEMHEIGHT>
+		<BOUNDS>
+			<X>135</X>
+			<Y>104</Y>
+			<W>150</W>
+			<H>24</H>
+		</BOUNDS>
+		<DROPSIZE>210</DROPSIZE>
+		<COMBOTYPE>1</COMBOTYPE>
+		<COMBOFIRSTSIZE>51</COMBOFIRSTSIZE>
+	</COMBOBOX>
+	
+	<!-- LABEL : 레벨 제한 -->
+	<LABEL item="Label" parent="StageSettingFrame">
+		<BOUNDS>
+			<X>20</X>
+			<Y>136</Y>
+			<W>110</W>
+			<H>24</H>
+		</BOUNDS>
+		<TEXT>Level Restriction</TEXT>
+	</LABEL>
+
+	<!-- COMBOBOX : 레벨 제한 콤보 박스 -->
+	<COMBOBOX item="StageLevelLimit" parent="StageSettingFrame">
+		<LISTBOXLOOK>CustomListBoxLook</LISTBOXLOOK>
+		<BUTTONLOOK>ListBoxButtonLook</BUTTONLOOK>
+		<TEXTALIGN>
+			<HALIGN>center</HALIGN>
+			<VALIGN>center</VALIGN>
+		</TEXTALIGN>
+		<ITEMHEIGHT>18</ITEMHEIGHT>
+		<BOUNDS>
+			<X>135</X>
+			<Y>136</Y>
+			<W>150</W>
+			<H>24</H>
+		</BOUNDS>
+		<DROPSIZE>210</DROPSIZE>
+	</COMBOBOX>
+		
+	<!-- LABEL : 관전 허용 -->
+	<LABEL item="Label" parent="StageSettingFrame">
+		<BOUNDS>
+			<X>20</X>
+			<Y>168</Y>
+			<W>110</W>
+			<H>24</H>
+		</BOUNDS>
+		<TEXT>Observation</TEXT>
+	</LABEL>	
+
+	<!-- COMBOBOX : 관전 허용 콤보 박스 -->
+	<COMBOBOX item="StageObserver" parent="StageSettingFrame">
+		<LISTBOXLOOK>CustomListBoxLook</LISTBOXLOOK>
+		<BUTTONLOOK>ListBoxButtonLook</BUTTONLOOK>
+		<TEXTALIGN>
+			<HALIGN>center</HALIGN>
+			<VALIGN>center</VALIGN>
+		</TEXTALIGN>
+		<ITEMHEIGHT>18</ITEMHEIGHT>
+		<BOUNDS>
+			<X>135</X>
+			<Y>168</Y>
+			<W>150</W>
+			<H>24</H>
+		</BOUNDS>
+		<DROPSIZE>210</DROPSIZE>
+		<COMBOTYPE>1</COMBOTYPE>
+		<COMBOFIRSTSIZE>51</COMBOFIRSTSIZE>
+		<ENABLE>false</ENABLE>
+	</COMBOBOX>
+	
+	<!-- LABEL : 투표 가능 -->
+	<LABEL item="Label" parent="StageSettingFrame">
+		<BOUNDS>
+			<X>20</X>
+			<Y>200</Y>
+			<W>110</W>
+			<H>24</H>
+		</BOUNDS>
+		<TEXT>Voting</TEXT>
+	</LABEL>	
+
+	<!-- COMBOBOX : 투표 가능 콤보 박스 -->
+	<COMBOBOX item="StageVote" parent="StageSettingFrame">
+		<LISTBOXLOOK>CustomListBoxLook</LISTBOXLOOK>
+		<BUTTONLOOK>ListBoxButtonLook</BUTTONLOOK>
+		<TEXTALIGN>
+			<HALIGN>center</HALIGN>
+			<VALIGN>center</VALIGN>
+		</TEXTALIGN>
+		<ITEMHEIGHT>18</ITEMHEIGHT>
+		<BOUNDS>
+			<X>135</X>
+			<Y>200</Y>
+			<W>150</W>
+			<H>24</H>
+		</BOUNDS>
+		<DROPSIZE>210</DROPSIZE>
+		<COMBOTYPE>1</COMBOTYPE>
+		<COMBOFIRSTSIZE>51</COMBOFIRSTSIZE>
+		<ENABLE>false</ENABLE>
+	</COMBOBOX>
+	
+	<!-- LABEL : 팀 선승제 -->
+	<LABEL item="Label" parent="StageSettingFrame">
+		<BOUNDS>
+			<X>20</X>
+			<Y>232</Y>
+			<W>110</W>
+			<H>24</H>
+		</BOUNDS>
+		<TEXT>First win</TEXT>
+	</LABEL>	
+
+	<!-- COMBOBOX : 팀 선승제 콤보 박스 -->
+	<COMBOBOX item="StageWinFirstGame" parent="StageSettingFrame">
+		<LISTBOXLOOK>CustomListBoxLook</LISTBOXLOOK>
+		<BUTTONLOOK>ListBoxButtonLook</BUTTONLOOK>
+		<TEXTALIGN>
+			<HALIGN>center</HALIGN>
+			<VALIGN>center</VALIGN>
+		</TEXTALIGN>
+		<ITEMHEIGHT>18</ITEMHEIGHT>
+		<BOUNDS>
+			<X>135</X>
+			<Y>232</Y>
+			<W>150</W>
+			<H>24</H>
+		</BOUNDS>
+		<DROPSIZE>210</DROPSIZE>
+		<COMBOTYPE>1</COMBOTYPE>
+		<COMBOFIRSTSIZE>51</COMBOFIRSTSIZE>
+		<ENABLE>false</ENABLE>
+	</COMBOBOX>
+
+	
+
+<!-- 버튼 -->
+	<!-- BUTTON : 확인 버튼 -->
+	<BUTTON item="StageSettingApplyBtn" parent="StageSettingFrame">
+		<BUTTONLOOK>DefaultButtonLook</BUTTONLOOK>
+		<ANCHORS>
+			<LEFT>true</LEFT>
+			<TOP>true</TOP>
+			<RIGHT>true</RIGHT>
+			<BOTTOM>true</BOTTOM>
+		</ANCHORS>
+		<BOUNDS>
+			<X>51</X>
+			<Y>287</Y>
+			<W>102</W>
+			<H>32</H>
+		</BOUNDS>
+		<TEXT>OK(&amp;O)</TEXT>
+		<DEFAULTKEY>ENTER</DEFAULTKEY>
+	</BUTTON>
+
+	<!-- BUTTON : 취소 버튼 -->
+	<BUTTON item="ParentClose" parent="StageSettingFrame">
+		<BUTTONLOOK>DefaultButtonLook</BUTTONLOOK>
+		<ANCHORS>
+			<LEFT>true</LEFT>
+			<TOP>true</TOP>
+			<RIGHT>true</RIGHT>
+			<BOTTOM>true</BOTTOM>
+		</ANCHORS>
+		<BOUNDS>
+			<X>157</X>
+			<Y>287</Y>
+			<W>102</W>
+			<H>32</H>
+		</BOUNDS>
+		<TEXT>Cancel(&amp;C)</TEXT>
+		<DEFAULTKEY>ESC</DEFAULTKEY>
+	</BUTTON>
+	
+</XML>

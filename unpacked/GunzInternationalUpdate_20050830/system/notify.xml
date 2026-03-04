@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<XML>
+	<NOTIFY id="10">Network initialization has failed.</NOTIFY>
+	<NOTIFY id="11">Network port is in use.</NOTIFY>
+	<NOTIFY id="15">NAT network connection configuration set.</NOTIFY>
+	<NOTIFY id="51">The user is not found.</NOTIFY>
+	<NOTIFY id="70">The character does not exist.</NOTIFY>
+	<NOTIFY id="100">The stage already exists.</NOTIFY>
+	<NOTIFY id="101">The stage does not exist.</NOTIFY>
+	<NOTIFY id="110">The capacity for members has reached its limit.</NOTIFY>
+	<NOTIFY id="150">The Chat Room has been created.</NOTIFY>
+	<NOTIFY id="151">The Chat Room creation has failed.</NOTIFY>
+	<NOTIFY id="152">The Chat Room already exists.</NOTIFY>
+	<NOTIFY id="153">The Chat Room does not exist.</NOTIFY>
+	<NOTIFY id="154">There is no Chat Room to participate in.</NOTIFY>
+	<NOTIFY id="155">You cannot participate in the Chat Room.</NOTIFY>
+	<NOTIFY id="156">Too many participants.</NOTIFY>
+	<NOTIFY id="200">Speed hacking has been declared as having been used.</NOTIFY>
+	<NOTIFY id="201">Use of memory hack has been declared.</NOTIFY>
+	<NOTIFY id="251">Already registered as a friend</NOTIFY>
+	<NOTIFY id="252">Not registered as a friend. </NOTIFY>
+	<NOTIFY id="253">The list of friends is full.</NOTIFY>
+	<NOTIFY id="255">Registered as friend.</NOTIFY>
+	<NOTIFY id="256">Released from a friend's status.</NOTIFY>
+    <NOTIFY id="301">Your counterpart has rejected whispering.</NOTIFY>
+    <NOTIFY id="302">Whispering has been rejected.</NOTIFY>
+    <NOTIFY id="311">Your counterpart has rejected the invitation.</NOTIFY>
+    <NOTIFY id="312">The invitation has been rejected.</NOTIFY>
+</XML>

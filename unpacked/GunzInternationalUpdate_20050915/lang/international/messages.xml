@@ -1,0 +1,329 @@
+﻿<?xml version="1.0"?>
+<XML>
+
+<!-- 클라이언트 에러메시지 관련 -->
+	<MESSAGE cid="500">Notice</MESSAGE>
+	<MESSAGE cid="501">Log into the Netmarble GUNZ home page first and select the server in the server list to operate the GUNZ.</MESSAGE>
+
+<!-- 클라이언트 인터페이스 관련 -->
+	<MESSAGE cid="1000">You can report in 1 minute.</MESSAGE>
+	<MESSAGE cid="1001">Details of the chatting have been reported.</MESSAGE>
+	<MESSAGE cid="1002">You do not have the authority to chat.</MESSAGE>
+	<MESSAGE cid="1003">Enter $1 characters or longer.</MESSAGE>
+	<MESSAGE cid="1004">Incorrect Command Syntax.</MESSAGE>
+	<MESSAGE cid="1005">Incorrect Command Syntax.</MESSAGE>
+	<MESSAGE cid="1006">Can be implemented in the lobby only.</MESSAGE>
+	<MESSAGE cid="1007">Can be implemented in the waiting room only.</MESSAGE>
+	<MESSAGE cid="1008">Can be implemented in the game only.</MESSAGE>
+	<MESSAGE cid="1009">It is cancelled.</MESSAGE>
+	<MESSAGE cid="1010">Cannot use a command.</MESSAGE>
+	<MESSAGE cid="1011">The screen shot is saved in "My Documents$1".</MESSAGE>
+	<MESSAGE cid="1012">An attempt to save the screen shot has failed.</MESSAGE>
+	<MESSAGE cid="1013">Recording has started.</MESSAGE>
+	<MESSAGE cid="1014">Recording has been saved in the file "My Documents$1".</MESSAGE>
+	<MESSAGE cid="1015">Saving the record has failed.</MESSAGE>
+	<MESSAGE cid="1016">Voting on the forced exit of '%s' has started. </MESSAGE>
+	<MESSAGE cid="1017">If you want to participate in the voting, press 'Y' if you consent; 'N' if you do not.</MESSAGE>
+	<MESSAGE cid="1018">Select the user that should be out </MESSAGE>
+	<MESSAGE cid="1019">[ESC] Cancel</MESSAGE>
+	<MESSAGE cid="1020">Vote is accepted.</MESSAGE>
+	<MESSAGE cid="1021">Vote is rejected.</MESSAGE>
+	<MESSAGE cid="1022">Vote option is not available.</MESSAGE>
+	<MESSAGE cid="1023">Vote on '$1' has commenced.</MESSAGE>
+	<!-- 추가부분 11. 15. -->
+	<MESSAGE cid="1024">Searching for the counter team $1</MESSAGE>
+
+	<MESSAGE cid="1025">투표대상인 플레이어가 게임에서 나갔습니다.</MESSAGE>
+
+	<MESSAGE cid="1105">$1 is trying to form '$3'Clan with $2. Do you agree?</MESSAGE>
+	<MESSAGE cid="1106">$1 refused the offer to create a clan.</MESSAGE>
+	<MESSAGE cid="1107">The clan is created.</MESSAGE>
+	<MESSAGE cid="1108">The clan is closed. The clan will be completed closed by 7:00 AM CST.</MESSAGE>
+	<MESSAGE cid="1109">Only the Clan Master can execute.</MESSAGE>
+	<MESSAGE cid="1110">Only the Clan Master and Clan Administrator can execute.</MESSAGE>
+	<MESSAGE cid="1111">You have already joined a clan.</MESSAGE>
+	<MESSAGE cid="1112">You have not joined the clan.</MESSAGE>
+	<MESSAGE cid="1113">'$1' Do you agree to join the clan?</MESSAGE>
+	<MESSAGE cid="1114">The member is rejected.</MESSAGE>
+	<MESSAGE cid="1115">You have joined the clan.</MESSAGE>
+	<MESSAGE cid="1116">You have withdrawn from the clan.</MESSAGE>
+	<MESSAGE cid="1117">Clan Master cannot withdraw from the clan.</MESSAGE>
+	<MESSAGE cid="1118">Deletion cannot be done while you are a clan member. Withdraw from the clan first.</MESSAGE>
+	<MESSAGE cid="1119">Authority has changed.</MESSAGE>
+	<MESSAGE cid="1120">The selected member has been removed from the clan.</MESSAGE>
+	<MESSAGE cid="1121">You have to select $1 members for clan creation in order to create a clan.</MESSAGE>
+	<MESSAGE cid="1122">Are you sure that you want to close the clan?</MESSAGE>
+	<MESSAGE cid="1123">Are you sure that you want to withdraw from the clan?</MESSAGE>
+	<MESSAGE cid="1124">Clan Name is different.</MESSAGE>
+	<MESSAGE cid="1125">Clan Member '$1' has accessed.</MESSAGE>
+
+	<MESSAGE cid="1200">Cannot be deleted as it is equipped with cash equipment(or item).</MESSAGE>
+	<MESSAGE cid="1201">A character is deleted.</MESSAGE>
+	
+	<MESSAGE cid="1202">You are back previous resolution in $1 second(s).</MESSAGE>
+
+<!-- 로비 UI -->
+	<MESSAGE cid="1301">Clan Master : $1, $2 accessed.</MESSAGE>
+	<MESSAGE cid="1302">%d waiting. </MESSAGE>
+	<MESSAGE cid="1303">You have not joined the clan.</MESSAGE>
+	<!-- 추가된 부분 11.13 -->
+	<MESSAGE cid="1304">Please use a free channel if you do not want the level restraint.</MESSAGE>
+	<MESSAGE cid="1305">You are to fight with all users regardless of the channel in the league game.</MESSAGE>
+	<MESSAGE cid="1306">$1 is invited to the Chat Room.</MESSAGE>	
+	<MESSAGE cid="1307">$1 has invited you the Chat Room '$2'.</MESSAGE>
+	<MESSAGE cid="1308">'$2' has entered the Chat Room '$1'.</MESSAGE>
+	<MESSAGE cid="1309">'$2' has exited the Chat Room '$1'.</MESSAGE>
+	<MESSAGE cid="1310">Will be converted to the Chat Room '$1'.</MESSAGE>
+	<!--
+	<MESSAGE cid="1311">'$1' invites you to Chat Room '$2'.</MESSAGE>
+	-->
+	<MESSAGE cid="1312">Chat Room($1) $2 : $3</MESSAGE>
+	<!--
+	<MESSAGE cid="1313">Whispering ($1) : $2</MESSAGE>
+	-->
+	<!-- 추가된 부분 11.15 -->
+	<MESSAGE cid="1313">Request being made to open the Chat Room ...</MESSAGE>
+	<MESSAGE cid="1314">Request being made to join the Chat Room ...</MESSAGE>
+	<MESSAGE cid="1315">Withdrawing from the Chat Room.</MESSAGE>
+	<MESSAGE cid="1316">Selecting the Chat Room.</MESSAGE>
+	<MESSAGE cid="1317">You have entered the channel '$1'.</MESSAGE>
+	
+
+	<MESSAGE cid="1400">Wait for consent</MESSAGE>
+	<MESSAGE cid="1401">Please wait until the player agrees.</MESSAGE>
+	<MESSAGE cid="1402">$1 has invited you to a game. Do you accept?</MESSAGE>
+	<MESSAGE cid="1403">$1 has rejected.</MESSAGE>
+	<MESSAGE cid="1404">$1 has cancelled.</MESSAGE>
+	<MESSAGE cid="1405">It is been cancelled.</MESSAGE>
+	<MESSAGE cid="1406">Select the right number of people.</MESSAGE>
+
+	<MESSAGE cid="1420">$1 have invited you to a clan war. Do you accept?</MESSAGE>
+	
+<!-- 클랜전 -->	
+	<MESSAGE cid="1510">'$1' Clan defeated '$2' Clan and filled with energy after recording $3 wins in a row.</MESSAGE>
+	<MESSAGE cid="1511">'$1' Clan defeated '$2' Clan recording $3 wins in a row.</MESSAGE>
+	<MESSAGE cid="1512">'$1' Clan defeated '$2' Clan to record $3 wins in a row without hitch.</MESSAGE>
+	<MESSAGE cid="1513">'$1' Clan defeated '$2' Clan to successfully record $3 wins in a row.</MESSAGE>
+	<MESSAGE cid="1514">'$1' Clan defeated '$2' Clan to mark $3 wins in a row.</MESSAGE>
+	<MESSAGE cid="1515">'$1' Clan defeated '$2' Clan blocking its way into a third consecutive win.</MESSAGE>
+	
+<!-- 로딩 메시지 -->
+	<MESSAGE cid="1600">'Dash'</MESSAGE>
+	<MESSAGE cid="1601">You can move a lot faster than in the general state.</MESSAGE>
+	<MESSAGE cid="1602">You can enter even when you are in the air. (Close weapon prerequisite)</MESSAGE>
+	<MESSAGE cid="1603">'Perfect defense'</MESSAGE>
+	<MESSAGE cid="1604">During defense, you can completely block all the bullets and swords.</MESSAGE>
+	<MESSAGE cid="1605">Impossible to defend the lower part.</MESSAGE>
+	<MESSAGE cid="1606">'Special attack'</MESSAGE>
+	<MESSAGE cid="1607">In case of a long sword, it hits the counterpart to suspend in the air. In case of</MESSAGE>
+	<MESSAGE cid="1608">a dagger it pushes the counterpart to suspend him/her with its pushing power. </MESSAGE>
+	<MESSAGE cid="1609">'How to fall'</MESSAGE>
+	<MESSAGE cid="1610">A successful fall-down onto the ground reduces the additional damage that you</MESSAGE>
+	<MESSAGE cid="1611">might suffer as you cannot move lying on the ground.</MESSAGE>
+	<MESSAGE cid="1612">'Tumbling'</MESSAGE>
+	<MESSAGE cid="1613">You can avoid an attack by tumbling.</MESSAGE>
+	<MESSAGE cid="1614">You can also shoot a gun when tumbling.</MESSAGE>
+	<MESSAGE cid="1615">'Suspending'</MESSAGE>
+	<MESSAGE cid="1616">Click the right button of the mouse when suspended in the air and armed with a weapon for</MESSAGE>
+	<MESSAGE cid="1617">close combat you can suspend yourself from the wall using the weapon for close combat.</MESSAGE>
+	<MESSAGE cid="1618">'Wall jump'</MESSAGE>
+	<MESSAGE cid="1619">Press the JUMP key when you are close to the wall</MESSAGE>
+	<MESSAGE cid="1620">to make another jump against it.</MESSAGE>
+	<MESSAGE cid="1621">'Run the wall'</MESSAGE>
+	<MESSAGE cid="1622">Press the Jump Key when the character stands diagonal against the wall while moving</MESSAGE>
+	<MESSAGE cid="1623">forward then the character can automatically run on the wall.</MESSAGE>
+	<MESSAGE cid="1624">Climb along the wall</MESSAGE>
+	<MESSAGE cid="1625">You can climb along the wall.</MESSAGE>
+	<MESSAGE cid="1626">Unless you are very close to the wall, the function does not work.</MESSAGE>
+
+<!-- 캐릭터 정보 표시 -->
+	<MESSAGE cid="1700">[Character Information]=============</MESSAGE>
+	<MESSAGE cid="1701">Name</MESSAGE>
+	<MESSAGE cid="1702">Clan</MESSAGE>
+	<MESSAGE cid="1703">Level</MESSAGE>
+	<MESSAGE cid="1704">Winning Percentage</MESSAGE>
+	<MESSAGE cid="1705">Win</MESSAGE>
+	<MESSAGE cid="1706">Lose</MESSAGE>
+	<MESSAGE cid="1707">Connection Time</MESSAGE>
+	<MESSAGE cid="1708">day</MESSAGE>
+	<MESSAGE cid="1709">hour</MESSAGE>
+	<MESSAGE cid="1710">min</MESSAGE>
+	<MESSAGE cid="1711">sec</MESSAGE>
+<!-- 추가된 부분 -->
+	<MESSAGE cid="1712">EXP</MESSAGE>
+	<MESSAGE cid="1713">Bounty</MESSAGE>
+	<MESSAGE cid="1714">HP</MESSAGE>
+	<MESSAGE cid="1715">AP</MESSAGE>
+	<MESSAGE cid="1716">WT</MESSAGE>
+
+<!-- 게임 중 메시지 -->
+	<MESSAGE cid="2000">$1 has participated in the game.</MESSAGE>
+	<MESSAGE cid="2001">$1 has left the game.</MESSAGE>
+	<MESSAGE cid="2002">$1 has been leveled up.</MESSAGE>
+	<MESSAGE cid="2003">$1 has been leveled down.</MESSAGE>
+	<MESSAGE cid="2004">Clan War $1 ( $2 vs. $3 )</MESSAGE>
+	<!-- 추가된 부분 -->
+	<MESSAGE cid="2005">Fallen into hell.</MESSAGE>
+	<MESSAGE cid="2006">You habe been killed by your explosives.</MESSAGE>
+	<MESSAGE cid="2007">You have defeated yourself.</MESSAGE>
+	<MESSAGE cid="2008">$1 has commited suicide.</MESSAGE>	
+	<MESSAGE cid="2009">You have defeated $1.</MESSAGE>
+	<MESSAGE cid="2010">$1 has defeated you.</MESSAGE>
+	<MESSAGE cid="2011">$1 has defeated $2.</MESSAGE>
+	<MESSAGE cid="2012">To play, press the Fire key!</MESSAGE>
+	<MESSAGE cid="2013">Wait for $1 second(s)!</MESSAGE>
+	<MESSAGE cid="2014">You are out of the game in $1 second(s).</MESSAGE>
+	<!-- 추가부분 11. 15. -->
+	<MESSAGE cid="2015">Whispering ($1) : $2</MESSAGE>
+	<MESSAGE cid="2016">The item has been brought in.</MESSAGE>
+	<MESSAGE cid="2017">The item cannot be brought in.</MESSAGE>
+	<MESSAGE cid="2018">You have made the purchase.</MESSAGE>
+	<MESSAGE cid="2019">You cannot make a purchase.</MESSAGE>
+	<MESSAGE cid="2020">It has been sold.</MESSAGE>
+	<MESSAGE cid="2021">There is no character to select. Create a character first.</MESSAGE>
+	<MESSAGE cid="2022">You cannot sell it .</MESSAGE>
+	<MESSAGE cid="2023">You go to the next round in $1 second(s).</MESSAGE>
+	<MESSAGE cid="2024">Quest Team got a(an) $1.</MESSAGE>
+	<MESSAGE cid="2025">Got $2 $1(s).</MESSAGE>
+	<MESSAGE cid="2026">The Portal was opened.</MESSAGE>
+
+	<!-- 추가부분 11. 15. -->
+	<MESSAGE cid="3000">Administrator: $1</MESSAGE>
+	
+	
+<!-- 메뉴 -->
+	<MESSAGE cid="8000">None</MESSAGE>
+
+	<MESSAGE cid="8001">Add a friend</MESSAGE>
+	<MESSAGE cid="8002">Delete a friend</MESSAGE>
+	<MESSAGE cid="8003">Check Location</MESSAGE>
+	<MESSAGE cid="8004">Catch up with</MESSAGE>
+	<MESSAGE cid="8005">Whisper</MESSAGE>
+	<MESSAGE cid="8006">Expel</MESSAGE>
+	<MESSAGE cid="8007">Recruit</MESSAGE>
+
+	<MESSAGE cid="8008">Delegate the clan master</MESSAGE>
+	<MESSAGE cid="8009">Change into the operator</MESSAGE>
+	<MESSAGE cid="8010">Change into a clan member</MESSAGE>
+	<MESSAGE cid="8011">Expel from the clan</MESSAGE>
+	<MESSAGE cid="8012">Quit the clan</MESSAGE>
+	
+	<MESSAGE cid="8013">Send to Central Bank</MESSAGE>
+
+	<MESSAGE cid="8014">OK</MESSAGE>
+	<MESSAGE cid="8015">Cancel</MESSAGE>
+	<MESSAGE cid="8016">Yes</MESSAGE>
+	<MESSAGE cid="8017">No</MESSAGE>
+	<MESSAGE cid="8018">Message</MESSAGE>	
+	
+				
+<!-- 용어 -->
+	<MESSAGE cid="9000"></MESSAGE>
+	<MESSAGE cid="9001">Clan Master</MESSAGE>
+	<MESSAGE cid="9002">Clan Administrator</MESSAGE>
+	<MESSAGE cid="9003">Clan Member</MESSAGE>
+	
+	<MESSAGE cid="9004">Administrator</MESSAGE>
+	<MESSAGE cid="9005">Developer</MESSAGE>
+	<MESSAGE cid="9006">Commands</MESSAGE>
+	<MESSAGE cid="9007">Help</MESSAGE>
+	<MESSAGE cid="9008">Usage</MESSAGE>
+
+	<MESSAGE cid="9100">Male</MESSAGE>
+	<MESSAGE cid="9101">Female</MESSAGE>
+	<MESSAGE cid="9102">Male</MESSAGE>
+	<MESSAGE cid="9103">Female</MESSAGE>
+	
+	<MESSAGE cid="9200">Lobby</MESSAGE>
+	<MESSAGE cid="9201">Stage</MESSAGE>
+	<MESSAGE cid="9202">Store</MESSAGE>
+	<MESSAGE cid="9203">Equipment</MESSAGE>
+	
+	<MESSAGE cid="9302">For Men</MESSAGE>
+	<MESSAGE cid="9349">For Women</MESSAGE>
+	<MESSAGE cid="9303">Req. Level</MESSAGE>
+	<MESSAGE cid="9304">Weight</MESSAGE>
+	<MESSAGE cid="9305">Attributes:Fire</MESSAGE>
+	<MESSAGE cid="9306">Attributes:Ice</MESSAGE>
+	<MESSAGE cid="9307">Attributes:Poison</MESSAGE>
+	<MESSAGE cid="9308">Attributes:Lightning</MESSAGE>
+	<MESSAGE cid="9309">Duration</MESSAGE>
+	<MESSAGE cid="9310">Clip</MESSAGE>
+	<MESSAGE cid="9311">Damage</MESSAGE>
+	<MESSAGE cid="9312">Delay</MESSAGE>
+	<MESSAGE cid="9313">Max Wgt.</MESSAGE>
+	<MESSAGE cid="9314">Speed</MESSAGE>					<!-- Speed of movement -->
+	<MESSAGE cid="9315">Jump [X]</MESSAGE>				<!-- Jump not allowed -->
+	<MESSAGE cid="9316">Dash [X]</MESSAGE>				<!-- Dash not allowed -->
+	<MESSAGE cid="9317">Wall climbing [X]</MESSAGE>		<!-- Wall climbing not allowed -->
+	<MESSAGE cid="9318">Damage</MESSAGE>
+	<MESSAGE cid="9319">Quest</MESSAGE>
+	<MESSAGE cid="9320">Item</MESSAGE>
+	<MESSAGE cid="9321">Sacrifice</MESSAGE>
+	<MESSAGE cid="9322">Players</MESSAGE>
+	<MESSAGE cid="9323">Blue</MESSAGE>
+	<MESSAGE cid="9324">Red</MESSAGE>
+	<MESSAGE cid="9325">Quantity</MESSAGE>
+	<MESSAGE cid="9326">Searching for the counter team</MESSAGE>
+	<MESSAGE cid="9327">Num of items</MESSAGE>
+	<MESSAGE cid="9328">Num of NPC</MESSAGE>
+	<MESSAGE cid="9329">Progression</MESSAGE>
+	<MESSAGE cid="9330">Remaining Time</MESSAGE>
+	<MESSAGE cid="9331">V</MESSAGE>
+	
+	<MESSAGE cid="9332">Rate</MESSAGE>
+	<MESSAGE cid="9333">Grade</MESSAGE>
+	<MESSAGE cid="9334">Regular</MESSAGE>
+	<MESSAGE cid="9335">Legendary</MESSAGE>
+	<MESSAGE cid="9336">Boss</MESSAGE>
+	<MESSAGE cid="9337">Elite</MESSAGE>
+	<MESSAGE cid="9338">Veteran</MESSAGE>
+	<MESSAGE cid="9339">Very strong</MESSAGE>
+	<MESSAGE cid="9340">Strong</MESSAGE>
+	<MESSAGE cid="9341">Average</MESSAGE>
+	<MESSAGE cid="9342">Weak</MESSAGE>
+	<MESSAGE cid="9343">Very Weak</MESSAGE>
+	
+	<MESSAGE cid="9344">Infinite</MESSAGE>
+	<MESSAGE cid="9345">Not available</MESSAGE>
+	<MESSAGE cid="9346">Level gap</MESSAGE>
+	<MESSAGE cid="9347">Allowed</MESSAGE>
+	<MESSAGE cid="9348">Prohibited</MESSAGE>
+	
+	<MESSAGE cid="100100">Searching for a counterpart team $1</MESSAGE>
+	<MESSAGE cid="100200">The vote on '$1' has started.</MESSAGE>
+
+	<MESSAGE cid="100300">There is a word '$1' that you cannot use.</MESSAGE>
+
+	
+	<!-- 매치 타입 -->
+	<MESSAGE cid="9350">Deathmatch</MESSAGE>
+	<MESSAGE cid="9351">Team Deathmatch</MESSAGE>
+	<MESSAGE cid="9352">Gladiator</MESSAGE>
+	<MESSAGE cid="9353">Team Gladiator</MESSAGE>
+	<MESSAGE cid="9354">Assassination</MESSAGE>
+	<MESSAGE cid="9355">Training</MESSAGE>
+	<MESSAGE cid="9356">Classic</MESSAGE>
+	<MESSAGE cid="9357">Team Classic</MESSAGE>
+	<MESSAGE cid="9358">Survival</MESSAGE>
+	<MESSAGE cid="9359">Quest</MESSAGE>
+	<MESSAGE cid="9360">Berserker</MESSAGE>
+
+
+	<!-- 추가 -->
+	<MESSAGE cid="9400">remaining.</MESSAGE>
+	
+	
+<!--
+	<MESSAGE cid=""></MESSAGE>
+-->
+
+<!-- 경고 -->
+	<MESSAGE cid="20000">A hacking attempt has been detected. In accordance with the agreement that members have consented, the GUNZ Operation Team continues to monitor and collect information on the users who hack. Keep in mind that all the responsibility brought about by committing any illegal act in civil or criminal case falls on the shoulders of the user who commits such an illegal act.</MESSAGE>
+	<MESSAGE cid="20001">The period of use expired.</MESSAGE>
+	<MESSAGE cid="20002">You can mount or release an equipment by dragging an icon. You cannot send a bounty equipment(item) to the Central Bank.</MESSAGE>
+	<MESSAGE cid="20003">WARNING: GunZ does not support the $1. You may be unable to view certain fonts or proceed with gameplay. Do you still wish to continue?</MESSAGE>
+	<MESSAGE cid="20004">GunZ requires DirectX 9.0c to run properly. Would you like to install DirectX 9.0c now?</MESSAGE>
+	<MESSAGE cid="20005">http://www.gunzonline.com/downloads</MESSAGE>
+	<MESSAGE cid="20006">Please enter 'YES' if you wish to delete this character.</MESSAGE>
+</XML>

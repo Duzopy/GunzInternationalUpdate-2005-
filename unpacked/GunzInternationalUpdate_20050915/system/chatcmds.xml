@@ -1,0 +1,90 @@
+<?xml version="1.0"?>
+<XML>
+	<CMD id="1" name="help" usage="/help or /help [command]" help="Show the list of chatting commands.">
+	  <ALIAS name="h"/>
+	</CMD>
+	
+	<CMD id="2" name="whisper" usage="/whisper [ID] [msg]" help="Whisper to the party designated with ID">
+	  <ALIAS name="w"/>
+	  <ALIAS name="say"/>
+	</CMD>
+
+	<CMD id="3" name="report" usage="/report" help="Report the details of the chatting">
+	  <ALIAS name="112"/>
+	</CMD>
+
+	<CMD id="4" name="friend" usage="/friend [cmd] [args]" help="friend commands">
+	</CMD>
+
+	<CMD id="5" name="clan" usage="/clan [cmd] [args]" help="clan commands">
+	</CMD>
+
+	<CMD id="6" name="follow" usage="/follow [ID]" help="Follow friend's game stage">
+	</CMD>
+
+	<CMD id="7" name="qj" usage="/qj" help="Start a game right away in any room">
+	  <ALIAS name="go"/>
+	</CMD>
+
+	<CMD id="8" name="taunt" usage="/taunt" help="Make a fool of others in a game. (Supported in games only)">
+	</CMD>
+
+	<CMD id="9" name="salute" usage="/salute" help="Character bows to salute. (Supported in games only)">
+	  <ALIAS name="bow"/>
+	</CMD>
+
+	<CMD id="10" name="wave" usage="/wave" help="Character waves hands. (Supported in games only)">
+	</CMD>
+
+	<CMD id="11" name="laugh" usage="/laugh" help="Character laughs. (Supported in games only)">
+	</CMD>
+
+	<CMD id="12" name="cry" usage="/cry" help="Character cries. (Supported in games only)">
+	</CMD>
+
+	<CMD id="13" name="dance" usage="/dance" help="Character dances. (Supported in games only)">
+	</CMD>
+
+	<CMD id="14" name="macro" usage="/macro" help="Register macros">
+	</CMD>
+
+	<CMD id="15" name="suicide" usage="/suicide" help="The character currently in the play gets immediately defeated.">
+	</CMD>
+
+	<CMD id="16" name="vote" usage="/vote" help="voting">
+	  <ALIAS name="callvote"/>
+	</CMD>
+
+	<CMD id="17" name="yes" usage="/yes" help="call yes">
+	</CMD>
+
+	<CMD id="18" name="no" usage="/no" help="call no">
+	</CMD>
+
+	<CMD id="19" name="kick" usage="/kick" help="Propose kicking player">
+	</CMD>
+
+<!--
+	<CMD id="20" name="채팅개설" usage="/채팅개설 [방이름]" help="채팅방을 개설합니다.">
+	</CMD>
+
+	<CMD id="21" name="채팅참가" usage="/채팅참가 [방이름]" help="채팅방에 들어갑니다.">
+	</CMD>
+
+	<CMD id="22" name="채팅탈퇴" usage="/채팅탈퇴 [방이름]" help="채팅방에 들어갑니다.">
+	</CMD>
+
+	<CMD id="23" name="채팅선택" usage="/채팅선택 [방이름]" help="채팅방을 선택합니다.">
+	</CMD>
+
+	<CMD id="24" name="채팅초대" usage="/채팅초대 [이름]" help="채팅방에 초대합니다.">
+	</CMD>
+
+	<CMD id="25" name="채팅수락" usage="/채팅수락" help="채팅방 초대를 수락합니다.">
+	</CMD>
+
+	<CMD id="26" name="채팅" usage="채팅 [메시지]" help="채팅을 합니다.">
+	</CMD>
+-->
+	
+</XML>
